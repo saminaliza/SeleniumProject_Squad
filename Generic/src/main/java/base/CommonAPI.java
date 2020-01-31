@@ -77,7 +77,7 @@ public class CommonAPI {
         if (result.getStatus() == ITestResult.FAILURE) {
             captureScreenshot(driver, result.getName());
         }
-        driver.quit();
+        //driver.quit();
     }
     @AfterSuite
     public void generateReport() {
@@ -111,7 +111,7 @@ public class CommonAPI {
             getLocalDriver(os, browserName);
         }
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        //driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
         driver.get(url);
         //driver.manage().window().maximize();
     }
@@ -170,9 +170,10 @@ public class CommonAPI {
         return driver;
     }
 
-    @AfterMethod
+    @AfterClass
     public void cleanUp(){
-        //driver.close();
+
+        driver.close();
     }
 
     //helper methods
