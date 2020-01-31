@@ -10,16 +10,14 @@ import org.testng.annotations.Test;
 import reporting.TestLogger;
 
 public class searchBarFunctionality extends CommonAPI{
-       // driver.get("https://bankofamerica.com");
-
 
     @Test ( enabled=false )
     //Checks if the suggestions window pops-up on clicking the text field.
     public void searchBarTextFieldClickFunctionality(){
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-         BoaHomePage bhp =PageFactory.initElements(driver, BoaHomePage.class);
+        BoaHomePage bhp =PageFactory.initElements(driver, BoaHomePage.class);
         bhp.helpSearchBarWebElement.click();
-       isPopUpWindowDisplayed(driver, ".search-container");
+        isPopUpWindowDisplayed(driver, ".search-container");
     }
     @Parameters({"searchBarValue"})
     @Test ( enabled=false )
@@ -92,6 +90,7 @@ public class searchBarFunctionality extends CommonAPI{
             handleNewTab(driver);
             Assert.assertEquals(driver.getCurrentUrl(), feedbackPageUrl);
         }
+
 
     }
 

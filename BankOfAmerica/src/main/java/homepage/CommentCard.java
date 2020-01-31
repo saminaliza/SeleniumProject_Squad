@@ -7,6 +7,12 @@ import org.openqa.selenium.support.How;
 
 public class CommentCard extends CommonAPI{
 
+    private String sucessfulSubmissionTitle = "Your submission has been received.";
+
+    public String getSucessfulSubmissionTitle() {
+        return sucessfulSubmissionTitle;
+    }
+
     @FindBy(how=How.LINK_TEXT, using = "Contact Us")
     public static WebElement contactUsWebElement;
 
@@ -30,5 +36,9 @@ public class CommentCard extends CommonAPI{
 
     @FindBy(how=How.CSS, using = "#footerLink1")
     public static WebElement privacyAndSecurityWebElement;
+
+    @FindBy(how=How.CSS, using = "#closeLink > a:nth-child(1)")
+    public static WebElement closeWindowWebElement;
+
 
 }

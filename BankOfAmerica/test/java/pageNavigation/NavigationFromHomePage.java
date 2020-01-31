@@ -105,12 +105,18 @@ public class NavigationFromHomePage extends CommonAPI {
     }
     @Test ( enabled=false )
     //Checks if the pop-up window for state selection appears on clicking the help element
-    public void helpTabFunctionality(){
+    public void helpTabFunctionality() throws InterruptedException {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         BoaHomePage bhp =PageFactory.initElements(driver, BoaHomePage.class);
         bhp.helpnWebElement.click();
+        sleepFor(7);
         isPopUpWindowDisplayed(driver,"#stateModalContent > h3:nth-child(1)");
     }
-
+    @Test ( enabled=false )
+        public void checkingFunctionality() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
+        BoaHomePage bhp=PageFactory.initElements(driver, BoaHomePage.class);
+        bhp.helpnWebElement.click();
+    }
 
 }
