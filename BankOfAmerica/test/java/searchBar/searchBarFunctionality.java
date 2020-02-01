@@ -45,7 +45,7 @@ public class searchBarFunctionality extends CommonAPI{
         bhp.helpSearchBarWebElement.click();
         typeOnElement("#nav-search-query", searchBarValue4);
         sleepFor(2);
-       clearInput("#nav-search-query");
+         clearInput("#nav-search-query");
        bhp.helpSearchBarWebElement.click();
        typeOnElement("#nav-search-query", searchBarValue);
        isPopUpWindowDisplayed(driver, ".search-container");

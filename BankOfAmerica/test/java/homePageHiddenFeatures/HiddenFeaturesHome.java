@@ -64,7 +64,7 @@ public class HiddenFeaturesHome extends CommonAPI{
         sleepFor(2);
         Assert.assertEquals(bhhf.investingHiddenMenuWebElement.isDisplayed(), true);
     }
-    @Test //( enabled=false )
+    @Test ( enabled=false )
     //checking if the hidden menu appears on clicking the Better Money Habits tab.
     public void betterMoneyHabitsFunctionality() throws InterruptedException {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
