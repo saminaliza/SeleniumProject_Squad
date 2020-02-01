@@ -9,6 +9,7 @@ import org.openqa.selenium.support.How;
 public class HomePage extends CommonAPI {
     @FindBy(how = How.XPATH, using = "//i[@id='ge5p-menu-active']")
     WebElement Hamburgerlink;
+
     @FindBy(how = How.XPATH,using = "//i[@class='icon-down']")
    WebElement Acountlink;
     @FindBy(how = How.XPATH,using = "//a[contains(text(),'Sign in')]")
@@ -88,9 +89,6 @@ public class HomePage extends CommonAPI {
     WebElement further_C;
     @FindBy(how=How.XPATH,using = "//button[contains(text(),'Cancel')]")
     WebElement another_Click_Cancel;
-
-
-
 
     public void clickhamburger() throws InterruptedException {
         Hamburgerlink.click();

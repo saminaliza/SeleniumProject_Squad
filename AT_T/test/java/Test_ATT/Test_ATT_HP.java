@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class Test_ATT_HP extends CommonAPI {
 
-    @Test
+    @Test (enabled = false)
     public void testhamburger() throws InterruptedException {
         HomePage hp = PageFactory.initElements(driver, HomePage.class);
         hp.clickhamburger();
@@ -48,9 +48,6 @@ public class Test_ATT_HP extends CommonAPI {
         hp.not_Robot();
         //hp.further_Continues();
         hp.anotherNToCancel();
-
-
-
 
 
 
