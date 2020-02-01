@@ -77,7 +77,7 @@ public class CommonAPI {
         if (result.getStatus() == ITestResult.FAILURE) {
             captureScreenshot(driver, result.getName());
         }
-        driver.quit();
+        //driver.quit();
     }
     @AfterSuite
     public void generateReport() {
@@ -111,7 +111,7 @@ public class CommonAPI {
             getLocalDriver(os, browserName);
         }
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        //driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
         driver.get(url);
         //driver.manage().window().maximize();
     }
@@ -138,12 +138,12 @@ public class CommonAPI {
             if(OS.equalsIgnoreCase("OS X")){
                 System.setProperty("webdriver.gecko.driver", "../Generic/browser-driver/geckodriver");
             }else if(OS.equalsIgnoreCase("Windows")) {
-                System.setProperty("webdriver.gecko.driver", "../Generic/browser-driver/geckodriver.exe");
+                System.setProperty("webdriver.gecko.driver", "..\\Generic\\browser-driver\\geckodriver.exe");
             }
             driver = new FirefoxDriver();
 
         } else if(browserName.equalsIgnoreCase("ie")) {
-            System.setProperty("webdriver.ie.driver", "../Generic/browser-driver/IEDriverServer.exe");
+            System.setProperty("webdriver.ie.driver", "..\\Generic\\browser-driver\\IEDriverServer.exe");
             driver = new InternetExplorerDriver();
         }
         return driver;
@@ -170,12 +170,12 @@ public class CommonAPI {
         return driver;
     }
 
-    @AfterMethod
+    @AfterClass
     public void cleanUp(){
+
 //        driver.close();
     }
-
-    //helper methods
+  //helper methods
     public void clickOnElement(String locator){
         try {
             driver.findElement(By.cssSelector(locator)).click();
