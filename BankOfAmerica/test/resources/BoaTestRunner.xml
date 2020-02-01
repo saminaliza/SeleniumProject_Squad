@@ -20,6 +20,18 @@
     <parameter name="contactUsUrl" value="https://www.bankofamerica.com/customer-service/contact-us/?request_locale=en_US"/>
     <parameter name="searchPageUrl" value="https://secure.bankofamerica.com/myaccounts/public/search-results/unAuthenticatedSearch.go"/>
     <parameter name="feedbackPageUrl" value="https://secure.opinionlab.com/ccc01/comment_card_d.asp"/>
+    <parameter name="locationsUrl" value="https://locators.bankofamerica.com/"/>
+    <parameter name="helpUrl" value="https://www.bankofamerica.com/help/overview/?request_locale=en_US"/>
+    <parameter name="accessibleBankingUrl" value="https://www.bankofamerica.com/accessiblebanking/overview.go?request_locale=en_US"/>
+    <parameter name="careersUrl" value="https://careers.bankofamerica.com/en-us"/>
+    <parameter name="privacySecurityUrl" value="https://www.bankofamerica.com/security-center/overview/?request_locale=en_US"/>
+    <parameter name="mcafeeUrl" value="https://www.bankofamerica.com/security-center/online-mobile-banking-privacy/mcafee-antivirus-free-trial/?request_locale=en_US"/>
+    <parameter name="sitemapUrl" value="https://www.bankofamerica.com/information/personal/?request_locale=en_US"/>
+    <parameter name="feedbackFooterUrl" value="https://secure.opinionlab.com/ccc01/comment_card_d.asp"/>
+    <parameter name="onlineBanking" value="https://secure.bankofamerica.com/login/sign-in/signOnV2Screen.go?request_locale=en-us"/>
+
+
+
 
     <parameter name="searchBarValue" value="business loan"/>
     <parameter name="searchBarValue2" value="Car"/>
@@ -37,6 +49,9 @@
             <class name="pageNavigation.NavigationFromHomePage"/>
             <class name="searchBar.searchBarFunctionality"/>
             <class name="feedbackCommentCard.CommentCardSubmission"/>
+            <class name="socialMediaLinkage.SocialMediaHandles"/>
+            <class name="pageNavigation.NavigationFromHomePageFooter"/>
+            <class name="homePageHiddenFeatures.HiddenFeaturesHome"/>
         </classes>
     </test>
 

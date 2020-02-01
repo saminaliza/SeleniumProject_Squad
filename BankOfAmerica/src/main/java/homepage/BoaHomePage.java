@@ -50,8 +50,63 @@ public class BoaHomePage extends CommonAPI{
     @FindBy(how = How.CSS, using = "a[name='Search Module - Feedback']")
     public static WebElement feedbackWebElement;
 
-    @FindBy(how = How.ID, using ="navChecking")
-    public static WebElement checkingWebElement;
+
+    @FindBy(how = How.LINK_TEXT, using ="Locations")
+    public static WebElement locationFooterWebElement;
+
+    @FindBy(how = How.LINK_TEXT, using ="Contact Us")
+    public static WebElement contactUsFooterWebElement;
+
+    @FindBy(how = How.LINK_TEXT, using ="Help")
+    public static WebElement helpFooterWebElement;
+
+    @FindBy(how = How.XPATH, using ="//*[@id=footer_bofa_careers]")
+    public static WebElement accessibleBankingFooterWebElement;
+
+    @FindBy(how = How.ID, using ="footer_bofa_careers")
+    public static WebElement carrearsFooterWebElement;
+
+    @FindBy(how = How.ID, using ="footer_bofa_privacy_and_security")
+    public static WebElement privacySecurityFooterWebElement;
+
+    @FindBy(how = How.ID, using ="footer_bofa_mcafee_internet_security")
+    public static WebElement mcafeeFooterWebElement;
+
+    @FindBy(how = How.ID, using ="footer_bofa_sitemap")
+    public static WebElement sitemapFooterWebElement;
+
+    @FindBy(how = How.LINK_TEXT, using ="Advertising Practices")
+    public static WebElement advertisingPracticeFooterWebElement;
+
+    @FindBy(how = How.XPATH, using ="//*[@id=footer_bofa_feedback]")
+    public static WebElement feedbackFooterWebElement;
+
+    @FindBy(how = How.LINK_TEXT, using ="View Full Online Banking Site")
+    public static WebElement onlineBankingLinkrWebElement;
+
+
+    @FindBy(how = How.CSS, using ="#social_follow_facebook_link > svg:nth-child(1) > g:nth-child(1) > path:nth-child(1)")
+    public static WebElement followFacebookWebElement;
+
+    @FindBy(how = How.XPATH, using ="//a[@id='social_follow_instagram_link' and @class='boa-social--network boa-social--instagram']")
+    public static WebElement followInstagramWebElement;
+
+    @FindBy(how = How.CSS, using ="#social_follow_linkedin_link")
+    public static WebElement followLinkedinWebElement;
+
+    @FindBy(how = How.CSS, using ="#social_follow_pinterest_link")
+    public static WebElement followPinterestWebElement;
+
+    @FindBy(how = How.CSS, using ="#social_follow_twitter_link")
+    public static WebElement followTwitterWebElement;
+
+    @FindBy(how = How.CSS, using ="#social_follow_youtube_link")
+    public static WebElement followYoutubeWebElement;
+
+    @FindBy(how = How.CSS, using =".equalhousing-container")
+    public static WebElement equalHousingWebElement;
+
+
 
     public WebElement getHelpSearchButtonWebElement() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
