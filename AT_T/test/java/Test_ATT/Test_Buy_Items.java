@@ -20,7 +20,7 @@ public class Test_Buy_Items extends Creat_ACCT {
         Thread.sleep(3000);
     }
     @Test(priority = 3)
-    public void testphoes() throws InterruptedException {
+    public void testPhones() throws InterruptedException {
         Buy_Items phones = PageFactory.initElements(driver, Buy_Items.class);
         phones.findPhones();
         Thread.sleep(10);

@@ -174,8 +174,7 @@ public class CommonAPI {
     public void cleanUp(){
         //driver.close();
     }
-
-    //helper methods
+  //helper methods
     public void clickOnElement(String locator){
         try {
             driver.findElement(By.cssSelector(locator)).click();

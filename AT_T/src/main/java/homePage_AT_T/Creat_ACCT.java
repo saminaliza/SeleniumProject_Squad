@@ -7,10 +7,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 public class Creat_ACCT extends CommonAPI {
-
     @FindBy(how = How.XPATH,using = "//i[@class='icon-down']")
     WebElement account;
-
     @FindBy(how=How.XPATH,using = "//a[contains(text(),'Sign in')]")
     WebElement signIn;
     @FindBy(how=How.XPATH,using = "//a[@id='createOneNowLink']")
