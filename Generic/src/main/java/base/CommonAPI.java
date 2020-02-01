@@ -79,7 +79,7 @@ public class CommonAPI {
         }
         //driver.quit();
     }
-    @AfterClass
+    @AfterSuite
     public void generateReport() {
         extent.close();
     }
@@ -96,7 +96,7 @@ public class CommonAPI {
     public String saucelabs_accesskey = "";
 
     @Parameters({"useCloudEnv","cloudEnvName","os","os_version","browserName","browserVersion","url"})
-    @BeforeClass
+    @BeforeMethod
     public void setUp(@Optional("false") boolean useCloudEnv, @Optional("false")String cloudEnvName,
                       @Optional("OS X") String os, @Optional("10") String os_version, @Optional("chrome-options") String browserName, @Optional("34")
                               String browserVersion, @Optional("http://www.amazon.com") String url)throws IOException {
