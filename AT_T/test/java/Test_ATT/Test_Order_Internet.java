@@ -1,6 +1,7 @@
 package Test_ATT;
 
 import base.CommonAPI;
+import com.sun.org.apache.xpath.internal.operations.Or;
 import homePage_AT_T.Order_Internet;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
@@ -32,7 +33,7 @@ public class Test_Order_Internet extends Order_Internet {
         Thread.sleep(2000);
     }
     @Test (priority = 5)
-            public void supportClick() throws InterruptedException {
+        public void supportClick() throws InterruptedException {
         Order_Internet sp = PageFactory.initElements(driver, Order_Internet.class);
         sp.clickSupport();
         Thread.sleep(2000);
@@ -49,10 +50,55 @@ public class Test_Order_Internet extends Order_Internet {
         bs.clickBusiness();
         Thread.sleep(2000);
     }
+    @Test(priority = 8)
+    public void direct_TV() throws InterruptedException {
+        Order_Internet dr = PageFactory.initElements(driver,Order_Internet.class);
+        dr.clickDirectTV();
+        Thread.sleep(2000);
+    }
+//    @Test(priority = 9)
+//    public void pop_Up(){
+//        Order_Internet pp = PageFactory.initElements(driver,Order_Internet.class);
+//        pp.clickPopUp();
+//    }
+    @Test(priority = 9)
+    public void shopDT() throws InterruptedException {
+        Order_Internet dtv = PageFactory.initElements(driver,Order_Internet.class);
+//        dtv.wire_Less();
+//        dtv.clickUpGrade();
+//        dtv.clickShopNow();
+//        dtv.clickContinueWIthOutSigning();
+//        dtv.clickSupport();
+//        dtv.clickViewBill();
+//        dtv.clickBusiness();
+//        dtv.clickDirectTV();
+        dtv.shpTV();
+        Thread.sleep(2000);
+    }
+    @Test(priority = 10)
+    public void pickRestaurant() throws InterruptedException {
+        Order_Internet res = PageFactory.initElements(driver,Order_Internet.class);
+        res.chooseRes();
+        Thread.sleep(4000);
+    }
+    @Test(priority = 11)
+    public void addCart() throws InterruptedException {
+        Order_Internet cart = PageFactory.initElements(driver,Order_Internet.class);
+        cart.clickToAdd();
+        Thread.sleep(2000);
+    }
+    @Test(priority = 12)
+    public void cart_2() throws InterruptedException {
+        Order_Internet ct = PageFactory.initElements(driver,Order_Internet.class);
+        ct.cart_Add();
+        Thread.sleep(3000);
+    }
+
+    }
 
 
 
 
 
 
-}
+
