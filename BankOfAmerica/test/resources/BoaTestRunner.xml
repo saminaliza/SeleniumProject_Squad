@@ -54,6 +54,7 @@
             <class name="pageNavigation.NavigationFromHomePageFooter"/>
             <class name="homePageHiddenFeatures.HiddenFeaturesHome"/>
             <class name="signInPanel.negativeSignIn"/>
+            <class name="pageNavigation.NaviagationFromSmallBusinessPage"/>
         </classes>
     </test>
 

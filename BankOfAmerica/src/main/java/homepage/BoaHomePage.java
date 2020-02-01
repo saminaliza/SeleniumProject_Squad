@@ -106,6 +106,10 @@ public class BoaHomePage extends CommonAPI{
     @FindBy(how = How.CSS, using =".equalhousing-container")
     public static WebElement equalHousingWebElement;
 
+    public void helpSearchBarClick(){
+        helpSearchBarWebElement.click();
+    }
+
 
 
     public WebElement getHelpSearchButtonWebElement() {

@@ -12,7 +12,7 @@ import reporting.TestLogger;
 
 public class CommentCardSubmission extends CommonAPI{
     @Parameters({"searchBarValue3"})
-    @Test ( enabled=false )
+    @Test //( enabled=false )
     //Positive checks the feedback submission card
     public void contactUsFromCommentCard(String searchBarValue3)throws InterruptedException{
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
@@ -20,17 +20,17 @@ public class CommentCardSubmission extends CommonAPI{
         bhp.helpSearchBarWebElement.click();
         typeOnInputBox("#nav-search-query", searchBarValue3);
         waitUntilVisible(By.className("results-heading"));
-        bhp.feedbackWebElement.click();
+        bhp.helpSearchBarClick();
         handleNewTab(driver);
         CommentCard cc = PageFactory.initElements(driver, CommentCard.class);
-        cc.contentRadio4WebElement.click();
-        cc.layoutRadio5WebElement.click();
-        cc.easeOfUseRadio4WebElement.click();
-        cc.overallUseRadio5WebElement.click();
+        cc.contentRadio4Click();
+        cc.layoutRadio5Click();
+        cc.easeOfUseRadio4Click();
+        cc.overallUseRadio5Click();
         typeOnElement(".large", "Good site, easy to fetch informations.");
-        cc.submitWebElement.click();
+        cc.submitClick();
         Assert.assertEquals(driver.getTitle(), cc.getSucessfulSubmissionTitle() );
-        cc.closeWindowWebElement.click();
+        cc.closeWindowClick();
     }
 
 

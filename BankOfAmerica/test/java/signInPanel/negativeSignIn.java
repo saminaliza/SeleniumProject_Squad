@@ -31,6 +31,7 @@ public class negativeSignIn extends CommonAPI{
         takeScreenShot();
     }
     @Test //( enabled = false)
+    //checks if the check-box is selectable and takes a screenShot
     public void saveOnlineIdCheckBox (){
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName() ));
         SignIn si = PageFactory.initElements(driver, SignIn.class);
@@ -39,6 +40,7 @@ public class negativeSignIn extends CommonAPI{
     }
     @Parameters({"forgotOnlineIdUrl"})
     @Test //( enabled = false )
+    //checks if the forgot password takes user to the proper page
     public void forgotIdPasscodeFunctionality(String forgotOnlineIdUrl) {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName() ));
         SignIn si = PageFactory.initElements(driver, SignIn.class);
@@ -67,7 +69,8 @@ public class negativeSignIn extends CommonAPI{
         Assert.assertEquals(driver.getTitle(), enrollTitledriver);
     }
     @Parameters({"openAccUrl"})
-    @Test// ( enabled = false )
+    @Test //( enabled = false )
+    //checks if the open account takes user to the account opening page
     public void openAccFunctionality(String openAccUrl) {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName() ));
         SignIn si = PageFactory.initElements(driver, SignIn.class);
