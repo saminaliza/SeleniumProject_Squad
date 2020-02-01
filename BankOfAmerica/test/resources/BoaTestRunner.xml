@@ -14,7 +14,7 @@
     <!-- page Url's of the application  -->
     <parameter name="smallBusinessUrl" value="https://www.bankofamerica.com/smallbusiness/"/>
     <parameter name="wealthManagementUrl" value="https://www.ml.com/wealthmanagement.html"/>
-    <parameter name="businessInstitutionUrl" value="https://www.bofaml.com/content/boaml/en_us/home.html"/>
+    <parameter name="businessInstitutionUrl" value="https://www.bofaml.com/content/boaml/en_us/amazonHomePageTest.html"/>
     <parameter name="securityUrl" value="https://www.bankofamerica.com/security-center/overview/"/>
     <parameter name="aboutUsUrl" value="https://about.bankofamerica.com/en-us/index.html"/>
     <parameter name="enEspanolUrl" value="https://www.bankofamerica.com/es/"/>
@@ -42,6 +42,11 @@
     <parameter name="searchBarValue" value="business loan"/>
     <parameter name="searchBarValue2" value="Car"/>
     <parameter name="searchBarValue3" value="Investing"/>
+    <parameter name="searchBarValue4" value="direct deposit"/>
+
+    <parameter name="searchBarValue" value="business loan"/>
+    <parameter name="searchBarValue2" value="Car"/>
+    <parameter name="searchBarValue3" value="investment"/>
     <parameter name="searchBarValue4" value="direct deposit"/>
 
 

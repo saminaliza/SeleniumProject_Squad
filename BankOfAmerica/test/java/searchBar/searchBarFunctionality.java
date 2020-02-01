@@ -2,9 +2,11 @@ package searchBar;
 
 import base.CommonAPI;
 import homepage.BoaHomePage;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import reporting.TestLogger;

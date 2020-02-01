@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Group2 Selenium Project " parallel="false">
+
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
+    <parameter name="os" value="Windows"/>
+    <parameter name="os_version" value="10"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserVersion" value="75.0"/>
+    <parameter name="url" value="https://www.amazon.com/"/>
+
+    <test name="Amazon Home">
+        <classes>
+            <class name="amazonHomePageTest.HomeTest"/>
+            <class name="amzonSignInTest.SignInTest"/>
+            <class name="amazonAccountNListTest.HomePageListTest"/>
+            <class name="amazonSignUpTest.SignUpPageTest"/>
+            <class name="amazonHomePageTest.HomePageOptionsTest"/>
+            <class name="amazonPrimeTest.PrimeOptionsUseTest"/>
+            <class name="amazonEchoNAlexaTest.EchoNAlexaTest"/>
+            <class name="amazonKindleOptionTest.KindleOptionsTest"/>
+        </classes>
+    </test>
+</suite>
