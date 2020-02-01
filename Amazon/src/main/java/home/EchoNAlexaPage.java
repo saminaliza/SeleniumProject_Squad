@@ -4,7 +4,7 @@ import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class EchoNAlexaUse extends CommonAPI {
+public class EchoNAlexaPage extends CommonAPI {
     @FindBy(id = "nav-hamburger-menu")
     WebElement hamburgerIcon;
     @FindBy(xpath="//*[@id=\"hmenu-content\"]/ul[3]/li[1]/a")

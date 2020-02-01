@@ -5,106 +5,106 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class MoreOnHomePageTest extends CommonAPI {
+public class HomePageListTest extends CommonAPI {
     @Test
     public void testUserCanUseDropdownToGoToCreateListPage() throws Exception {
-        MoreOnHomePage hm = PageFactory.initElements(driver,MoreOnHomePage.class);
+        HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.selectCreateAListFromMouseHover();
     }
     @Test
     public void testUserCanUseDropdownToGoToFindAGiftPage() throws Exception {
-        MoreOnHomePage hm = PageFactory.initElements(driver,MoreOnHomePage.class);
+        HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.selectCreateAListFromMouseHover();
     }
     @Test
     public void testUserCanUseDropdownToGoToIdeaListPage() throws Exception {
-        MoreOnHomePage hm = PageFactory.initElements(driver,MoreOnHomePage.class);
+        HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.selectIdeaListFromMouseHover();
     }
 
     @Test
     public void testUserCanUseDropdownToGoToDiscoverPage() throws Exception {
-        MoreOnHomePage hm = PageFactory.initElements(driver,MoreOnHomePage.class);
+        HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.canDiscoverOptionsFromMouseHover();
     }
     @Test
     public void testUserCanUseDropdownToGoToOrderListPage() throws Exception {
-        MoreOnHomePage hm = PageFactory.initElements(driver,MoreOnHomePage.class);
+        HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.cancheckOrderListOptionsFromDropdown();
     }
     @Test
     public void testUserCanUseDropdownToGoToPrimeMembershipInformation() throws Exception {
-        MoreOnHomePage hm = PageFactory.initElements(driver,MoreOnHomePage.class);
+        HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.canGoTOPrimeMembershipFromDropdown();
     }
     @Test
     public void testUserCanGoToMusicLibraryPage() throws Exception {
-        MoreOnHomePage hm = PageFactory.initElements(driver,MoreOnHomePage.class);
+        HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.canGoTOMusicLibraryFromDropdown();
     }
     @Test
     public void testUserCanCheckTheirPantryList() throws Exception {
-        MoreOnHomePage hm = PageFactory.initElements(driver,MoreOnHomePage.class);
+        HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.canGoTOPantryListsFromDropdown();
     }
     @Test
     public void testUserCanCheckTheirRecommendation() throws Exception {
-        MoreOnHomePage hm = PageFactory.initElements(driver,MoreOnHomePage.class);
+        HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.canGoTORecommendationFromDropdown();
     }
     @Test
     public void testUserCanGoToCharityList() throws Exception {
-        MoreOnHomePage hm = PageFactory.initElements(driver,MoreOnHomePage.class);
+        HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.canGoTOCharityListFromDropdown();
     }
     @Test
     public void testUserCanStartASellingAccount() throws Exception {
-        MoreOnHomePage hm = PageFactory.initElements(driver,MoreOnHomePage.class);
+        HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.canGoTOSellAccountFromDropdown();
     }
     @Test
     public void testUserCanGoToSubscribeNSaveBtn() throws Exception {
-        MoreOnHomePage hm = PageFactory.initElements(driver,MoreOnHomePage.class);
+        HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.canGoTOSubscribeNSaveItemFromDropdown();
     }
     @Test
     public void testUserCanGoToTheirCreditCardsOption() throws Exception {
-        MoreOnHomePage hm = PageFactory.initElements(driver,MoreOnHomePage.class);
+        HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.canGoTOYourCreditCardFromDropdown();
     }
     @Test
     public void testUserCanRegisterForBusinessAccount() throws Exception {
-        MoreOnHomePage hm = PageFactory.initElements(driver,MoreOnHomePage.class);
+        HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.canGoToBusinessAccountFromDropdown();
     }
     @Test
     public void testUserCanGoToTheirContentNDevices() throws Exception {
-        MoreOnHomePage hm = PageFactory.initElements(driver,MoreOnHomePage.class);
+        HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.canGoToContentNDeviceOptionFromDropdown();
     }
     @Test
     public void testUserCanCheckForAmazonShowRooms() throws Exception {
-        MoreOnHomePage hm = PageFactory.initElements(driver,MoreOnHomePage.class);
+        HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.canCheckForShowroomsFromDropdown();
     }
     @Test
     public void testUserCanLookForAndroidApps() throws Exception {
-        MoreOnHomePage hm = PageFactory.initElements(driver,MoreOnHomePage.class);
+        HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.canLookForAndroidAppsFromDropdown();
     }
     @Test
     public void testUserCanLookForAmazonPhotoOption() throws Exception {
-        MoreOnHomePage hm = PageFactory.initElements(driver,MoreOnHomePage.class);
+        HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.canLookForAmazonPhotoBtnFromDropdown();
     }
     @Test
     public void testUserCanLookForPrimeVideo() throws Exception {
-        MoreOnHomePage hm = PageFactory.initElements(driver,MoreOnHomePage.class);
+        HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.canLookForPrimeVideo();
     }
     @Test
     public void testUserCanGoToTheirWatchList() throws Exception {
-        MoreOnHomePage hm = PageFactory.initElements(driver, MoreOnHomePage.class);
+        HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.canLookForWatchList();
         Assert.assertEquals(true,true);
     }

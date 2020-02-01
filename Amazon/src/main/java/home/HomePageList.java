@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
-public class MoreOnHomePage extends CommonAPI {
+public class HomePageList extends CommonAPI {
     @FindBy(id = "nav-link-accountList")
     WebElement signInBtn;
     @FindBy(linkText = "Start here.")

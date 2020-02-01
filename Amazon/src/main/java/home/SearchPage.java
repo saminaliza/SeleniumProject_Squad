@@ -4,7 +4,7 @@ import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class Search extends CommonAPI {
+public class SearchPage extends CommonAPI {
     @FindBy(id = "twotabsearchtextbox")
     WebElement searchBox;
     @FindBy(css = "input[class='nav-input']")
