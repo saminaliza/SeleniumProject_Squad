@@ -44,8 +44,32 @@ public class BoaHomeHiddenFeatures extends CommonAPI {
     public static WebElement investingHiddenMenuWebElement;
 
     @FindBy(how = How.LINK_TEXT, using ="Better Money Habits®")
-    public static WebElement betterMoneyHabbitsWebElement;
+    public static WebElement betterMoneyHabitsWebElement;
 
     @FindBy(how = How.CSS, using ="#navBetterMoneyHabitsContent > div:nth-child(2)")
     public static WebElement betterMoneyHabbitsHiddenMenuWebElement;
+
+    public void checkingClick(){
+        checkingWebElement.click();
+    }
+    public void savingClick(){
+        savingWebElement.click();
+    }
+    public void creditCardClick(){
+        creditCardsWebElement.click();
+    }
+    public void homeLoansClick(){
+        homeLoansWebElement.click();
+    }
+    public void autoLoanClick(){
+        autoLoansWebElement.click();
+    }
+    public void investingClick(){
+        investingWebElement.click();
+    }
+    public void betterMoneyHabitsClick(){
+        betterMoneyHabitsWebElement.click();
+    }
+
+
 }

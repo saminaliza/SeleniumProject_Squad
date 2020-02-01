@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class SocialMediaHandles extends CommonAPI {
 
-    @Test ( enabled=false )
+    @Test //( enabled=false )
     //Checks if confirmation window pops up on clicking the Facebook follow icon
     public void facebookFollowIcon() throws InterruptedException {
         BoaHomePage bhp =PageFactory.initElements(driver, BoaHomePage.class);
@@ -17,7 +17,7 @@ public class SocialMediaHandles extends CommonAPI {
         sleepFor(3);
         isPopUpWindowDisplayed(driver,"#boaSocialModal_link > h3:nth-child(1)");
     }
-    @Test ( enabled=false )
+    @Test //( enabled=false )
     //Checks if confirmation window pops up on clicking the Instagram follow icon
     public void instagramFollowIcon() throws InterruptedException {
         BoaHomePage bhp =PageFactory.initElements(driver, BoaHomePage.class);

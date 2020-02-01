@@ -11,6 +11,7 @@
     <parameter name="browserVersion" value="79.0"/>
     <parameter name="url" value="https://www.bankofamerica.com/"/>
 
+    <!-- page Url's of the application  -->
     <parameter name="smallBusinessUrl" value="https://www.bankofamerica.com/smallbusiness/"/>
     <parameter name="wealthManagementUrl" value="https://www.ml.com/wealthmanagement.html"/>
     <parameter name="businessInstitutionUrl" value="https://www.bofaml.com/content/boaml/en_us/amazonHomePageTest.html"/>
@@ -29,10 +30,15 @@
     <parameter name="sitemapUrl" value="https://www.bankofamerica.com/information/personal/?request_locale=en_US"/>
     <parameter name="feedbackFooterUrl" value="https://secure.opinionlab.com/ccc01/comment_card_d.asp"/>
     <parameter name="onlineBanking" value="https://secure.bankofamerica.com/login/sign-in/signOnV2Screen.go?request_locale=en-us"/>
+    <parameter name="forgotOnlineIdUrl" value="https://secure.bankofamerica.com/auth/forgot/reset-entry/"/>
+    <parameter name="enrollUrl" value="https://secure.bankofamerica.com/auth/enroll/enroll-entry/"/>
+    <parameter name="openAccUrl" value="https://promo.bankofamerica.com/hp-oaa2/"/>
 
+    <!-- SignIn credentials  -->
+    <parameter name="onlineID" value="kinkAbidal"/>
+    <parameter name="passcode" value="letmein"/>
 
-
-
+    <!-- HomePage search bar values  -->
     <parameter name="searchBarValue" value="business loan"/>
     <parameter name="searchBarValue2" value="Car"/>
     <parameter name="searchBarValue3" value="Investing"/>
@@ -52,6 +58,8 @@
             <class name="socialMediaLinkage.SocialMediaHandles"/>
             <class name="pageNavigation.NavigationFromHomePageFooter"/>
             <class name="homePageHiddenFeatures.HiddenFeaturesHome"/>
+            <class name="signInPanel.negativeSignIn"/>
+            <class name="pageNavigation.NaviagationFromSmallBusinessPage"/>
         </classes>
     </test>
 
