@@ -8,38 +8,44 @@ import org.testng.annotations.Test;
 public class KindleOptionsTest extends CommonAPI {
 
     @Test
-    public void testUserCanNavigateToPrimeOptionsAndNavigateBackToHamburgerOptions() throws Exception {
-        KindleOptions kindleOptions = PageFactory.initElements(driver,KindleOptions.class);
+    public void userCAnNavigateBackToHamburgerOptionsTest() throws Exception {
+        KindleOptions kindleOptions = PageFactory.initElements(driver, KindleOptions.class);
         kindleOptions.navigateBackToHamburgerOptions();
     }
+
     @Test
-    public void testUserCanNavigateToAllKidsKindleEditionPage() throws Exception {
-        KindleOptions kindleOptions = PageFactory.initElements(driver,KindleOptions.class);
+    public void userCanNavigateToAllKidsKindleEditionPageTest() throws Exception {
+        KindleOptions kindleOptions = PageFactory.initElements(driver, KindleOptions.class);
         kindleOptions.allKidsKindleEdition();
     }
+
     @Test
-    public void testUserCanNavigateToKindlePage() throws Exception {
-        KindleOptions kindleOptions = PageFactory.initElements(driver,KindleOptions.class);
+    public void userCanNavigateToKindlePageTest() throws Exception {
+        KindleOptions kindleOptions = PageFactory.initElements(driver, KindleOptions.class);
         kindleOptions.clickKindleOption();
     }
+
     @Test
-    public void testUserCanNavigateToKindlePaperWhitePage() throws Exception {
-        KindleOptions kindleOptions = PageFactory.initElements(driver,KindleOptions.class);
+    public void userCanNavigateToKindlePaperWhitePageTest() throws Exception {
+        KindleOptions kindleOptions = PageFactory.initElements(driver, KindleOptions.class);
         kindleOptions.clickKindlePaperWhiteOption();
     }
+
     @Test
-    public void testUserCanNavigateToKindleBookPage() throws Exception {
-        KindleOptions kindleOptions = PageFactory.initElements(driver,KindleOptions.class);
+    public void userCanNavigateToKindleBookPageTest() throws Exception {
+        KindleOptions kindleOptions = PageFactory.initElements(driver, KindleOptions.class);
         kindleOptions.clickKindleBookOption();
     }
+
     @Test
-    public void testUserCanNavigateToMagazinesPage() throws Exception {
-        KindleOptions kindleOptions = PageFactory.initElements(driver,KindleOptions.class);
+    public void userCanNavigateToMagazinesPageTest() throws Exception {
+        KindleOptions kindleOptions = PageFactory.initElements(driver, KindleOptions.class);
         kindleOptions.clickMagazinesOption();
     }
+
     @Test
-    public void testUserCanNavigateToNewsPapersPage() throws Exception {
-        KindleOptions kindleOptions = PageFactory.initElements(driver,KindleOptions.class);
+    public void userCanNavigateToNewsPapersPageTest() throws Exception {
+        KindleOptions kindleOptions = PageFactory.initElements(driver, KindleOptions.class);
         kindleOptions.clickNewsPapersOption();
     }
 }

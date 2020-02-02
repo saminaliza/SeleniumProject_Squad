@@ -7,58 +7,68 @@ import org.testng.annotations.Test;
 
 public class EchoNAlexaTest extends CommonAPI {
     @Test
-    public void testUserCanNavigateToEchoOptionsAndNavigateBackToHamburgerOptions() throws Exception {
-        EchoNAlexaPage echoNAlexaUse= PageFactory.initElements(driver, EchoNAlexaPage.class);
+    public void userCanNavigateToEchoOptionsAndNavigateBackToHamburgerOptionsTest() throws Exception {
+        EchoNAlexaPage echoNAlexaUse = PageFactory.initElements(driver, EchoNAlexaPage.class);
         echoNAlexaUse.navigateBackToHamburgerOptions();
     }
+
     @Test
-    public void testUserCanNavigateToEchoShow5Page() throws Exception {
-        EchoNAlexaPage echoNAlexaUse= PageFactory.initElements(driver, EchoNAlexaPage.class);
+    public void userCanNavigateToEchoShow5PageTest() throws Exception {
+        EchoNAlexaPage echoNAlexaUse = PageFactory.initElements(driver, EchoNAlexaPage.class);
         echoNAlexaUse.clickEchoShow5();
     }
+
     @Test
-    public void testUserCanNavigateToEchoShow8Page() throws Exception {
-        EchoNAlexaPage echoNAlexaUse= PageFactory.initElements(driver, EchoNAlexaPage.class);
+    public void userCanNavigateToEchoShow8PageTest() throws Exception {
+        EchoNAlexaPage echoNAlexaUse = PageFactory.initElements(driver, EchoNAlexaPage.class);
         echoNAlexaUse.clickEchoShow8();
     }
+
     @Test
-    public void testUserCanNavigateToEchoShowPage() throws Exception {
-        EchoNAlexaPage echoNAlexaUse= PageFactory.initElements(driver, EchoNAlexaPage.class);
+    public void userCanNavigateToEchoShowPageTest() throws Exception {
+        EchoNAlexaPage echoNAlexaUse = PageFactory.initElements(driver, EchoNAlexaPage.class);
         echoNAlexaUse.clickOnEchoShow();
     }
+
     @Test
-    public void testUserCanNavigateToEchoFlexPage() throws Exception {
-        EchoNAlexaPage echoNAlexaUse= PageFactory.initElements(driver, EchoNAlexaPage.class);
+    public void userCanNavigateToEchoFlexPageTest() throws Exception {
+        EchoNAlexaPage echoNAlexaUse = PageFactory.initElements(driver, EchoNAlexaPage.class);
         echoNAlexaUse.clickOnEchoFlex();
     }
+
     @Test
-    public void testUserCanNavigateToEchoDotPage() throws Exception {
-        EchoNAlexaPage echoNAlexaUse= PageFactory.initElements(driver, EchoNAlexaPage.class);
+    public void userCanNavigateToEchoDotPageTest() throws Exception {
+        EchoNAlexaPage echoNAlexaUse = PageFactory.initElements(driver, EchoNAlexaPage.class);
         echoNAlexaUse.clickOnEchoDot();
     }
+
     @Test
-    public void testUserCanNavigateToAmazonSmartPlugPage() throws Exception {
-        EchoNAlexaPage echoNAlexaUse= PageFactory.initElements(driver, EchoNAlexaPage.class);
+    public void userCanNavigateToAmazonSmartPlugPageTest() throws Exception {
+        EchoNAlexaPage echoNAlexaUse = PageFactory.initElements(driver, EchoNAlexaPage.class);
         echoNAlexaUse.clickOnAmazonSmartPlug();
     }
+
     @Test
-    public void testUserCanNavigateToAmazonSmartOvenPage() throws Exception {
-        EchoNAlexaPage echoNAlexaUse= PageFactory.initElements(driver, EchoNAlexaPage.class);
+    public void userCanNavigateToAmazonSmartOvenPageTest() throws Exception {
+        EchoNAlexaPage echoNAlexaUse = PageFactory.initElements(driver, EchoNAlexaPage.class);
         echoNAlexaUse.clickOnAmazonSmartOven();
     }
+
     @Test
-    public void testUserCanNavigateToEchoGlowPage() throws Exception {
-        EchoNAlexaPage echoNAlexaUse= PageFactory.initElements(driver, EchoNAlexaPage.class);
+    public void userCanNavigateToEchoGlowPageTest() throws Exception {
+        EchoNAlexaPage echoNAlexaUse = PageFactory.initElements(driver, EchoNAlexaPage.class);
         echoNAlexaUse.clickOnEchoGlow();
     }
+
     @Test
-    public void testUserCanNavigateToAllSmartHomeDevicesPage() throws Exception {
-        EchoNAlexaPage echoNAlexaUse= PageFactory.initElements(driver, EchoNAlexaPage.class);
+    public void userCanNavigateToAllSmartHomeDevicesPageTest() throws Exception {
+        EchoNAlexaPage echoNAlexaUse = PageFactory.initElements(driver, EchoNAlexaPage.class);
         echoNAlexaUse.clickOnAllSmartHomeDevices();
     }
+
     @Test
-    public void testUserCanNavigateToMeetAlexaPage() throws Exception {
-        EchoNAlexaPage echoNAlexaUse= PageFactory.initElements(driver, EchoNAlexaPage.class);
+    public void userCanNavigateToMeetAlexaPageTest() throws Exception {
+        EchoNAlexaPage echoNAlexaUse = PageFactory.initElements(driver, EchoNAlexaPage.class);
         echoNAlexaUse.clickOnMeetAlexa();
     }
 }

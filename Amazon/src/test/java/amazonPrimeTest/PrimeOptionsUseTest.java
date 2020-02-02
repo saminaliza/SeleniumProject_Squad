@@ -1,64 +1,74 @@
 package amazonPrimeTest;
 
-import amazonPrime.PrimeOptionsUse;
+import amazonPrime.PrimeOptionsPage;
 import base.CommonAPI;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
 public class PrimeOptionsUseTest extends CommonAPI {
     @Test
-    public void testUserCanNavigateToPrimeOptionsAndNavigateBackToHamburgerOptions() throws Exception {
-        PrimeOptionsUse pO = PageFactory.initElements(driver, PrimeOptionsUse.class);
+    public void userCanNavigateToPrimeOptionsAndNavigateBackToHamburgerOptionsTest() throws Exception {
+        PrimeOptionsPage pO = PageFactory.initElements(driver, PrimeOptionsPage.class);
         pO.navigateBackToHamburgerOptions();
     }
+
     @Test
-    public void testUserCanNavigateToPrimeVideoOptions() throws Exception {
-        PrimeOptionsUse pO = PageFactory.initElements(driver, PrimeOptionsUse.class);
+    public void userCanNavigateToPrimeVideoOptionsTest() throws Exception {
+        PrimeOptionsPage pO = PageFactory.initElements(driver, PrimeOptionsPage.class);
         pO.clickPrimeVideoOption();
     }
+
     @Test
-    public void testUserCanNavigateToCheckWhatsIncludedWithPrime() throws Exception {
-        PrimeOptionsUse pO = PageFactory.initElements(driver, PrimeOptionsUse.class);
+    public void userCanNavigateToCheckWhatsIncludedWithPrimeTest() throws Exception {
+        PrimeOptionsPage pO = PageFactory.initElements(driver, PrimeOptionsPage.class);
         pO.clickForIncludedWithPrimeOption();
     }
+
     @Test
-    public void testUserCanNavigateToVideoChannelOption() throws Exception {
-        PrimeOptionsUse pO = PageFactory.initElements(driver, PrimeOptionsUse.class);
+    public void userCanNavigateToVideoChannelOptionTest() throws Exception {
+        PrimeOptionsPage pO = PageFactory.initElements(driver, PrimeOptionsPage.class);
         pO.clickForVideoChannelOption();
     }
+
     @Test
-    public void testUserCanNavigateToRentOrBuyOptionForPrimeMember() throws Exception {
-        PrimeOptionsUse pO = PageFactory.initElements(driver, PrimeOptionsUse.class);
+    public void userCanNavigateToRentOrBuyOptionForPrimeMemberTest() throws Exception {
+        PrimeOptionsPage pO = PageFactory.initElements(driver, PrimeOptionsPage.class);
         pO.clickForRentOrBuyOption();
     }
+
     @Test
-    public void testUserCanNavigateToWatchListOptionForPrimeMember() throws Exception {
-        PrimeOptionsUse pO = PageFactory.initElements(driver, PrimeOptionsUse.class);
+    public void userCanNavigateToWatchListOptionForPrimeMemberTest() throws Exception {
+        PrimeOptionsPage pO = PageFactory.initElements(driver, PrimeOptionsPage.class);
         pO.clickForWatchListOption();
     }
+
     @Test
-    public void testUserCanNavigateToWatchAnywhereForPrimeMember() throws Exception {
-        PrimeOptionsUse pO = PageFactory.initElements(driver, PrimeOptionsUse.class);
+    public void userCanNavigateToWatchAnywhereForPrimeMemberTest() throws Exception {
+        PrimeOptionsPage pO = PageFactory.initElements(driver, PrimeOptionsPage.class);
         pO.clickForWatchAnyWhereOption();
     }
+
     @Test
-    public void testUserCanNavigateToGettingStartedOption() throws Exception {
-        PrimeOptionsUse pO = PageFactory.initElements(driver, PrimeOptionsUse.class);
+    public void userCanNavigateToGettingStartedOptionTest() throws Exception {
+        PrimeOptionsPage pO = PageFactory.initElements(driver, PrimeOptionsPage.class);
         pO.clickForGettingStartedOption();
     }
+
     @Test
-    public void testUserCanNavigateToAmazonOriginalsOption() throws Exception {
-        PrimeOptionsUse pO = PageFactory.initElements(driver, PrimeOptionsUse.class);
+    public void userCanNavigateToAmazonOriginalsOptionTest() throws Exception {
+        PrimeOptionsPage pO = PageFactory.initElements(driver, PrimeOptionsPage.class);
         pO.clickForAmazonOriginalsOption();
     }
+
     @Test
-    public void testUserCanNavigateToKidsOption() throws Exception {
-        PrimeOptionsUse pO = PageFactory.initElements(driver, PrimeOptionsUse.class);
+    public void userCanNavigateToKidsOptionTest() throws Exception {
+        PrimeOptionsPage pO = PageFactory.initElements(driver, PrimeOptionsPage.class);
         pO.clickForKidsOption();
     }
+
     @Test
-    public void testUserCanNavigatePrimeOption() throws Exception {
-        PrimeOptionsUse pO = PageFactory.initElements(driver, PrimeOptionsUse.class);
+    public void userCanNavigatePrimeOptionTest() throws Exception {
+        PrimeOptionsPage pO = PageFactory.initElements(driver, PrimeOptionsPage.class);
         pO.clickForNavigateToPrimeOption();
     }
 }

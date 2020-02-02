@@ -8,105 +8,123 @@ import org.testng.annotations.Test;
 
 public class HomePageListTest extends CommonAPI {
     @Test
-    public void testUserCanUseDropdownToGoToCreateListPage() throws Exception {
+    public void userCanUseDropdownToGoToCreateListPageTest() throws Exception {
         HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.selectCreateAListFromMouseHover();
     }
+
     @Test
-    public void testUserCanUseDropdownToGoToFindAGiftPage() throws Exception {
+    public void userCanUseDropdownToGoToFindAGiftPageTest() throws Exception {
         HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.selectCreateAListFromMouseHover();
     }
+
     @Test
-    public void testUserCanUseDropdownToGoToIdeaListPage() throws Exception {
+    public void userCanUseDropdownToGoToIdeaListPageTest() throws Exception {
         HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.selectIdeaListFromMouseHover();
     }
 
     @Test
-    public void testUserCanUseDropdownToGoToDiscoverPage() throws Exception {
+    public void userCanUseDropdownToGoToDiscoverPageTest() throws Exception {
         HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.canDiscoverOptionsFromMouseHover();
     }
+
     @Test
-    public void testUserCanUseDropdownToGoToOrderListPage() throws Exception {
+    public void userCanUseDropdownToGoToOrderListPageTest() throws Exception {
         HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.cancheckOrderListOptionsFromDropdown();
     }
+
     @Test
-    public void testUserCanUseDropdownToGoToPrimeMembershipInformation() throws Exception {
+    public void userCanUseDropdownToGoToPrimeMembershipInformationTest() throws Exception {
         HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.canGoTOPrimeMembershipFromDropdown();
     }
+
     @Test
-    public void testUserCanGoToMusicLibraryPage() throws Exception {
+    public void userCanGoToMusicLibraryPageTest() throws Exception {
         HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.canGoTOMusicLibraryFromDropdown();
     }
+
     @Test
-    public void testUserCanCheckTheirPantryList() throws Exception {
+    public void userCanCheckTheirPantryListTest() throws Exception {
         HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.canGoTOPantryListsFromDropdown();
     }
+
     @Test
-    public void testUserCanCheckTheirRecommendation() throws Exception {
+    public void userCanCheckTheirRecommendationTest() throws Exception {
         HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.canGoTORecommendationFromDropdown();
     }
+
     @Test
-    public void testUserCanGoToCharityList() throws Exception {
+    public void userCanGoToCharityListTest() throws Exception {
         HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.canGoTOCharityListFromDropdown();
     }
+
     @Test
-    public void testUserCanStartASellingAccount() throws Exception {
+    public void userCanStartASellingAccountTest() throws Exception {
         HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.canGoTOSellAccountFromDropdown();
     }
+
     @Test
-    public void testUserCanGoToSubscribeNSaveBtn() throws Exception {
+    public void userCanGoToSubscribeNSaveBtnTest() throws Exception {
         HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.canGoTOSubscribeNSaveItemFromDropdown();
     }
+
     @Test
-    public void testUserCanGoToTheirCreditCardsOption() throws Exception {
+    public void userCanGoToTheirCreditCardsOptionTest() throws Exception {
         HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.canGoTOYourCreditCardFromDropdown();
     }
+
     @Test
-    public void testUserCanRegisterForBusinessAccount() throws Exception {
+    public void userCanRegisterForBusinessAccountTest() throws Exception {
         HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.canGoToBusinessAccountFromDropdown();
     }
+
     @Test
-    public void testUserCanGoToTheirContentNDevices() throws Exception {
+    public void userCanGoToTheirContentNDevicesTest() throws Exception {
         HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.canGoToContentNDeviceOptionFromDropdown();
     }
+
     @Test
-    public void testUserCanCheckForAmazonShowRooms() throws Exception {
+    public void userCanCheckForAmazonShowRoomsTest() throws Exception {
         HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.canCheckForShowroomsFromDropdown();
     }
+
     @Test
-    public void testUserCanLookForAndroidApps() throws Exception {
+    public void userCanLookForAndroidAppsTest() throws Exception {
         HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.canLookForAndroidAppsFromDropdown();
     }
+
     @Test
-    public void testUserCanLookForAmazonPhotoOption() throws Exception {
+    public void userCanLookForAmazonPhotoOptionTest() throws Exception {
         HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.canLookForAmazonPhotoBtnFromDropdown();
     }
+
     @Test
-    public void testUserCanLookForPrimeVideo() throws Exception {
+    public void userCanLookForPrimeVideoTest() throws Exception {
         HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.canLookForPrimeVideo();
     }
+
     @Test
-    public void testUserCanGoToTheirWatchList() throws Exception {
+    public void userCanGoToTheirWatchListTest() throws Exception {
         HomePageList hm = PageFactory.initElements(driver, HomePageList.class);
         hm.canLookForWatchList();
-        Assert.assertEquals(true,true);
+        Assert.assertEquals(true, true);
     }
 }

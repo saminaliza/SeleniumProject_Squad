@@ -1,4 +1,5 @@
 package amazonHomePageTest;
+
 import base.CommonAPI;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
@@ -8,87 +9,89 @@ public class HomeTest extends CommonAPI {
     @Test
     public void testUserCanUseSearchBox() {
         HomePage searchPage = PageFactory.initElements(driver, HomePage.class);
-        searchPage.searchNClick("phone");
+        searchPage.searchNClick("backpack");
     }
 
     @Test
-    public void testUserCanClickOnAmazonLogo() {
+    public void userCanClickOnAmazonLogoTest() {
         HomePage hm = PageFactory.initElements(driver, HomePage.class);
         hm.clickOnAmazonLogo();
     }
 
     @Test
-    public void testUserCanClickOnReturnNOrder() {
+    public void userCanClickOnReturnNOrderTest() {
         HomePage hm = PageFactory.initElements(driver, HomePage.class);
         hm.returnNOrderProduct();
     }
 
     @Test
-    public void testUserCanGoToShoppingCart() {
-       HomePage hm = PageFactory.initElements(driver, HomePage.class);
+    public void userCanGoToShoppingCartTest() {
+        HomePage hm = PageFactory.initElements(driver, HomePage.class);
         hm.checkShoppingCart();
     }
 
     @Test
-    public void testUserCanGoToPrime() {
+    public void userCanGoToPrimeTest() {
         HomePage hm = PageFactory.initElements(driver, HomePage.class);
         hm.gotoPrime();
     }
 
     @Test
-    public void testUserCanClickOnSignIn() {
+    public void userCanClickOnSignInTest() {
         HomePage hm = PageFactory.initElements(driver, HomePage.class);
         hm.goToSignIn();
     }
 
     @Test
-    public void testUserCanClickOnHamburgerIconForMoreOptions() {
+    public void userCanClickOnHamburgerIconForMoreOptionsTest() {
         HomePage hm = PageFactory.initElements(driver, HomePage.class);
         hm.hamburgerIconForOptions();
     }
 
     @Test
-    public void testUserCanSelectAddress() {
+    public void userCanSelectAddressTest() {
         HomePage hm = PageFactory.initElements(driver, HomePage.class);
-       hm.useAddressBtn();
+        hm.useAddressBtn();
     }
 
     @Test
-    public void testUserCanGoToTodaysDealPage() {
+    public void userCanGoToTodaysDealPageTest() {
         HomePage hm = PageFactory.initElements(driver, HomePage.class);
         hm.useTodaysDealBtn();
     }
 
     @Test
-    public void testUserCanGoToBestSellersPage() {
+    public void userCanGoToBestSellersPageTest() {
         HomePage hm = PageFactory.initElements(driver, HomePage.class);
         hm.useBestSellersBtn();
     }
 
     @Test
-    public void testUserCanGoToCustomerServicePage() {
+    public void userCanGoToCustomerServicePageTest() {
         HomePage hm = PageFactory.initElements(driver, HomePage.class);
         hm.useCustomerServiceBtn();
     }
 
     @Test
-    public void testUserCanGoToFindAGiftPage() {
+    public void userCanGoToFindAGiftPageTest() {
         HomePage hm = PageFactory.initElements(driver, HomePage.class);
         hm.useFindGiftBtn();
     }
 
     @Test
-    public void testUserCanGoToNewReleasePage() {
+    public void userCanGoToNewReleasePageTest() {
         HomePage hm = PageFactory.initElements(driver, HomePage.class);
         hm.useNewReleaseBtn();
     }
+
     @Test
-    public void testUserCanGoToRegistryPage() {
+    public void userCanGoToRegistryPageTest() {
         HomePage hm = PageFactory.initElements(driver, HomePage.class);
         hm.useRegistryBtn();
     }
+
     @Test
-    public void testUserCanGoToSellPage() {
+    public void userCanGoToSellPageTest() {
         HomePage hm = PageFactory.initElements(driver, HomePage.class);
         hm.useSellBtn();
     }
@@ -98,27 +101,28 @@ public class HomeTest extends CommonAPI {
         HomePage hm = PageFactory.initElements(driver, HomePage.class);
         hm.useCountryBtn();
     }
+
     @Test
-    public void testUserCanGoToCouponPage() {
+    public void userCanGoToCouponPageTest() {
         HomePage hm = PageFactory.initElements(driver, HomePage.class);
         hm.useCouponBtn();
     }
 
     @Test
-    public void testUserCanGoToWholeFoodsPage() {
+    public void userCanGoToWholeFoodsPageTest() {
         HomePage hm = PageFactory.initElements(driver, HomePage.class);
         hm.useWholeFoodsBtn();
     }
+
     @Test
-    public void testUserCanGoBackToTopOfHomePage() {
+    public void userCanGoBackToTopOfHomePageTest() {
         HomePage hm = PageFactory.initElements(driver, HomePage.class);
         hm.backToTopNavigation();
     }
 
     @Test
-    public void testUserCanGoToAboutAmazonPage(){
-        HomePage hm = PageFactory.initElements(driver,HomePage.class);
+    public void userCanGoToAboutAmazonPageTest() {
+        HomePage hm = PageFactory.initElements(driver, HomePage.class);
         hm.canClickOnAboutAmazon();
     }
-
 }
