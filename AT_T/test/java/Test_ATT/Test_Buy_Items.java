@@ -19,6 +19,14 @@ public class Test_Buy_Items extends CreatACCT {
         hp.clickCases();
         Thread.sleep(3000);
     }
+}
+
+
+
+
+
+
+
 
 //    @Test(priority = 8)
 //    public void testShopNow() throws InterruptedException {
@@ -62,6 +70,6 @@ public class Test_Buy_Items extends CreatACCT {
 //        btnContinue.buttonContinue();
 //        Thread.sleep(1000);
 //    }
-}
+
 
 

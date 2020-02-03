@@ -14,7 +14,12 @@
 <!--            <class name="Test_ATT.Test_Buy_Items"/>-->
 <!--            <class name="Test_ATT.TestACT"/>-->
 <!--            <class name="Test_ATT.Test_Order_Internet"/>-->
-                <class name="testPrePaidPhone.TestPrePaidPhone"/>
+<!--                <class name="testPrePaidPhone.TestPrePaidPhone"/>-->
+<!--                <class name="testBundlePurchase.TestBundlePurchase"/>-->
+<!--            <class name="teststoreLocation.TestStoreLocation"/>-->
+<!--            <class name="testDifferencesServices.TestDifferencesServices"/>-->
+            <class name="testSupport.TestSupport"/>
+
 
         </classes>
     </test>
