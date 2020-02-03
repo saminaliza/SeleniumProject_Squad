@@ -44,6 +44,11 @@
     <parameter name="searchBarValue3" value="Investing"/>
     <parameter name="searchBarValue4" value="direct deposit"/>
 
+    <parameter name="searchBarValue" value="business loan"/>
+    <parameter name="searchBarValue2" value="Car"/>
+    <parameter name="searchBarValue3" value="investment"/>
+    <parameter name="searchBarValue4" value="direct deposit"/>
+
 
     <test name = "Web Application Test">
         <classes>
