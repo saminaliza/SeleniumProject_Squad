@@ -10,6 +10,10 @@ import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import reporting.TestLogger;
+import searchBoxHome.SearchBox;
+
+import java.io.IOException;
+import java.sql.SQLException;
 
 public class searchBarFunctionality extends CommonAPI{
 
@@ -47,7 +51,7 @@ public class searchBarFunctionality extends CommonAPI{
         bhp.helpSearchBarWebElement.click();
         typeOnElement("#nav-search-query", searchBarValue4);
         sleepFor(2);
-       clearInput("#nav-search-query");
+         clearInput("#nav-search-query");
        bhp.helpSearchBarWebElement.click();
        typeOnElement("#nav-search-query", searchBarValue);
        isPopUpWindowDisplayed(driver, ".search-container");
@@ -92,6 +96,21 @@ public class searchBarFunctionality extends CommonAPI{
             handleNewTab(driver);
             Assert.assertEquals(driver.getCurrentUrl(), feedbackPageUrl);
         }
+
+    @Test ( enabled=false )
+    //checks if the search box takes in values from the data source
+    public void searchItems()throws Exception, IOException, SQLException, ClassNotFoundException{
+        // TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        SearchBox sb = PageFactory.initElements(driver, SearchBox.class);
+        sb.clearTypeNClickOnSearch();
+    }
+
+    @Test ( enabled=false )
+    //Takes in values from sql database and puts on them on the search bar.
+    public void searchFromDataBaseSql() throws Exception {
+        SearchBox sb = PageFactory.initElements(driver, SearchBox.class);
+        sb.searchItemsAndSubmit();
+    }
 
 
     }

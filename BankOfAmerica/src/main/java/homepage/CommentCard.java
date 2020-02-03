@@ -7,11 +7,6 @@ import org.openqa.selenium.support.How;
 
 public class CommentCard extends CommonAPI{
 
-    private String sucessfulSubmissionTitle = "Your submission has been received.";
-
-    public String getSucessfulSubmissionTitle() {
-        return sucessfulSubmissionTitle;
-    }
 
     @FindBy(how=How.LINK_TEXT, using = "Contact Us")
     public static WebElement contactUsWebElement;
@@ -40,5 +35,23 @@ public class CommentCard extends CommonAPI{
     @FindBy(how=How.CSS, using = "#closeLink > a:nth-child(1)")
     public static WebElement closeWindowWebElement;
 
+    public void contentRadio4Click(){
+        contentRadio4WebElement.click();
+    }
+    public void layoutRadio5Click(){
+        layoutRadio5WebElement.click();
+    }
+    public void easeOfUseRadio4Click(){
+        easeOfUseRadio4WebElement.click();
+    }
+    public void overallUseRadio5Click() {
+        overallUseRadio5WebElement.click();
+    }
+    public void submitClick() {
+        submitWebElement.click();
+    }
+    public void closeWindowClick() {
+        closeWindowWebElement.click();
+    }
 
-}
+    }
