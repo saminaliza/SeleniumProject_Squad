@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-public class Order_Internet extends CommonAPI {
+public class OrderInternet extends CommonAPI {
     @FindBy(how = How.XPATH,using = "//a[contains(@class,'_20CgK _1hxmk')]//span[contains(@class,'')][contains(text(),'Wireless')]")
     WebElement order_Wireless;
     //@FindBy(how = How.XPATH,using = "//*[@id=\'LINKFARM15items00\']/span/a/span")

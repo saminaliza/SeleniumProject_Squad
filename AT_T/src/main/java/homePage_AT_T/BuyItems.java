@@ -1,19 +1,14 @@
 package homePage_AT_T;
 
 import base.CommonAPI;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-import org.openqa.selenium.support.ui.Select;
 
-import javax.swing.*;
-import java.security.Key;
-
-public class Buy_Items extends CommonAPI {
+public class BuyItems extends CommonAPI {
     @FindBy(how = How.XPATH, using = "//i[@id='ge5p-menu-active']")
     WebElement Hamburgerlink;
     @FindBy(how = How.XPATH,using ="//li[@id='HEADBAND00']//img[contains(@class,'_32CgZ')]")
