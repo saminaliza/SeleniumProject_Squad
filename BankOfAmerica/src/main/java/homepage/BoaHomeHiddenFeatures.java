@@ -1,6 +1,7 @@
 package homepage;
 
 import base.CommonAPI;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -47,7 +48,7 @@ public class BoaHomeHiddenFeatures extends CommonAPI {
     public static WebElement betterMoneyHabitsWebElement;
 
     @FindBy(how = How.CSS, using ="#navBetterMoneyHabitsContent > div:nth-child(2)")
-    public static WebElement betterMoneyHabbitsHiddenMenuWebElement;
+    public static WebElement betterMoneyHabitsHiddenMenuWebElement;
 
     public void checkingClick(){
         checkingWebElement.click();
@@ -71,5 +72,46 @@ public class BoaHomeHiddenFeatures extends CommonAPI {
         betterMoneyHabitsWebElement.click();
     }
 
-
+    public  boolean checkingMenuIsDisplayed(){
+        checkingWebElement.click();
+        waitUntilVisible(By.cssSelector("#navCheckingContent > div:nth-child(2)"));
+        boolean checkigDisplay = checkingHiddenMenuWebElement.isDisplayed();
+        return checkigDisplay;
+    }
+    public  boolean savingMenuIsDisplayed(){
+        savingWebElement.click();
+        waitUntilVisible(By.cssSelector("#navSavingsContent > div:nth-child(2) > div:nth-child(1)"));
+        boolean savingDisplay = savingHiddenMenuWebElement.isDisplayed();
+        return savingDisplay;
+    }
+    public  boolean CreditCardMenuIsDisplayed(){
+        creditCardsWebElement.click();
+        waitUntilVisible(By.cssSelector("#navCreditCardsContent"));
+        boolean creditCardDisplay = creditCardsHiddenMenuWebElement.isDisplayed();
+        return creditCardDisplay;
+    }
+    public  boolean HomeLoanMenuIsDisplayed(){
+        homeLoansWebElement.click();
+        waitUntilVisible(By.cssSelector("#navHomeLoansContent"));
+        boolean HomeLoanDisplay = homeLoansHiddenMenuWebElement.isDisplayed();
+        return HomeLoanDisplay;
+    }
+    public  boolean autoLoansMenuIsDisplayed(){
+        autoLoansWebElement.click();
+        waitUntilVisible(By.cssSelector("#navAutoLoansContent > div:nth-child(2) > div:nth-child(1)"));
+        boolean autoLoansDisplay = autoLoansHiddenMenuWebElement.isDisplayed();
+        return autoLoansDisplay;
+    }
+    public  boolean investingMenuIsDisplayed(){
+        investingWebElement.click();
+        waitUntilVisible(By.cssSelector("#navInvestingContent > div:nth-child(2)"));
+        boolean investingDisplay = investingHiddenMenuWebElement.isDisplayed();
+        return investingDisplay;
+    }
+    public  boolean betterMoneyHabitsMenuIsDisplayed(){
+        betterMoneyHabitsWebElement.click();
+        waitUntilVisible(By.cssSelector("#navBetterMoneyHabitsContent > div:nth-child(2)"));
+        boolean betterMoneyHabitsDisplay = betterMoneyHabitsHiddenMenuWebElement.isDisplayed();
+        return betterMoneyHabitsDisplay;
+    }
 }

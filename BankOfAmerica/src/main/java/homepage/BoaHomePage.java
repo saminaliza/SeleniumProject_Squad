@@ -1,9 +1,12 @@
 package homepage;
 
 import base.CommonAPI;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.testng.Assert;
+import org.testng.annotations.Parameters;
 import reporting.TestLogger;
 
 public class BoaHomePage extends CommonAPI{
@@ -109,6 +112,82 @@ public class BoaHomePage extends CommonAPI{
     public void helpSearchBarClick(){
         helpSearchBarWebElement.click();
     }
+
+    @Parameters({"smallBusinessUrl"})
+    public void smallBusinessPageTitle (String smallBusinessUrl){
+        driver.navigate().to(smallBusinessUrl);
+        String smallBusinessPageTitle = driver.getTitle();
+        navigateBack();
+        smallBusinessWebElement.click();
+        String currentPageTitle = driver.getTitle();
+        Assert.assertEquals(currentPageTitle, smallBusinessPageTitle);
+    }
+
+    @Parameters({"wealthManagementUrl"})
+    public void wealthManagementPageTitle (String wealthManagementUrl){
+        driver.navigate().to(wealthManagementUrl);
+        String wealthManagementPageTitle = driver.getTitle();
+        navigateBack();
+        wealthManagemetWebElement.click();
+        String currentPageTitle = driver.getTitle();
+        Assert.assertEquals(currentPageTitle, wealthManagementPageTitle);
+    }
+    @Parameters({"businessInstitutionUrl"})
+    public void businessNInstitutionPageTitle (String businessInstitutionUrl){
+        driver.navigate().to(businessInstitutionUrl);
+        String businessInstitutionPageTitle = driver.getTitle();
+        navigateBack();
+        businessInstitutionWebElement.click();
+        String currentPageTitle = driver.getTitle();
+        Assert.assertEquals(currentPageTitle, businessInstitutionPageTitle);
+    }
+
+    @Parameters({"securityUrl"})
+    public void securityPageTitle (String securityUrl){
+        driver.navigate().to(securityUrl);
+        String securityPageTitle = driver.getTitle();
+        navigateBack();
+        securityWebElement.click();
+        String currentPageTitle = driver.getTitle();
+        Assert.assertEquals(currentPageTitle, securityPageTitle);
+    }
+    @Parameters({"aboutUsUrl"})
+    public void aboutUsPageTitle (String aboutUsUrl){
+        driver.navigate().to(aboutUsUrl);
+        String aboutUsPageTitle = driver.getTitle();
+        navigateBack();
+        aboutUsWebElement.click();
+        String currentPageTitle = driver.getTitle();
+        Assert.assertEquals(currentPageTitle, aboutUsPageTitle);
+    }
+    @Parameters({"enEspanolUrl"})
+    public void EnEspañolPageTitle (String enEspanolUrl){
+        driver.navigate().to(enEspanolUrl);
+        String EnEspañolPageTitle = driver.getTitle();
+        navigateBack();
+        enEspanolWebElement.click();
+        String currentPageTitle = driver.getTitle();
+        Assert.assertEquals(currentPageTitle, EnEspañolPageTitle);
+    }
+    @Parameters({"contactUsUrl"})
+    public void contactUsPageTitle (String contactUsUrl){
+        driver.navigate().to(contactUsUrl);
+        String contactUsPageTitle = driver.getTitle();
+        navigateBack();
+        contactUsWebElement.click();
+        String currentPageTitle = driver.getTitle();
+        Assert.assertEquals(currentPageTitle, contactUsPageTitle);
+    }
+    public void helpTabPopUp(){
+        helpnWebElement.click();
+        waitUntilSelectable(By.cssSelector("#stateModalContent > h3:nth-child(1)"));
+        isPopUpWindowDisplayed(driver, "#stateModalContent > h3:nth-child(1)");
+    }
+    public void checkingClick(){
+        helpnWebElement.click();
+    }
+
+
 
 
 

@@ -12,12 +12,12 @@ public class NaviagationFromSmallBusinessPage extends CommonAPI{
     public void navigate (){
         driver.get("https://www.bankofamerica.com/smallbusiness/");
     }
-    @Test
+
+    @Test (enabled = false)
+    //Tests if the checking account tab takes the user to the checking account page
     public void smallBusinessFunctionality(){
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName() ));
         SbPage si = PageFactory.initElements(driver, SbPage.class);
         si.openCheckingAcWebElement.click();
     }
-
-
 }

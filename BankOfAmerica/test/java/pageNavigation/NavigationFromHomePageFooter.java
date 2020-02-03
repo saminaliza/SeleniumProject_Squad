@@ -11,7 +11,7 @@ import reporting.TestLogger;
 
 public class NavigationFromHomePageFooter extends CommonAPI {
     @Parameters({"locationsUrl"})
-    @Test//(enabled=false)
+    @Test (enabled=false)
     //Checks if the locations link on the footer of the page navigates to locations page.
     public void locationFunctionality(String locationsUrl) {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -25,7 +25,7 @@ public class NavigationFromHomePageFooter extends CommonAPI {
     }
 
     @Parameters({"contactUsUrl"})
-    @Test//(enabled=false)
+    @Test (enabled=false)
     //Checks if the contactUs link on the footer of the page navigates to contact us page.
     public void contactUsFunctionality(String contactUsUrl) {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -39,7 +39,7 @@ public class NavigationFromHomePageFooter extends CommonAPI {
     }
 
     @Parameters({"helpUrl"})
-    @Test//(enabled=false)
+    @Test (enabled=false)
     public void helpFunctionality(String helpurl) {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
@@ -52,7 +52,7 @@ public class NavigationFromHomePageFooter extends CommonAPI {
     }
 
     @Parameters({"accessibleBankingUrl"})
-    @Test //(enabled=false)
+    @Test (enabled=false)
     public void accessibleBankingFunctionality(String accessibleBankingUrl) throws InterruptedException {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
@@ -81,7 +81,7 @@ public class NavigationFromHomePageFooter extends CommonAPI {
         Assert.assertEquals(driver.getTitle(), careersTitle);
     }
 
-    @Parameters //({"privacySecurityUrl"})
+    @Parameters ({"privacySecurityUrl"})
     @Test(enabled=false)
     public void privacySecurityFunctionality(String privacySecurityUrl) {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -95,7 +95,7 @@ public class NavigationFromHomePageFooter extends CommonAPI {
     }
 
     @Parameters({"mcafeeUrl"})
-    @Test //(enabled=false)
+    @Test (enabled=false)
     //checks if the mcafee tab on the footer of the page navigates to the expected page.
     public void mcafeeFunctionality(String mcafeeUrl) {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -109,7 +109,7 @@ public class NavigationFromHomePageFooter extends CommonAPI {
     }
 
     @Parameters({"sitemapUrl"})
-    @Test //(enabled=false)
+    @Test (enabled=false)
     public void sitemapFunctionality(String sitemapUrl) {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
@@ -121,7 +121,7 @@ public class NavigationFromHomePageFooter extends CommonAPI {
         Assert.assertEquals(driver.getTitle(), sitemapTitle);
     }
 
-    @Test //(enabled=false)
+    @Test (enabled=false)
     public void advertisingPracticeFunctionality() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
@@ -132,7 +132,7 @@ public class NavigationFromHomePageFooter extends CommonAPI {
     }
 
     @Parameters({"feedbackFooterUrl"})
-    @Test //(enabled=false)
+    @Test (enabled=false)
     public void feedbackFooterFunctionality(String feedbackFooterUrl) {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
@@ -143,7 +143,7 @@ public class NavigationFromHomePageFooter extends CommonAPI {
     }
 
     @Parameters({"onlineBanking"})
-    @Test //( enabled=false )
+    @Test ( enabled=false )
     //checks if the online banking tab on the footer navigates to the online banking page
     public void onlineBankingFunctionality(String onlineBanking) {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
