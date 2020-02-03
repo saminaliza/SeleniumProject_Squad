@@ -138,12 +138,12 @@ public class CommonAPI {
             if(OS.equalsIgnoreCase("OS X")){
                 System.setProperty("webdriver.gecko.driver", "../Generic/browser-driver/geckodriver");
             }else if(OS.equalsIgnoreCase("Windows")) {
-                System.setProperty("webdriver.gecko.driver", "..\\Generic\\browser-driver\\geckodriver.exe");
+                System.setProperty("webdriver.gecko.driver", "../Generic/browser-driver/geckodriver.exe");
             }
             driver = new FirefoxDriver();
 
         } else if(browserName.equalsIgnoreCase("ie")) {
-            System.setProperty("webdriver.ie.driver", "..\\Generic\\browser-driver\\IEDriverServer.exe");
+            System.setProperty("webdriver.ie.driver", "../Generic/browser-driver/IEDriverServer.exe");
             driver = new InternetExplorerDriver();
         }
         return driver;
@@ -172,8 +172,7 @@ public class CommonAPI {
 
     @AfterClass
     public void cleanUp(){
-
-//        driver.close();
+        //driver.close();
     }
   //helper methods
     public void clickOnElement(String locator){
@@ -456,7 +455,7 @@ public class CommonAPI {
     }
 
     //Taking Screen shots
-    public void takeScreenShot() {
+    public void takeScreenShot() throws IOException {
         File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         //FileUtils.copyFile(file, new File("screenShots.png"));
     }
@@ -470,7 +469,6 @@ public class CommonAPI {
     public void waitUntilVisible(By locator) {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-
     }
 
     public void waitUntilSelectable(By locator) {
