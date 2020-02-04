@@ -20,7 +20,7 @@ public class searchBarFunctionality extends CommonAPI{
     public void searchBarTextFieldClickFunctionality(){
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         BoaHomePage bhp =PageFactory.initElements(driver, BoaHomePage.class);
-        bhp.helpSearchBarWebElement.click();
+        BoaHomePage.helpSearchBarWebElement.click();
         isPopUpWindowDisplayed(driver, ".search-container");
     }
     @Parameters({"searchBarValue"})
@@ -38,19 +38,19 @@ public class searchBarFunctionality extends CommonAPI{
     public void helpSearchBarRepetitiveSearches(String searchBarValue2, String searchBarValue3, String searchBarValue, String searchBarValue4) throws InterruptedException {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         BoaHomePage bhp =PageFactory.initElements(driver, BoaHomePage.class);
-        bhp.helpSearchBarWebElement.click();
+       BoaHomePage.helpSearchBarWebElement.click();
         typeOnElement("#nav-search-query", searchBarValue2);
         sleepFor(2);
         clearInput("#nav-search-query");
-        bhp.helpSearchBarWebElement.click();
+       BoaHomePage.helpSearchBarWebElement.click();
         typeOnElement("#nav-search-query", searchBarValue3);
         sleepFor(2);
         clearInput("#nav-search-query");
-        bhp.helpSearchBarWebElement.click();
+       BoaHomePage.helpSearchBarWebElement.click();
         typeOnElement("#nav-search-query", searchBarValue4);
         sleepFor(2);
          clearInput("#nav-search-query");
-       bhp.helpSearchBarWebElement.click();
+       BoaHomePage.helpSearchBarWebElement.click();
        typeOnElement("#nav-search-query", searchBarValue);
        isPopUpWindowDisplayed(driver, ".search-container");
     }
@@ -60,7 +60,7 @@ public class searchBarFunctionality extends CommonAPI{
     public void searchBarResultRelevance(String searchBarValue3) throws InterruptedException {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         BoaHomePage bhp =PageFactory.initElements(driver, BoaHomePage.class);
-        bhp.helpSearchBarWebElement.click();
+        BoaHomePage.helpSearchBarWebElement.click();
         typeOnInputBox("#nav-search-query", searchBarValue3);
         sleepFor(3);
         waitUntilVisible(By.className("results-heading"));
@@ -75,10 +75,10 @@ public class searchBarFunctionality extends CommonAPI{
     public void searchPageNavigationFromSearchPopUp(String searchBarValue, String searchPageUrl) {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         BoaHomePage bhp =PageFactory.initElements(driver, BoaHomePage.class);
-        bhp.helpSearchBarWebElement.click();
+        BoaHomePage.helpSearchBarWebElement.click();
         typeOnInputBox("#nav-search-query", searchBarValue);
         waitUntilVisible(By.className("results-heading"));
-        bhp.viewAllSearchWebElement.click();
+        BoaHomePage.viewAllSearchWebElement.click();
         Assert.assertEquals(getCurrentPageUrl(),searchPageUrl);
         }
         @Parameters({"searchBarValue2", "feedbackPageUrl"})
@@ -87,24 +87,24 @@ public class searchBarFunctionality extends CommonAPI{
     public void feedbackWebElementBringsNewWindow(String searchBarValue2, String feedbackPageUrl){
             TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
             BoaHomePage bhp =PageFactory.initElements(driver, BoaHomePage.class);
-            bhp.helpSearchBarWebElement.click();
+            BoaHomePage.helpSearchBarWebElement.click();
             typeOnInputBox("#nav-search-query", searchBarValue2);
             waitUntilVisible(By.className("results-heading"));
-            bhp.feedbackWebElement.click();
+            BoaHomePage.feedbackWebElement.click();
             handleNewTab(driver);
             Assert.assertEquals(driver.getCurrentUrl(), feedbackPageUrl);
         }
 
     @Test ( enabled=false )
     //checks if the search box takes in values from the data source
-    public void searchItems()throws Exception, IOException, SQLException, ClassNotFoundException{
+    public void searchItems() throws Exception {
         // TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         SearchBox sb = PageFactory.initElements(driver, SearchBox.class);
         sb.clearTypeNClickOnSearch();
     }
 
     @Test ( enabled=false )
-    //Takes in values from sql database and puts on them on the search bar.
+    //Takes in values from sql database and puts them on the search bar.
     public void searchFromDataBaseSql() throws Exception {
         SearchBox sb = PageFactory.initElements(driver, SearchBox.class);
         sb.searchItemsAndSubmit();
