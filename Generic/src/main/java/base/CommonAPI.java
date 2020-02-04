@@ -77,7 +77,7 @@ public class CommonAPI {
         if (result.getStatus() == ITestResult.FAILURE) {
             captureScreenshot(driver, result.getName());
         }
-        //driver.quit();
+        driver.quit();
     }
     @AfterSuite
     public void generateReport() {
@@ -173,7 +173,7 @@ public class CommonAPI {
     @AfterClass
     public void cleanUp(){
 
-//        driver.close();
+      driver.close();
     }
   //helper methods
     public void clickOnElement(String locator){
@@ -248,7 +248,7 @@ public class CommonAPI {
         Date date = new Date();
         df.format(date);
 
-        File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE); //problem
         try {
             //FileUtils.copyFile(file, new File(System.getProperty("user.dir") + "/screenshots/" + screenshotName + " " + df.format(date) + ".png"));
             System.out.println("Screenshot captured");

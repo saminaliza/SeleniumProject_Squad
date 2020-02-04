@@ -6,27 +6,37 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
 public class ShoppingCartTest extends CommonAPI {
+//    @Test
+//    public void userCanCheckoutItemsTest() {
+//        ShoppingCartPage shop = PageFactory.initElements(driver, ShoppingCartPage.class);
+//        shop.shoppingCartCheckout(); //????
+//    }
     @Test
-    public void userCanCheckoutItemsTest() {
-        ShoppingCartPage shop = PageFactory.initElements(driver, ShoppingCartPage.class);
-        shop.shoppingCartCheckout();
+    public void useCanAddItemToCartFromTodaysDeal(){
+        ShoppingCartPage shop = PageFactory.initElements(driver,ShoppingCartPage.class);
+        shop.addItemFromTodaysDeal();
     }
-
     @Test
-    public void userCanDeleteItemFromCartTest() {
-        ShoppingCartPage shop = PageFactory.initElements(driver, ShoppingCartPage.class);
-        shop.deleteItemFromCart();
+    public void userCanCheckShoppingCart(){
+        ShoppingCartPage shop = PageFactory.initElements(driver,ShoppingCartPage.class);
+        shop.goToShoppingCart();
     }
-
-    @Test
-    public void userCanSaveItemForLaterTest() {
-        ShoppingCartPage shop = PageFactory.initElements(driver, ShoppingCartPage.class);
-        shop.saveItemForLater();
-    }
-
-    @Test
-    public void userCanCompareSimilarItemTest() {
-        ShoppingCartPage shop = PageFactory.initElements(driver, ShoppingCartPage.class);
-        shop.saveItemForLater();
-    }
+//
+//    @Test
+//    public void userCanDeleteItemFromCartTest() {
+//        ShoppingCartPage shop = PageFactory.initElements(driver, ShoppingCartPage.class);
+//        shop.deleteItemFromCart(); //?????
+//    }
+//
+//    @Test
+//    public void userCanSaveItemForLaterTest() {
+//        ShoppingCartPage shop = PageFactory.initElements(driver, ShoppingCartPage.class);
+//        shop.saveItemForLater();  //????
+//    }
+//
+//    @Test
+//    public void userCanCompareSimilarItemTest() {
+//        ShoppingCartPage shop = PageFactory.initElements(driver, ShoppingCartPage.class);
+//        shop.saveItemForLater(); //????
+//    }
 }

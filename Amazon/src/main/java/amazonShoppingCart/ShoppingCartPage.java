@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 
 public class ShoppingCartPage extends CommonAPI {
-    @BeforeMethod
+    //@BeforeMethod
     public void setUpLogin() {
         SignInPage signIn = PageFactory.initElements(driver, SignInPage.class);
         signIn.signIn("myautotestmail2020@gmail.com", "test2055");
@@ -38,13 +38,21 @@ public class ShoppingCartPage extends CommonAPI {
     @FindBy(linkText = "Compare with similar items")
     WebElement compareItems;
 
+    @FindBy(id = "101 73b55192-announce")
+    WebElement dealItem;
+
     public void goToShoppingCart() {
         shoppingCart.click();
     }
+    public void addItemFromTodaysDeal(){
+        clickOnElement("//*[@id=\"nav-xshop\"]/a[1]");
+        dealItem.click();
+    }
+
 
     public void shoppingCartCheckout() {
         goToShoppingCart();
-        proceedToCheckout.click();
+        proceedToCheckout.click(); //????
         deliverToThisAddress.click();
         continueBTn.click();
         checkOutBtn.click();
@@ -52,12 +60,12 @@ public class ShoppingCartPage extends CommonAPI {
 
     public void deleteItemFromCart() {
         goToShoppingCart();
-        delete.click();
+        delete.click(); //????
     }
 
     public void saveItemForLater() {
         goToShoppingCart();
-        saveForLater.click();
+        saveForLater.click(); //???
     }
 
     public void compareSimilarItems() {
