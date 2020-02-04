@@ -18,7 +18,11 @@
 <!--                <class name="testBundlePurchase.TestBundlePurchase"/>-->
 <!--            <class name="teststoreLocation.TestStoreLocation"/>-->
 <!--            <class name="testDifferencesServices.TestDifferencesServices"/>-->
-            <class name="testSupport.TestSupport"/>
+<!--            <class name="testSupport.TestSupport"/>-->
+<!--            <class name="testBusinessVoice.TestBusinessVoice"/>-->
+<!--            <class name="testSetUpVoiceMail.TestSetUpVoiceMail"/>-->
+<!--            <class name="testFindiPad.TestFindiPad"/>-->
+            <class name="testFindiPhone11.TestFindiPhone11"/>
 
 
         </classes>
