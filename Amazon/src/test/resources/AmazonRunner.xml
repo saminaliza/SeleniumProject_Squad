@@ -22,8 +22,9 @@
 <!--            <class name="amazonEchoNAlexaTest.EchoNAlexaTest"/>-->
 <!--            <class name="amazonKindleOptionTest.KindleOptionsTest"/>-->
 <!--            <class name="amazonSearchPageTest.searchPageTest"/>-->
-            <class name="amazonShoppingCartTest.ShoppingCartTest"/>
+<!--            <class name="amazonShoppingCartTest.ShoppingCartTest"/>-->
 <!--            <class name="amazonHelpOptionTest.HelpOptionTest"/>-->
+            <class name="amazonTodaysDealTest.TodaysDealPageTest"/>
         </classes>
     </test>
 </suite>

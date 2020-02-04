@@ -14,4 +14,5 @@ public class TodaysDealPageTest extends CommonAPI {
         TodaysDealPage deal = PageFactory.initElements(driver,TodaysDealPage.class);
         deal.goToTodaysDeal();
     }
+
 }
