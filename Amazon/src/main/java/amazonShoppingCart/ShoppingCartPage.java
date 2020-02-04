@@ -8,16 +8,11 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 
 public class ShoppingCartPage extends CommonAPI {
-    //@BeforeMethod
-    public void setUpLogin() {
-        SignInPage signIn = PageFactory.initElements(driver, SignInPage.class);
-        signIn.signIn("myautotestmail2020@gmail.com", "test2055");
-    }
 
     @FindBy(css = "a[id='nav-cart']")
     WebElement shoppingCart;
 
-    @FindBy(name = "proceedToRetailCheckout")
+    @FindBy(xpath = "//*[@id=\"sc-buy-box-ptc-button\"]/span")
     WebElement proceedToCheckout;
 
     @FindBy(xpath = "//*[@id=\"address-book-entry-0\"]/div[2]/span/a")
@@ -41,21 +36,17 @@ public class ShoppingCartPage extends CommonAPI {
     @FindBy(id = "101 73b55192-announce")
     WebElement dealItem;
 
+    public void setUpLogin() {
+        SignInPage signIn = PageFactory.initElements(driver, SignInPage.class);
+        signIn.signIn("myautotestmail2020@gmail.com", "test2055");
+    }
+
     public void goToShoppingCart() {
         shoppingCart.click();
     }
     public void addItemFromTodaysDeal(){
         clickOnElement("//*[@id=\"nav-xshop\"]/a[1]");
         dealItem.click();
-    }
-
-
-    public void shoppingCartCheckout() {
-        goToShoppingCart();
-        proceedToCheckout.click(); //????
-        deliverToThisAddress.click();
-        continueBTn.click();
-        checkOutBtn.click();
     }
 
     public void deleteItemFromCart() {
@@ -65,7 +56,7 @@ public class ShoppingCartPage extends CommonAPI {
 
     public void saveItemForLater() {
         goToShoppingCart();
-        saveForLater.click(); //???
+        clickOnElement("//*[@id=\"sc-item-C28a72f58-f247-4a79-9bc7-1b2a35ec84e2\"]/div[4]/div/div[1]/div/div/div[2]/div/span[2]/span/input");//???
     }
 
     public void compareSimilarItems() {
