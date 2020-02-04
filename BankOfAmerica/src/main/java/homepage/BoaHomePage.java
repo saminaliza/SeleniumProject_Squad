@@ -187,6 +187,45 @@ public class BoaHomePage extends CommonAPI{
         helpnWebElement.click();
     }
 
+    @Parameters({"locationsUrl"})
+    public void locationPageTitle(String locationsUrl) {
+        driver.navigate().to(locationsUrl);
+        String locationsPageTitle=driver.getTitle();
+        navigateBack();
+        locationFooterWebElement.click();
+        String currentPageTitle=driver.getTitle();
+        Assert.assertEquals(currentPageTitle, locationsPageTitle);
+    }
+
+    @Parameters({"contactUsUrl"})
+    public void contactUsFooterPageTitle(String contactUsUrl) {
+        driver.navigate().to(contactUsUrl);
+        String contactUsFooterPageTitle=driver.getTitle();
+        navigateBack();
+        contactUsFooterWebElement.click();
+        Assert.assertEquals(driver.getTitle(), contactUsFooterPageTitle);
+    }
+
+    @Parameters({"helpUrl"})
+    public void helpFooterPageTitle(String helpUrl) {
+        driver.navigate().to(helpUrl);
+        String actualPageTitle=driver.getTitle();
+        navigateBack();
+        helpFooterWebElement.click();
+        Assert.assertEquals(driver.getTitle(), actualPageTitle);
+    }
+
+    @Parameters({"accessibleBankingUrl"})
+    public void accessibleBankingFooterPageTitle(String accessibleBankingUrl) throws InterruptedException {
+        driver.navigate().to(accessibleBankingUrl);
+        String actualPageTitle=driver.getTitle();
+        navigateBack();
+        sleepFor(3);
+        accessibleBankingFooterWebElement.click();
+        waitUntilVisible(By.xpath("//*[@id=footer_bofa_careers]"));
+        Assert.assertEquals(driver.getTitle(), actualPageTitle);
+    }
+
 
 
 
