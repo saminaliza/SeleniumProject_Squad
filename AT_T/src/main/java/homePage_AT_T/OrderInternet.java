@@ -11,7 +11,6 @@ public class OrderInternet extends CommonAPI {
     //@FindBy(how = How.XPATH,using = "//*[@id=\'LINKFARM15items00\']/span/a/span")
     @FindBy(how =How.LINK_TEXT,using = "Upgrade my phone")
     WebElement upGrade;
-
     @FindBy(how=How.XPATH,using = "//div[contains(@class,'solidBtn')]//a[contains(@class,'')][contains(text(),'Shop now')]")
     WebElement shopNow;
     @FindBy(how=How.XPATH,using = "//a[contains(text(),'Continue without signing in')]")
@@ -34,13 +33,6 @@ public class OrderInternet extends CommonAPI {
     WebElement addToCart;
     @FindBy(how =How.XPATH,using = "//button[@class='btn btn-primary continue']")
     WebElement cart_Too;
-
-
-
-
-
-
-
 
     public void clickUpGrade(){
         upGrade.click();
