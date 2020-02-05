@@ -12,16 +12,16 @@ public class SbPage extends CommonAPI{
     @FindBy(how = How.CSS, using ="span.spa-btn")
     public static WebElement openCheckingAcWebElement;
 
-    @FindBy(how=How.XPATH, using="//a[@id='bmhDefaultGetMostFromAccounts' and @class='slide-content ']")
+    @FindBy(how=How.XPATH, using="/html/body/div[1]/div/div/section[3]/div/div/div[2]/div[2]/div/ul/li[1]/a/p")
     public static WebElement getMostFromYourCheckingCreditCardWebElement;
 
-    @FindBy(how=How.CSS, using="#bmhDefaultVideosToHelpBusiness > p:nth-child(2)")
+    @FindBy(how=How.XPATH, using="/html/body/div[1]/div/div/section[3]/div/div/div[2]/div[2]/div/ul/li[2]/a/p")
     public static WebElement ourVideosCanHelpYouRunWebElement;
 
-    @FindBy(how=How.XPATH, using="//a[@id='bmhDefaultProcessingPayrollBestPractices' and @class='slide-content ']")
+    @FindBy(how=How.XPATH, using="/html/body/div[1]/div/div/section[3]/div/div/div[2]/div[2]/div/ul/li[3]/a/p")
     public static WebElement bestPracticesForProcessingPayrollWebElement;
 
-    @FindBy(how=How.XPATH, using="//a[id='bmhSbFinancingSolutions' and @class='slide-content ']")
+    @FindBy(how=How.XPATH, using="/html/body/div[1]/div/div/section[3]/div/div/div[2]/div[2]/div/ul/li[4]/a/p")
     public static WebElement needFinancingFindTheRightSolutionWebElement;
 
     @FindBy(how=How.CSS, using="#yniMeetBusinessAdvantage360Cta")
@@ -34,15 +34,17 @@ public class SbPage extends CommonAPI{
     public static WebElement onlineBankingServiceAgreementWebElement;
 
 
-    public String onlineBankingServiceAgreementPageTitle() {
+    public String onlineBankingServiceAgreementPageTitle() throws InterruptedException {
         onlineBankingServiceAgreementClick();
         handleNewTab(driver);
+        Thread.sleep(8000);
         return driver.getTitle();
     }
 
     @Parameters({"onlineBankingServiceAgreementUrl"})
-    public String onlineBankingServiceAgreementActualTitle(String onlineBankingServiceAgreementUrl) {
+    public String onlineBankingServiceAgreementActualTitle(String onlineBankingServiceAgreementUrl) throws InterruptedException {
         driver.navigate().to(onlineBankingServiceAgreementUrl);
+        Thread.sleep(8000);
         return driver.getTitle();
     }
 
@@ -117,8 +119,8 @@ public class SbPage extends CommonAPI{
     }
 
     public void getMostFromYourCheckingCreditClick() {
-        getMostFromYourCheckingCreditCardWebElement.click();
         waitUntilVisible(By.xpath("//a[@id='bmhDefaultGetMostFromAccounts' and @class='slide-content ']"));
+        getMostFromYourCheckingCreditCardWebElement.click();
     }
 
     public void ourVideosCanHelpYouRunClick() {
@@ -142,6 +144,7 @@ public class SbPage extends CommonAPI{
     }
 
     public void onlineBankingServiceAgreementClick() {
+
         onlineBankingServiceAgreementWebElement.click();
     }
 

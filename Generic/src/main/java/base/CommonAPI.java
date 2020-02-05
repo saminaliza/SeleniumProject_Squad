@@ -36,6 +36,7 @@ import java.util.concurrent.TimeUnit;
 
 public class CommonAPI {
 
+
     //ExtentReport
     public static ExtentReports extent;
     @BeforeSuite

@@ -88,22 +88,22 @@ public class BoaHomePage extends CommonAPI{
     public static WebElement onlineBankingLinkrWebElement;
 
 
-    @FindBy(how = How.CSS, using ="#social_follow_facebook_link > svg:nth-child(1) > g:nth-child(1) > path:nth-child(1)")
+    @FindBy(how = How.XPATH, using ="/html/body/div[1]/div[1]/div/section[5]/div/div/div/footer/div[2]/div/div/div/div[2]/div/div/div/div[1]/a[1]/svg")
     public static WebElement followFacebookWebElement;
 
-    @FindBy(how = How.XPATH, using ="//a[@id='social_follow_instagram_link' and @class='boa-social--network boa-social--instagram']")
+    @FindBy(how = How.ID, using ="social_follow_instagram_link")
     public static WebElement followInstagramWebElement;
 
-    @FindBy(how = How.CSS, using ="#social_follow_linkedin_link")
+    @FindBy(how = How.ID, using ="social_follow_linkedin_link")
     public static WebElement followLinkedinWebElement;
 
-    @FindBy(how = How.CSS, using ="#social_follow_pinterest_link")
+    @FindBy(how = How.ID, using ="social_follow_pinterest_link")
     public static WebElement followPinterestWebElement;
 
-    @FindBy(how = How.CSS, using ="#social_follow_twitter_link")
+    @FindBy(how = How.XPATH, using ="//a[@id=social_follow_twitter_link]")
     public static WebElement followTwitterWebElement;
 
-    @FindBy(how = How.CSS, using ="#social_follow_youtube_link")
+    @FindBy(how = How.ID, using ="social_follow_youtube_link")
     public static WebElement followYoutubeWebElement;
 
     @FindBy(how = How.CSS, using =".equalhousing-container")
@@ -224,6 +224,24 @@ public class BoaHomePage extends CommonAPI{
         accessibleBankingFooterWebElement.click();
         waitUntilVisible(By.xpath("//*[@id=footer_bofa_careers]"));
         Assert.assertEquals(driver.getTitle(), actualPageTitle);
+    }
+    public void followFbClick (){
+        followFacebookWebElement.click();
+    }
+    public void followInstagramClick (){
+        followInstagramWebElement.click();
+    }
+    public void followLinkedInClick(){
+        followLinkedinWebElement.click();
+    }
+    public void followPinterestClick (){
+        followPinterestWebElement.click();
+    }
+    public void followTwitterClick (){
+        followTwitterWebElement.click();
+    }
+    public void followYouTubeClick (){
+        followYoutubeWebElement.click();
     }
 
 

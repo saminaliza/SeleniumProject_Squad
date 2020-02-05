@@ -46,6 +46,15 @@
                value="https://secure.bankofamerica.com/login/sign-in/signOnV2Screen.go?reason=paperSuppression&amp;request_locale=en_US"/>
     <parameter name="onlineBankingServiceAgreementUrl"
                value="https://www.bankofamerica.com/online-banking/service-agreement.go?request_locale=en_US"/>
+    <parameter name="mostPopularVideoUrl" value="https://promo.bankofamerica.com/small-business-videos/most-popular/"/>
+    <parameter name="cashManagementUrl" value="https://promo.bankofamerica.com/small-business-videos/cash-management/"/>
+    <parameter name="bankingServicesUrl" value="https://promo.bankofamerica.com/small-business-videos/online-business-banking/"/>
+    <parameter name="payrollServicesUrl" value="https://promo.bankofamerica.com/small-business-videos/"/>
+    <parameter name="resourcesUrl" value="https://promo.bankofamerica.com/small-business-videos/resources/forum/"/>
+    <parameter name="retirementUrl" value="https://promo.bankofamerica.com/small-business-videos/retirement/business-retirement-solutions/"/>
+    <parameter name="businessAdvantageRewardsUrl" value="https://promo.bankofamerica.com/small-business-videos/rewards/"/>
+
+
 
     <!-- SignIn credentials  -->
     <parameter name="onlineID" value="kinkAbidal"/>
@@ -68,6 +77,7 @@
             <class name="homePageHiddenFeatures.HiddenFeaturesHome"/>
             <class name="signInPanel.negativeSignIn"/>
             <class name="pageNavigation.NaviagationFromSmallBusinessPage"/>
+            <class name="pageNavigation.VideoPageNavigation"/>
         </classes>
     </test>
 
