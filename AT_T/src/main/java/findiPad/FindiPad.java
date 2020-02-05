@@ -37,7 +37,6 @@ public class FindiPad extends CommonAPI {
     WebElement updateCard;
 
 
-
     public void clickiPad() throws InterruptedException {
         ipad.click();
         chooseSelection.click();
