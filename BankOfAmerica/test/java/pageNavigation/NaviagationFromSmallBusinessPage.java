@@ -18,7 +18,7 @@ public class NaviagationFromSmallBusinessPage extends CommonAPI {
     @Parameters({"onlineBankingServiceAgreementUrl"})
     @Test(enabled=false)
     //Tests if the 'online Banking Service Agreement' tab is clickable.
-    public void onlineBankingServiceAgreementNavigationFunctionality(String onlineBankingServiceAgreementUrl) {
+    public void onlineBankingServiceAgreementNavigationFunctionality(String onlineBankingServiceAgreementUrl) throws InterruptedException {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
         SbPage si=PageFactory.initElements(driver, SbPage.class);
@@ -87,7 +87,7 @@ public class NaviagationFromSmallBusinessPage extends CommonAPI {
 
     @Test(enabled=false)
     //Tests if the 'online Banking Service Agreement' tab is clickable.
-    public void onlineBankingServiceAgreementPageTitleFunctionality() {
+    public void onlineBankingServiceAgreementPageTitleFunctionality() throws InterruptedException {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
         SbPage si=PageFactory.initElements(driver, SbPage.class);
@@ -185,7 +185,7 @@ public class NaviagationFromSmallBusinessPage extends CommonAPI {
     }
 
     @Test(enabled=false)
-// Tests if the 'best Practices For Processing Payroll' tab is clickable.
+    // Tests if the 'best Practices For Processing Payroll' tab is clickable.
     public void bestPracticesForProcessingPayrollClickFunctionality() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
