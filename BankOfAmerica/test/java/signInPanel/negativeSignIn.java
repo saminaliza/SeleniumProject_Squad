@@ -13,7 +13,7 @@ import reporting.TestLogger;
 public class negativeSignIn extends CommonAPI{
 
     @Parameters({"onlineID"})
-    @Test //( enabled = false)
+    @Test ( enabled = false)
     // checks if the onlineId text box takes in values
     public void onlineIdTextBoxFunctionality(String onlineID){
     TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName() ));
@@ -22,7 +22,7 @@ public class negativeSignIn extends CommonAPI{
     takeScreenShot();
 }
     @Parameters({"passcode"})
-    @Test //( enabled = false)
+    @Test ( enabled = false)
     // checks if the passcode text box takes in values
     public void passcodeTextBoxFunctionality(String passcode){
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName() ));
@@ -30,7 +30,7 @@ public class negativeSignIn extends CommonAPI{
         typeOnElement("#passcode1", passcode);
         takeScreenShot();
     }
-    @Test //( enabled = false)
+    @Test ( enabled = false)
     //checks if the check-box is selectable and takes a screenShot
     public void saveOnlineIdCheckBox (){
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName() ));
@@ -39,7 +39,7 @@ public class negativeSignIn extends CommonAPI{
         takeScreenShot();
     }
     @Parameters({"forgotOnlineIdUrl"})
-    @Test //( enabled = false )
+    @Test ( enabled = false )
     //checks if the forgot password takes user to the proper page
     public void forgotIdPasscodeFunctionality(String forgotOnlineIdUrl) {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName() ));
@@ -50,7 +50,7 @@ public class negativeSignIn extends CommonAPI{
         si.forgotIdPasscodeWebElement.click();
         Assert.assertEquals(driver.getTitle(), forgotOnlineIdPageTitledriver);
     }
-    @Test //( enabled = false )
+    @Test ( enabled = false )
     public void securityNHelpFunctionality(){
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName() ));
         SignIn si = PageFactory.initElements(driver, SignIn.class);
@@ -58,7 +58,7 @@ public class negativeSignIn extends CommonAPI{
         isPopUpWindowDisplayed(driver, ".spa-dialog" );
     }
     @Parameters({"enrollUrl"})
-    @Test //( enabled = false )
+    @Test ( enabled = false )
     public void enrollFunctionality(String enrollUrl) {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName() ));
         SignIn si = PageFactory.initElements(driver, SignIn.class);
@@ -69,7 +69,7 @@ public class negativeSignIn extends CommonAPI{
         Assert.assertEquals(driver.getTitle(), enrollTitledriver);
     }
     @Parameters({"openAccUrl"})
-    @Test //( enabled = false )
+    @Test ( enabled = false )
     //checks if the open account takes user to the account opening page
     public void openAccFunctionality(String openAccUrl) {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName() ));
@@ -81,7 +81,7 @@ public class negativeSignIn extends CommonAPI{
         Assert.assertEquals(driver.getTitle(), openAccTitledriver);
     }
     @Parameters({"onlineID", "passcode", "forgotOnlineIdUrl"})
-    @Test //(enabled = false)
+    @Test (enabled = false)
     //checks if the application takes the user to the forgotId/Passcode page on wrong onlineID and passcode values.
     public void signInNegativeTest(String onlineID, String passcode, String forgotOnlineIdUrl){
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName() ));

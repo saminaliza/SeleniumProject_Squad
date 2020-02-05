@@ -7,7 +7,7 @@
     <parameter name="cloudEnvName" value="browserstack"/>
     <parameter name="os" value="OS X"/>
     <parameter name="os_version" value="Sierra"/>
-    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserName" value="firefox"/>
     <parameter name="browserVersion" value="79.0"/>
     <parameter name="url" value="https://www.bankofamerica.com/"/>
 
@@ -33,6 +33,28 @@
     <parameter name="forgotOnlineIdUrl" value="https://secure.bankofamerica.com/auth/forgot/reset-entry/"/>
     <parameter name="enrollUrl" value="https://secure.bankofamerica.com/auth/enroll/enroll-entry/"/>
     <parameter name="openAccUrl" value="https://promo.bankofamerica.com/hp-oaa2/"/>
+    <parameter name="ourVideosCanHelpYouUrl" value="https://promo.bankofamerica.com/small-business-videos/"/>
+    <parameter name="bestPracticesForProcessingPayrollUrl"
+               value="https://www.bankofamerica.com/smallbusiness/education/payroll-best-practices/"/>
+    <parameter name="needFinancingFindTheRightSolutionUrl"
+               value="https://www.bankofamerica.com/smallbusiness/business-financing/"/>
+    <parameter name="meetBusinessAdvantage360Url"
+               value="https://promo.bankofamerica.com/businessadvantage360/?cm_mmc=SB-OLB-_-vanity-_-KO01VN0003_businessadvantage360-_-NA"/>
+    <parameter name="getMostFromYourCheckingCreditCardAccountsUrl"
+               value="https://www.bankofamerica.com/smallbusiness/education/business-checking-and-credit-card-benefits/"/>
+    <parameter name="signInGoPaperlessUrl"
+               value="https://secure.bankofamerica.com/login/sign-in/signOnV2Screen.go?reason=paperSuppression&amp;request_locale=en_US"/>
+    <parameter name="onlineBankingServiceAgreementUrl"
+               value="https://www.bankofamerica.com/online-banking/service-agreement.go?request_locale=en_US"/>
+    <parameter name="mostPopularVideoUrl" value="https://promo.bankofamerica.com/small-business-videos/most-popular/"/>
+    <parameter name="cashManagementUrl" value="https://promo.bankofamerica.com/small-business-videos/cash-management/"/>
+    <parameter name="bankingServicesUrl" value="https://promo.bankofamerica.com/small-business-videos/online-business-banking/"/>
+    <parameter name="payrollServicesUrl" value="https://promo.bankofamerica.com/small-business-videos/"/>
+    <parameter name="resourcesUrl" value="https://promo.bankofamerica.com/small-business-videos/resources/forum/"/>
+    <parameter name="retirementUrl" value="https://promo.bankofamerica.com/small-business-videos/retirement/business-retirement-solutions/"/>
+    <parameter name="businessAdvantageRewardsUrl" value="https://promo.bankofamerica.com/small-business-videos/rewards/"/>
+
+
 
     <!-- SignIn credentials  -->
     <parameter name="onlineID" value="kinkAbidal"/>
@@ -60,6 +82,7 @@
             <class name="homePageHiddenFeatures.HiddenFeaturesHome"/>
             <class name="signInPanel.negativeSignIn"/>
             <class name="pageNavigation.NaviagationFromSmallBusinessPage"/>
+            <class name="pageNavigation.VideoPageNavigation"/>
         </classes>
     </test>
 

@@ -36,6 +36,7 @@ import java.util.concurrent.TimeUnit;
 
 public class CommonAPI {
 
+
     //ExtentReport
     public static ExtentReports extent;
     @BeforeSuite
@@ -138,12 +139,20 @@ public class CommonAPI {
             if(OS.equalsIgnoreCase("OS X")){
                 System.setProperty("webdriver.gecko.driver", "../Generic/browser-driver/geckodriver");
             }else if(OS.equalsIgnoreCase("Windows")) {
+<<<<<<< HEAD
                 System.setProperty("webdriver.gecko.driver", "..\\Generic\\browser-driver\\chromedriver.exe");
+=======
+                System.setProperty("webdriver.gecko.driver", "../Generic/browser-driver/geckodriver.exe");
+>>>>>>> 88217ab53eb4c3b7936606f5a84d2cfe776ad899
             }
             driver = new FirefoxDriver();
 
         } else if(browserName.equalsIgnoreCase("ie")) {
+<<<<<<< HEAD
             System.setProperty("webdriver.ie.driver", "..\\Generic\\browser-driver\\chromedriver.exe");
+=======
+            System.setProperty("webdriver.ie.driver", "../Generic/browser-driver/IEDriverServer.exe");
+>>>>>>> 88217ab53eb4c3b7936606f5a84d2cfe776ad899
             driver = new InternetExplorerDriver();
         }
         return driver;
@@ -172,8 +181,12 @@ public class CommonAPI {
 
     @AfterClass
     public void cleanUp(){
+<<<<<<< HEAD
 
       //driver.close();
+=======
+        //driver.close();
+>>>>>>> 88217ab53eb4c3b7936606f5a84d2cfe776ad899
     }
   //helper methods
     public void clickOnElement(String locator){
@@ -456,7 +469,7 @@ public class CommonAPI {
     }
 
     //Taking Screen shots
-    public void takeScreenShot() {
+    public void takeScreenShot() throws IOException {
         File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         //FileUtils.copyFile(file, new File("screenShots.png"));
     }
@@ -470,7 +483,6 @@ public class CommonAPI {
     public void waitUntilVisible(By locator) {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-
     }
 
     public void waitUntilSelectable(By locator) {
