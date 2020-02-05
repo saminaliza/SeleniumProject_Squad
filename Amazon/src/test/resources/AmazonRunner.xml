@@ -20,10 +20,10 @@
 <!--            <class name="amazonPrimeTest.PrimeOptionsUseTest"/>-->
 <!--            <class name="amazonEchoNAlexaTest.EchoNAlexaTest"/>-->
 <!--            <class name="amazonKindleOptionTest.KindleOptionsTest"/>-->
-<!--            <class name="amazonSearchPageTest.searchPageTest"/>-->
+            <class name="amazonSearchPageTest.searchPageTest"/>
 <!--            <class name="amazonShoppingCartTest.ShoppingCartTest"/>-->
 <!--            <class name="amazonHelpOptionTest.HelpOptionTest"/>-->
-            <class name="amazonTodaysDealTest.TodaysDealPageTest"/>
+<!--            <class name="amazonTodaysDealTest.TodaysDealPageTest"/>-->
 <!--            <class name="amazonHomePageTest.HomeTest"/>-->
         </classes>
     </test>
