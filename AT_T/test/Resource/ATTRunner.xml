@@ -23,6 +23,9 @@
 <!--            <class name="testSetUpVoiceMail.TestSetUpVoiceMail"/>-->
 <!--            <class name="testFindiPad.TestFindiPad"/>-->
             <class name="testFindiPhone11.TestFindiPhone11"/>
+<!--            <class name="testSearch.SearchPageTest"/>-->
+<!--            <class name="testArraySearch.TestArraySearch"/>-->
+
 
 
         </classes>

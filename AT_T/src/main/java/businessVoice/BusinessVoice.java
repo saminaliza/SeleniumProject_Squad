@@ -11,16 +11,11 @@ public class BusinessVoice extends CommonAPI {
     WebElement business;
     @FindBy(how =How.XPATH,using = "//span[@class='top-action-button'][contains(text(),'Voice')]")
     WebElement voice;
-    //@FindBy(how =How.XPATH,using = "//*[@id=\"z1-searchfield\"]")
-    //WebElement search;
-
     public void businessDeal() throws InterruptedException {
         business.click();
         JavascriptExecutor executor = (JavascriptExecutor) driver;
         executor.executeScript("arguments[0].click();", voice);
         sleepFor(2);
-        //search.sendKeys("Use Google Assistant & voice commands");
-
     }
 
 
