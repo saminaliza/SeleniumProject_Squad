@@ -36,30 +36,30 @@ public class MakeMoneyOptionPage extends CommonAPI {
     @FindBy(linkText = "Self-Publish with Us")
     WebElement selfPublishWithUs;
 
-    public void sellOnAmazon(){
-        sellOnAmazon.click();
-    }
-    public void sellUnderAmazonAccelerator(){
-        sellUnderAccelerator.click();
-    }public void sellOnAmazonHandmade(){
-        sellOnAmazon.click();
-    }public void sellOnAmazon(){
-        sellOnAmazon.click();
-    }public void sellOnAmazon(){
-        sellOnAmazon.click();
-    }public void sellOnAmazon(){
-        sellOnAmazon.click();
-    }public void sellOnAmazon(){
-        sellOnAmazon.click();
-    }public void sellOnAmazon(){
-        sellOnAmazon.click();
-    }public void sellOnAmazon(){
-        sellOnAmazon.click();
-    }public void sellOnAmazon(){
-        sellOnAmazon.click();
-    }public void sellOnAmazon(){
-        sellOnAmazon.click();
-    }
+//    public void sellOnAmazon(){
+//        sellOnAmazon.click();
+//    }
+//    public void sellUnderAmazonAccelerator(){
+//        sellUnderAccelerator.click();
+//    }public void sellOnAmazonHandmade(){
+//        sellOnAmazon.click();
+//    }public void sellOnAmazon(){
+//        sellOnAmazon.click();
+//    }public void sellOnAmazon(){
+//        sellOnAmazon.click();
+//    }public void sellOnAmazon(){
+//        sellOnAmazon.click();
+//    }public void sellOnAmazon(){
+//        sellOnAmazon.click();
+//    }public void sellOnAmazon(){
+//        sellOnAmazon.click();
+//    }public void sellOnAmazon(){
+//        sellOnAmazon.click();
+//    }public void sellOnAmazon(){
+//        sellOnAmazon.click();
+//    }public void sellOnAmazon(){
+//        sellOnAmazon.click();
+//    }
 
 
 }
