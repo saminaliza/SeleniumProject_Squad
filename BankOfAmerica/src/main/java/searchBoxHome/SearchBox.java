@@ -4,9 +4,9 @@ import base.CommonAPI;
 import dataSupply.DataSource;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import reporting.TestLogger;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class SearchBox extends CommonAPI {
@@ -16,21 +16,6 @@ public class SearchBox extends CommonAPI {
 
     @FindBy(css=".submit")
     public static WebElement submitWebElement;
-
-
-    public List<String> getItems() {
-        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
-        }.getClass().getEnclosingMethod().getName()));
-        List<String> itemsList=new ArrayList<String>();
-        itemsList.add("debit card");
-        itemsList.add("fixed deposit");
-        itemsList.add("short term loan");
-        itemsList.add("home loan");
-        itemsList.add("travellers card");
-        itemsList.add("cash deposit");
-
-        return itemsList;
-    }
 
     public void typeItemName(String value) {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -65,7 +50,8 @@ public class SearchBox extends CommonAPI {
     public void clearTypeNClickOnSearch() throws Exception {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        List<String> list=getItems();
+        DataSource data =PageFactory.initElements(driver, DataSource.class);
+        List<String> list=data.getItems();
         for (int i=0; i < list.size(); i++) {
             typeItemName(list.get(i));
             clickOnSearch();

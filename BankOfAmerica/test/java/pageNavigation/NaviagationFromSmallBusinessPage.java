@@ -16,7 +16,7 @@ public class NaviagationFromSmallBusinessPage extends CommonAPI {
     }
 
     @Parameters({"onlineBankingServiceAgreementUrl"})
-    @Test(enabled=false)
+    @Test//(enabled=false)
     //Tests if the 'online Banking Service Agreement' tab is clickable.
     public void onlineBankingServiceAgreementNavigationFunctionality(String onlineBankingServiceAgreementUrl) throws InterruptedException {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -26,7 +26,7 @@ public class NaviagationFromSmallBusinessPage extends CommonAPI {
     }
 
     @Parameters({"signInGoPaperlessUrl"})
-    @Test(enabled=false)
+    @Test//(enabled=false)
     //Tests if the 'online Banking Service Agreement' tab is clickable.
     public void signGoPaperLessNavigationFunctionality(String signInGoPaperlessUrl) {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -36,7 +36,7 @@ public class NaviagationFromSmallBusinessPage extends CommonAPI {
     }
 
     @Parameters({"getMostFromYourCheckingCreditCardAccountsUrl"})
-    @Test(enabled=false)
+    @Test//(enabled=false)
     //Tests if the 'online Banking Service Agreement' tab is clickable.
     public void getMostFromYourCheckingCredit0NavigationFunctionality(String getMostFromYourCheckingCreditCardAccountsUrl) {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -46,7 +46,7 @@ public class NaviagationFromSmallBusinessPage extends CommonAPI {
     }
 
     @Parameters({"meetBusinessAdvantage360Url"})
-    @Test(enabled=false)
+    @Test//(enabled=false)
     //Tests if the 'online Banking Service Agreement' tab is clickable.
     public void meetBusinessAdvantage360NavigationFunctionality(String meetBusinessAdvantage360Url) {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -56,7 +56,7 @@ public class NaviagationFromSmallBusinessPage extends CommonAPI {
     }
 
     @Parameters({"needFinancingFindTheRightSolutionUrl"})
-    @Test(enabled=false)
+    @Test//(enabled=false)
     //Tests if the 'online Banking Service Agreement' tab is clickable.
     public void needFinancingFindTheRightSolutionNavigationFunctionality(String needFinancingFindTheRightSolutionUrl) {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -66,7 +66,7 @@ public class NaviagationFromSmallBusinessPage extends CommonAPI {
     }
 
     @Parameters({"bestPracticesForProcessingPayrollUrl"})
-    @Test(enabled=false)
+    @Test//(enabled=false)
     //Tests if the 'online Banking Service Agreement' tab is clickable.
     public void bestPracticesForProcessingPayrollNavigationFunctionality(String bestPracticesForProcessingPayrollUrl) {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -76,7 +76,7 @@ public class NaviagationFromSmallBusinessPage extends CommonAPI {
     }
 
     @Parameters({"ourVideosCanHelpYouUrl"})
-    @Test(enabled=false)
+    @Test//(enabled=false)
     //Tests if the 'online Banking Service Agreement' tab is clickable.
     public void ourVideosCanHelpYouRunNavigationFunctionality(String ourVideosCanHelpYouUrl) {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -85,7 +85,7 @@ public class NaviagationFromSmallBusinessPage extends CommonAPI {
         Assert.assertEquals(si.ourVideosCanHelpYouRunPageTitle(), si.ourVideosCanHelpYouRunActualTitle(ourVideosCanHelpYouUrl));
     }
 
-    @Test(enabled=false)
+    @Test//(enabled=false)
     //Tests if the 'online Banking Service Agreement' tab is clickable.
     public void onlineBankingServiceAgreementPageTitleFunctionality() throws InterruptedException {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -94,7 +94,7 @@ public class NaviagationFromSmallBusinessPage extends CommonAPI {
         si.onlineBankingServiceAgreementPageTitle();
     }
 
-    @Test(enabled=false)
+    @Test//(enabled=false)
     //Tests if the 'online Banking Service Agreement' tab is clickable.
     public void signGoPaperLessPageTitleFunctionality() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -103,7 +103,7 @@ public class NaviagationFromSmallBusinessPage extends CommonAPI {
         si.signGoPaperLessPageTitle();
     }
 
-    @Test(enabled=false)
+    @Test//(enabled=false)
     //Tests if the 'online Banking Service Agreement' tab is clickable.
     public void getMostFromYourCheckingCreditPageTitleFunctionality() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -112,7 +112,7 @@ public class NaviagationFromSmallBusinessPage extends CommonAPI {
         si.getMostFromYourCheckingCreditPageTitle();
     }
 
-    @Test(enabled=false)
+    @Test//(enabled=false)
     //Tests if the 'online Banking Service Agreement' tab is clickable.
     public void meetBusinessAdvantage360PageTitleFunctionality() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -121,7 +121,7 @@ public class NaviagationFromSmallBusinessPage extends CommonAPI {
         si.meetBusinessAdvantage360PageTitle();
     }
 
-    @Test(enabled=false)
+    @Test//(enabled=false)
     //Tests if the 'online Banking Service Agreement' tab is clickable.
     public void needFinancingFindTheRightSolutionPageTitleFunctionality() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -130,7 +130,7 @@ public class NaviagationFromSmallBusinessPage extends CommonAPI {
         si.needFinancingFindTheRightSolutionPageTitle();
     }
 
-    @Test(enabled=false)
+    @Test//(enabled=false)
     //Tests if the 'online Banking Service Agreement' tab is clickable.
     public void bestPracticesForProcessingPayrollPageTitleFunctionality() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -139,7 +139,7 @@ public class NaviagationFromSmallBusinessPage extends CommonAPI {
         si.bestPracticesForProcessingPayrollPageTitle();
     }
 
-    @Test(enabled=false)
+    @Test//(enabled=false)
     //Tests if the 'online Banking Service Agreement' tab is clickable.
     public void ourVideosCanHelpYouRunPageTitleFunctionality() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -148,7 +148,7 @@ public class NaviagationFromSmallBusinessPage extends CommonAPI {
         si.ourVideosCanHelpYouRunPageTitle();
     }
 
-    @Test(enabled=false)
+    @Test//(enabled=false)
     //Tests if the 'online Banking Service Agreement' tab is clickable.
     public void onlineBankingServiceAgreementClickFunctionality() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -157,7 +157,7 @@ public class NaviagationFromSmallBusinessPage extends CommonAPI {
         si.onlineBankingServiceAgreementClick();
     }
 
-    @Test(enabled=false)
+    @Test//(enabled=false)
     //Tests if the 'sign Go Paper Less' tab is clickable.
     public void signGoPaperLessClickFunctionality() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -166,7 +166,7 @@ public class NaviagationFromSmallBusinessPage extends CommonAPI {
         si.signGoPaperLessClick();
     }
 
-    @Test(enabled=false)
+    @Test//(enabled=false)
     //Tests if the 'meet Business Advantage360' tab is clickable.
     public void meetBusinessAdvantage360ClickFunctionality() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -175,7 +175,7 @@ public class NaviagationFromSmallBusinessPage extends CommonAPI {
         si.meetBusinessAdvantage360Click();
     }
 
-    @Test(enabled=false)
+    @Test//(enabled=false)
     //Tests if the 'need Financing Find The Right Solution' tab is clickable.
     public void needFinancingFindTheRightSolutionClickFunctionality() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -184,7 +184,7 @@ public class NaviagationFromSmallBusinessPage extends CommonAPI {
         si.needFinancingFindTheRightSolutionClick();
     }
 
-    @Test(enabled=false)
+    @Test//(enabled=false)
     // Tests if the 'best Practices For Processing Payroll' tab is clickable.
     public void bestPracticesForProcessingPayrollClickFunctionality() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -193,7 +193,7 @@ public class NaviagationFromSmallBusinessPage extends CommonAPI {
         si.bestPracticesForProcessingPayrollClick();
     }
 
-    @Test(enabled=false)
+    @Test//(enabled=false)
     //Tests if the 'our Videos Can Help You Run' tab is clickable.
     public void ourVideosCanHelpYouRunClickFunctionality() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -202,7 +202,7 @@ public class NaviagationFromSmallBusinessPage extends CommonAPI {
         si.ourVideosCanHelpYouRunClick();
     }
 
-    @Test(enabled=false)
+    @Test//(enabled=false)
     //Tests if the 'get Most From Your Checking Credit' tab is clickable.
     public void getMostFromYourCheckingCreditClickFunctionality() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -211,7 +211,7 @@ public class NaviagationFromSmallBusinessPage extends CommonAPI {
         si.getMostFromYourCheckingCreditClick();
     }
 
-    @Test(enabled=false)
+    @Test//(enabled=false)
     //Tests if the checking account tab takes the user to the checking account page
     public void openCheckingAccountClickFunctionality() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {

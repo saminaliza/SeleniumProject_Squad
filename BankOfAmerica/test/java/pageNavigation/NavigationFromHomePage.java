@@ -10,7 +10,7 @@ import reporting.TestLogger;
 public class NavigationFromHomePage extends CommonAPI {
 
 @Parameters({"smallBusinessUrl"})
-@Test ( enabled=false )
+@Test( enabled=false )
 //This test checks weather the 'Small Business' element takes the user to the small business page
     public void smallBusinessTabFunctionality(String smallBusinessUrl) throws InterruptedException {
     TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
@@ -66,7 +66,7 @@ public class NavigationFromHomePage extends CommonAPI {
         BoaHomePage bhp =PageFactory.initElements(driver, BoaHomePage.class);
         bhp.contactUsPageTitle(contactUsUrl);
     }
-    @Test ( enabled=false )
+    @Test //( enabled=false )
     //Checks if the pop-up window for state selection appears on clicking the help element
     public void helpTabFunctionality() throws InterruptedException {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
