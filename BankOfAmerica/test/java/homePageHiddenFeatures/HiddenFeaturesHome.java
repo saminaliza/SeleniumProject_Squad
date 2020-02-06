@@ -9,7 +9,7 @@ import reporting.TestLogger;
 
 public class HiddenFeaturesHome extends CommonAPI {
 
-    @Test(enabled=false)
+    @Test//(enabled=false)
     //checks if the hidden menu appears on clicking the checking tab.
     public void checkingFunctionality() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -18,7 +18,7 @@ public class HiddenFeaturesHome extends CommonAPI {
         Assert.assertEquals(bhhf.checkingMenuIsDisplayed(), true);
     }
 
-    @Test(enabled=false)
+    @Test//(enabled=false)
     //checks if the hidden menu appears on clicking the saving tab.
     public void savingFunctionality() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -27,7 +27,7 @@ public class HiddenFeaturesHome extends CommonAPI {
         Assert.assertEquals(bhhf.savingMenuIsDisplayed(), true);
     }
 
-    @Test(enabled=false)
+    @Test//(enabled=false)
     //checks if the hidden menu appears on clicking the Credit Card tab.
     public void creditCardFunctionality() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -36,7 +36,7 @@ public class HiddenFeaturesHome extends CommonAPI {
         Assert.assertEquals(bhhf.CreditCardMenuIsDisplayed(), true);
     }
 
-    @Test(enabled=false)
+    @Test//(enabled=false)
     //checks if the hidden menu appears on clicking the Home Loans tab.
     public void homeLoansFunctionality() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -45,7 +45,7 @@ public class HiddenFeaturesHome extends CommonAPI {
         Assert.assertEquals(bhhf.HomeLoanMenuIsDisplayed(), true);
     }
 
-    @Test(enabled=false)
+    @Test//(enabled=false)
     //checks if the hidden menu appears on clicking the Auto Loans tab.
     public void autoLoansFunctionality() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -54,7 +54,7 @@ public class HiddenFeaturesHome extends CommonAPI {
         Assert.assertEquals(bhhf.autoLoansMenuIsDisplayed(), true);
     }
 
-    @Test(enabled=false)
+    @Test//(enabled=false)
     //checks if the hidden menu appears on clicking the Investing Loans tab.
     public void investingFunctionality() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -63,7 +63,7 @@ public class HiddenFeaturesHome extends CommonAPI {
         Assert.assertEquals(bhhf.investingMenuIsDisplayed(), true);
     }
 
-    @Test(enabled=false)
+    @Test//(enabled=false)
     //checks if the hidden menu appears on clicking the Better Money Habits tab.
     public void betterMoneyHabitsFunctionality() {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
