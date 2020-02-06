@@ -8,10 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
-/**
- * Created by mrahman on 04/02/18.
- */
-
 public class ConnectToSqlDB {
 
     public static Connection connect = null;
@@ -21,7 +17,7 @@ public class ConnectToSqlDB {
 
     public static Properties loadProperties() throws IOException{
         Properties prop = new Properties();
-        InputStream ism = new FileInputStream("../Generic/secret.properties");
+        InputStream ism = new FileInputStream("C:\\Users\\samin\\Desktop\\projectRN\\SeleniumProject_Squad\\Generic\\secret.properties");
         prop.load(ism);
         ism.close();
         return prop;
