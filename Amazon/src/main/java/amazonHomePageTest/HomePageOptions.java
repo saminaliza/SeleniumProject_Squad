@@ -1,4 +1,4 @@
-package CnnHomePageTest;
+package amazonHomePageTest;
 
 import base.CommonAPI;
 import org.openqa.selenium.WebElement;
@@ -73,7 +73,7 @@ public class HomePageOptions extends CommonAPI {
     }
 
     public void canGoToSellingAppsOption() {
-        sellAppsLink.click();
+        sellAppsLink.click(); //need to check locator
     }
 
 }

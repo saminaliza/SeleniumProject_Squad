@@ -1,4 +1,4 @@
-package CnnHomePageTest;
+package amazonHomePageTest;
 
 import base.CommonAPI;
 import org.openqa.selenium.WebElement;
@@ -113,7 +113,7 @@ public class HomePage extends CommonAPI {
         amazonLogo.click();
     }
 
-    public void searchNClick(String itemName) {
+    public void searchItems(String itemName) {
         this.navigateToAmazon();
         searchBox.sendKeys(itemName);
         submitBtn.click();
@@ -160,11 +160,11 @@ public class HomePage extends CommonAPI {
     }
 
     public void useNewReleaseBtn() {
-        newReleaseBtn.click();
+        newReleaseBtn.click(); //i dont have this in my amazon
     }
 
     public void useRegistryBtn() {
-        registryBtn.click();
+        registryBtn.click(); //same amazon problem
     }
 
     public void useGiftCardBtn() {
@@ -172,7 +172,7 @@ public class HomePage extends CommonAPI {
     }
 
     public void useSellBtn() {
-        sellBtn.click();
+        sellBtn.click(); //amazon
     }
 
     public void useAmazonBasicsBtn() {
@@ -184,7 +184,7 @@ public class HomePage extends CommonAPI {
     }
 
     public void useWholeFoodsBtn() {
-        wholeFoodsBtn.click();
+        wholeFoodsBtn.click();  //need to check
     }
 
     public void useCountryBtn() {

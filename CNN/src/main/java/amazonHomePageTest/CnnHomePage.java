@@ -1,4 +1,4 @@
-package CnnHomePageTest;
+package amazonHomePageTest;
 
 import base.CommonAPI;
 import org.openqa.selenium.By;
@@ -37,7 +37,7 @@ public class CnnHomePage extends CommonAPI {
     WebElement emailField;
     @FindBy(xpath = "/html/body/div[6]/section[1]/div[4]/div[1]/div/button/span")
     WebElement subButton;
-    //-----------------------------------------------------------------------------------------------------
+
     @FindBy(how = How.XPATH, using = "//*[@id=\"header-nav-container\"]/div/div[1]/div/div[2]/nav/ul/li[5]/a")
     WebElement opinionWebElement;
 
@@ -63,7 +63,7 @@ public class CnnHomePage extends CommonAPI {
         driver.get("https://www.cnn.com/");
     }
 
-    public void searchClick(String itemName)  {
+    public void searchClick(String itemName) {
         this.navigateToCnn();
         searchBox.click();
         searchButton2.sendKeys(itemName);
@@ -103,14 +103,16 @@ public class CnnHomePage extends CommonAPI {
         searchBox2.clear();
 
     }
+
     public void signUpNewsletterButton(String email) {
         subscribeButton.click();
         emailField.sendKeys(email);
         subButton.click();
 
 
-}
-    public  void getOpinionWebElement() {
+    }
+
+    public void getOpinionWebElement() {
         opinionWebElement.click();
     }
 
@@ -138,6 +140,38 @@ public class CnnHomePage extends CommonAPI {
         videosWebElement.click();
     }
 
+    public void HealthButton() {
+        driver.findElement(By.xpath("//li[7]//label[1]")).click();
+    }
+
+    public void EntertainButton() {
+        driver.findElement(By.xpath("//li[8]//label[1]")).click();
+    }
+
+    public void StyleButton() {
+        driver.findElement(By.xpath("//li[9]//label[1]")).click();
+    }
+
+    public void TravelButton() {
+        driver.findElement(By.xpath("//label[contains(text(),'Travel')]")).click();
+    }
+
+    public void AllCNNButton() {
+        driver.findElement(By.xpath("//label[contains(text(),'All CNN')]")).click();
+    }
+
+    public void StoriesTab() {
+        driver.findElement(By.xpath("//label[contains(text(),'Stories')]")).click();
+    }
+
+    public void VideosTab() {
+        driver.findElement(By.xpath("//label[contains(text(),'Videos')]")).click();
+    }
+
+    public void PhotosTab() {
+        driver.findElement(By.xpath("//label[contains(text(),'Photos')]")).click();
+    }
+
     public void clickOnOpinionTab() {
         opinionWebElement.click();
     }
@@ -151,7 +185,7 @@ public class CnnHomePage extends CommonAPI {
     }
 
     public void clickOnStyleTab() {
-       styleWebElement.click();
+        styleWebElement.click();
     }
 
     public void clickOnTravelTab() {
@@ -165,6 +199,7 @@ public class CnnHomePage extends CommonAPI {
     public void clickOnVideoTab() {
         videosWebElement.click();
     }
+
     public void InvokeCNN() {
         driver.get("https://www.cnn.com/");
         driver.manage().window().maximize(); // comment
@@ -187,6 +222,18 @@ public class CnnHomePage extends CommonAPI {
         driver.findElement(By.className("search-icon")).click();
         driver.findElement(By.xpath("//input[@id='header-search-bar']")).sendKeys("Kobe");
         driver.findElement(By.xpath("//div[@class='Box-sc-1fet97o-0 iKQPmQ']//button[@class='Flex-sc-1sqrs56-0 search-barstyles__Button-yoe3fw-2 kxpkSG']")).click();
+    }
+
+    public void CarouselRight() {
+        driver.findElement(By.className("owl-next")).click();
+        driver.findElement(By.className("owl-next")).click();
+        driver.findElement(By.className("owl-next")).click();
+    }
+
+    public void CarouselLeft() {
+        driver.findElement(By.className("owl-prev")).click();
+        driver.findElement(By.className("owl-prev")).click();
+        driver.findElement(By.className("owl-prev")).click();
     }
 }
 

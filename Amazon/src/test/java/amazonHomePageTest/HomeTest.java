@@ -1,4 +1,4 @@
-package CnnHomePageTest;
+package amazonHomePageTest;
 
 import base.CommonAPI;
 import org.openqa.selenium.support.PageFactory;
@@ -9,7 +9,7 @@ public class HomeTest extends CommonAPI {
     @Test
     public void testUserCanUseSearchBox() {
         HomePage searchPage = PageFactory.initElements(driver, HomePage.class);
-        searchPage.searchNClick("backpack");
+        searchPage.searchItems("backpack");
     }
 
     @Test
@@ -81,19 +81,19 @@ public class HomeTest extends CommonAPI {
     @Test
     public void userCanGoToNewReleasePageTest() {
         HomePage hm = PageFactory.initElements(driver, HomePage.class);
-        hm.useNewReleaseBtn();
+        hm.useNewReleaseBtn(); //amazon problem
     }
 
     @Test
     public void userCanGoToRegistryPageTest() {
         HomePage hm = PageFactory.initElements(driver, HomePage.class);
-        hm.useRegistryBtn();
+        hm.useRegistryBtn(); //amazon problem
     }
 
     @Test
     public void userCanGoToSellPageTest() {
         HomePage hm = PageFactory.initElements(driver, HomePage.class);
-        hm.useSellBtn();
+        hm.useSellBtn(); //amazon problem
     }
 
     @Test
@@ -105,13 +105,13 @@ public class HomeTest extends CommonAPI {
     @Test
     public void userCanGoToCouponPageTest() {
         HomePage hm = PageFactory.initElements(driver, HomePage.class);
-        hm.useCouponBtn();
+        hm.useCouponBtn(); //need to change the locator
     }
 
     @Test
     public void userCanGoToWholeFoodsPageTest() {
         HomePage hm = PageFactory.initElements(driver, HomePage.class);
-        hm.useWholeFoodsBtn();
+        hm.useWholeFoodsBtn(); //need to cjeck
     }
 
     @Test

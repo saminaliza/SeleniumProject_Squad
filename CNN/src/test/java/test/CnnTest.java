@@ -1,7 +1,7 @@
 package test;
 
 
-import CnnHomePageTest.CnnHomePage;
+import amazonHomePageTest.CnnHomePage;
 import base.CommonAPI;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -18,6 +18,7 @@ public class CnnTest extends CommonAPI {
         aw.signUpNewsletterButton("abc123@gmail.com");
         Thread.sleep(5000);
     }
+
 
     @Test
     public void useTheSearchBox() {
@@ -37,6 +38,7 @@ public class CnnTest extends CommonAPI {
         CnnHomePage aw = PageFactory.initElements(driver, CnnHomePage.class);
         Assert.assertEquals(driver.getTitle(), "CNN - Breaking News, Latest News and Videos");
     }
+
 
     @Test
     public void goToWorldPage() {
@@ -89,6 +91,79 @@ public class CnnTest extends CommonAPI {
     }
 
     @Test
+    public void TestInvokeCNNPage() {
+        CnnHomePage hp = PageFactory.initElements(driver, CnnHomePage.class);
+        hp.InvokeCNN();
+
+    }
+
+    @Test
+    public void TestClickSearchIcon() {
+        CnnHomePage hp = PageFactory.initElements(driver, CnnHomePage.class);
+        hp.Clicksearch_icon();
+    }
+
+    @Test
+    public void TestExitSearchButton() {
+        CnnHomePage hp = PageFactory.initElements(driver, CnnHomePage.class);
+        hp.Exitsearch_icon();
+    }
+
+    @Test
+    public void TestClickMedia() {
+        CnnHomePage hp = PageFactory.initElements(driver, CnnHomePage.class);
+        hp.clickMedia();
+    }
+
+    @Test
+    public void testopinionTab() {
+        CnnHomePage cnnHomePage = PageFactory.initElements(driver, CnnHomePage.class);
+        cnnHomePage.clickOnOpinionTab();
+    }
+
+    @Test
+    public void testhealthTab() {
+        CnnHomePage cnnHomePage = PageFactory.initElements(driver, CnnHomePage.class);
+        cnnHomePage.clickOnHealthTab();
+    }
+
+    @Test
+    public void testEntertainmentTab() {
+        CnnHomePage cnnHomePage = PageFactory.initElements(driver, CnnHomePage.class);
+        cnnHomePage.clickOnEntertainmentTab();
+    }
+
+    @Test
+    public void testStyleTab() {
+        CnnHomePage cnnHomePage = PageFactory.initElements(driver, CnnHomePage.class);
+        cnnHomePage.clickOnStyleTab();
+    }
+
+    @Test
+    public void testTravelTab() {
+        CnnHomePage cnnHomePage = PageFactory.initElements(driver, CnnHomePage.class);
+        cnnHomePage.clickOnTravelTab();
+    }
+
+    @Test
+    public void testSportsTab() {
+        CnnHomePage cnnHomePage = PageFactory.initElements(driver, CnnHomePage.class);
+        cnnHomePage.clickOnSportsTab();
+    }
+
+    @Test
+    public void testVideoTab() {
+        CnnHomePage cnnHomePage = PageFactory.initElements(driver, CnnHomePage.class);
+        cnnHomePage.clickOnVideoTab();
+    }
+
+    @Test
+    public void TestSearchAmerica() {
+        CnnHomePage hp = PageFactory.initElements(driver, CnnHomePage.class);
+        hp.searchAmerica();
+    }
+
+    @Test
     public void styleTab() {
         CnnHomePage cnnHomePage = PageFactory.initElements(driver, CnnHomePage.class);
         cnnHomePage.clickOnStyleTab();
@@ -98,6 +173,67 @@ public class CnnTest extends CommonAPI {
     public void travelTab() {
         CnnHomePage cnnHomePage = PageFactory.initElements(driver, CnnHomePage.class);
         cnnHomePage.clickOnTravelTab();
+    }
+
+    @Test
+    public void TestCarouselRight() {
+        CnnHomePage hp = PageFactory.initElements(driver, CnnHomePage.class);
+        hp.CarouselRight();
+    }
+
+    @Test
+    public void TestHealthButton() {
+        CnnHomePage hp = PageFactory.initElements(driver, CnnHomePage.class);
+        hp.HealthButton();
+    }
+
+    @Test
+    public void TestEntertainmentButton() {
+        CnnHomePage hp = PageFactory.initElements(driver, CnnHomePage.class);
+        hp.EntertainButton();
+    }
+
+    @Test
+    public void TestStyleButton() {
+        CnnHomePage hp = PageFactory.initElements(driver, CnnHomePage.class);
+        hp.StyleButton();
+    }
+
+    @Test
+    public void TestTravelButton() {
+        CnnHomePage hp = PageFactory.initElements(driver, CnnHomePage.class);
+        hp.TravelButton();
+    }
+
+    @Test
+    public void TestAllCNNButton() {
+        CnnHomePage hp = PageFactory.initElements(driver, CnnHomePage.class);
+        hp.AllCNNButton();
+    }
+
+    @Test
+    public void TestStoriesTab() {
+        CnnHomePage hp = PageFactory.initElements(driver, CnnHomePage.class);
+        hp.StoriesTab();
+    }
+
+
+    @Test
+    public void TestVideosTab() {
+        CnnHomePage hp = PageFactory.initElements(driver, CnnHomePage.class);
+        hp.VideosTab();
+    }
+
+    @Test
+    public void TestPhotosTab() {
+        CnnHomePage hp = PageFactory.initElements(driver, CnnHomePage.class);
+        hp.PhotosTab();
+    }
+
+    @Test
+    public void TestCarouselLeft() {
+        CnnHomePage hp = PageFactory.initElements(driver, CnnHomePage.class);
+        hp.CarouselLeft();
     }
 
     @Test
@@ -112,15 +248,6 @@ public class CnnTest extends CommonAPI {
         cnnHomePage.clickOnVideoTab();
     }
 
-
-
-/*
-    @Test
-    public void TestDropDown() {
-        CnnHomePage aw = PageFactory.initElements(driver, CnnHomePage.class);
-        aw.useDropDownButton();
-    }*/
-
     @Test
     public void testMultipleItem() {
         CnnHomePage aw = PageFactory.initElements(driver, CnnHomePage.class);
@@ -131,7 +258,8 @@ public class CnnTest extends CommonAPI {
         for (String item : items) {
             aw.searchItem(item);
             System.out.println(item);
+
         }
 
     }
-        }
+}

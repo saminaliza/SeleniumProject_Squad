@@ -1,4 +1,4 @@
-package CnnHomePageTest;
+package amazonHomePageTest;
 
 import base.CommonAPI;
 import org.openqa.selenium.support.PageFactory;

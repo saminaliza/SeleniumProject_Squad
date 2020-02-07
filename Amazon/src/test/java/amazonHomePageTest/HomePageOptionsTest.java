@@ -1,4 +1,4 @@
-package CnnHomePageTest;
+package amazonHomePageTest;
 
 import base.CommonAPI;
 import org.openqa.selenium.support.PageFactory;
@@ -62,7 +62,7 @@ public class HomePageOptionsTest extends CommonAPI {
     @Test
     public void userCanNavigateToSellingAppPageTest() {
         HomePageOptions homePageOptions = PageFactory.initElements(driver, HomePageOptions.class);
-        homePageOptions.canGoToSellingAppsOption();
+        homePageOptions.canGoToSellingAppsOption(); //need to check
     }
 
 }
