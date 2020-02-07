@@ -7,12 +7,25 @@
     <parameter name="os" value="OS X"></parameter>
     <parameter name="browserName" value="Chrome"></parameter>
 
-
     <test name="ATT Home">
         <classes>
-                        <class name="Test_ATT.Test_ATT_HP"></class>
-           <class name="Test_ATT.Test_Buy_Items"/>
+            <class name="Test_ATT.Test_ATT_HP"></class>
+            <class name="Test_ATT.Test_Buy_Items"/>
+            <class name="Test_ATT.TestACT"/>
             <class name="Test_ATT.Test_Order_Internet"/>
+            <class name="testPrePaidPhone.TestPrePaidPhone"/>
+            <class name="testBundlePurchase.TestBundlePurchase"/>
+            <class name="teststoreLocation.TestStoreLocation"/>
+            <class name="testDifferencesServices.TestDifferencesServices"/>
+            <class name="testSupport.TestSupport"/>
+            <class name="testBusinessVoice.TestBusinessVoice"/>
+            <class name="testSetUpVoiceMail.TestSetUpVoiceMail"/>
+            <class name="testFindiPad.TestFindiPad"/>
+            <class name="testFindiPhone11.TestFindiPhone11"/>
+            <class name="testSearch.SearchPageTest"/>
+            <class name="testArraySearch.TestArraySearch"/>
+            <class name="testHelpAndSupport.TestHelpAndSupport"/>
+            <class name="testSqlConnection.TestSqlConnection"/>
 
         </classes>
     </test>

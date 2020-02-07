@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="Group2 Selenium Project " parallel="false">
+
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
+    <parameter name="os" value="Windows"/>
+    <parameter name="os_version" value="10"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserVersion" value="75.0"/>
+    <parameter name="url" value="https://www.cnn.com/"/>
+
+    <test name="Cnn Home">
+        <classes>
+            <class name="CnnPageTest.CnnHomePage"/>
+            <class name="test.CnnTest"/>
+
+        </classes>
+    </test>
+</suite>

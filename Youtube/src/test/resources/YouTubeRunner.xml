@@ -13,6 +13,7 @@
 
     <test name="YouTube Homepage">
         <classes>
+
             <!--  <class name="home.TestHomePage"/>
          </classes>
      </test>
@@ -31,3 +32,4 @@
          </classes>
      </test>
  </suite>
+
