@@ -13,11 +13,11 @@
 
     <test name="Amazon Home">
         <classes>
-            <class name="amazonHomePageTest.HomeTest"/>
+            <class name="CnnHomePageTest.HomeTest"/>
             <class name="amazonSignInTest.SignInTest"/>
             <class name="amazonAccountNListTest.HomePageListTest"/>
             <class name="amazonSignUpTest.SignUpPageTest"/>
-            <class name="amazonHomePageTest.HomePageOptionsTest"/>
+            <class name="CnnHomePageTest.HomePageOptionsTest"/>
             <class name="amazonPrimeTest.PrimeOptionsUseTest"/>
             <class name="amazonEchoNAlexaTest.EchoNAlexaTest"/>
             <class name="amazonKindleOptionTest.KindleOptionsTest"/>

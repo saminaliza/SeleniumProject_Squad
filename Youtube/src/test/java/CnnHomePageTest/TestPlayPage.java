@@ -1,4 +1,4 @@
-package amazonHomePageTest;
+package CnnHomePageTest;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;

@@ -13,19 +13,19 @@
 
     <test name="YouTube Homepage">
         <classes>
-            <class name="amazonHomePageTest.TestHomePage"/>
+            <class name="CnnHomePageTest.TestHomePage"/>
         </classes>
     </test>
 
     <test name="YouTube Sign In">
         <classes>
-            <class name="amazonHomePageTest.TestSignInPage"/>
+            <class name="CnnHomePageTest.TestSignInPage"/>
         </classes>
     </test>
 
     <test name="YouTube Play">
         <classes>
-            <class name="amazonHomePageTest.TestPlayPage"/>
+            <class name="CnnHomePageTest.TestPlayPage"/>
         </classes>
     </test>
 </suite>
