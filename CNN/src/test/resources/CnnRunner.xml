@@ -14,7 +14,7 @@
 
     <test name="Cnn Home">
         <classes>
-            <class name="CnnHomePageTest.CnnHomePage"/>
+            <class name="CnnPageTest.CnnHomePage"/>
             <class name="test.CnnTest"/>
 
         </classes>

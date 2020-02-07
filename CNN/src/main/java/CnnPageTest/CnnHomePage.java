@@ -1,4 +1,4 @@
-package CnnHomePageTest;
+package CnnPageTest;
 
 import base.CommonAPI;
 import org.openqa.selenium.By;

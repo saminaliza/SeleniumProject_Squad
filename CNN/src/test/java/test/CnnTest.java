@@ -1,7 +1,7 @@
 package test;
 
 
-import CnnHomePageTest.CnnHomePage;
+import CnnPageTest.CnnHomePage;
 import base.CommonAPI;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
