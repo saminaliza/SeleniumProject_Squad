@@ -64,6 +64,5 @@ public class SearchPage extends CommonAPI {
         itemsList.add("mouse");
 
         return itemsList;
-
     }
 }

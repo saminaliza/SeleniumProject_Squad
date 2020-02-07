@@ -1,5 +1,6 @@
 package amazonSignInTest;
 
+import amazonHomePageTest.HomePage;
 import amazonSignIn.SignInPage;
 import base.CommonAPI;
 import org.openqa.selenium.support.PageFactory;

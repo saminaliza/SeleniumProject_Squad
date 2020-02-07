@@ -1,7 +1,6 @@
 package homePage_AT_T;
 
 import base.CommonAPI;
-import org.apache.poi.ss.formula.functions.T;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -9,7 +8,6 @@ import org.openqa.selenium.support.How;
 public class HomePage extends CommonAPI {
     @FindBy(how = How.XPATH, using = "//i[@id='ge5p-menu-active']")
     WebElement Hamburgerlink;
-
     @FindBy(how = How.XPATH,using = "//i[@class='icon-down']")
    WebElement Acountlink;
     @FindBy(how = How.XPATH,using = "//a[contains(text(),'Sign in')]")
@@ -236,16 +234,5 @@ public class HomePage extends CommonAPI {
         another_Click_Cancel.click();
         Thread.sleep(2000);
     }
-    // All testst passed except go further continue in the Robot page
-
-
-
-
-
-
-
-
-
-
 }
 

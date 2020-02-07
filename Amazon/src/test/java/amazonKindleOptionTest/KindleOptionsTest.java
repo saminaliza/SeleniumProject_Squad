@@ -28,7 +28,7 @@ public class KindleOptionsTest extends CommonAPI {
     @Test
     public void userCanNavigateToKindlePaperWhitePageTest() throws Exception {
         KindleOptions kindleOptions = PageFactory.initElements(driver, KindleOptions.class);
-        kindleOptions.clickKindlePaperWhiteOption();
+        kindleOptions.clickKindlePaperWhiteOption(); //need to check
     }
 
     @Test

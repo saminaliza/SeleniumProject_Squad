@@ -84,13 +84,13 @@ public class EchoNAlexaPage extends CommonAPI {
     public void clickOnAmazonSmartPlug() {
         hamburgerIcon.click();
         echoNAlexaBtn.click();
-        amazonSmartPlugBtn.click();
+        amazonSmartPlugBtn.click(); //need to check
     }
 
     public void clickOnAmazonSmartOven() {
         hamburgerIcon.click();
         echoNAlexaBtn.click();
-        amazonSmrtOvenBtn.click();
+        amazonSmrtOvenBtn.click(); //need to check
     }
 
     public void clickOnEchoGlow() {
