@@ -27,9 +27,6 @@ public class Features extends CommonAPI {
 public void feedbackScoreOf4(WebDriver driver1) throws InterruptedException {
    // BoaHomePage bhp=PageFactory.initElements(driver1, BoaHomePage.class);
     bhp.checkingClick();
-    sleepFor(4);
-    handleNewTab(driver);
-    sleepFor(4);
 
 }
 
@@ -66,9 +63,6 @@ public void feedbackScoreOf4(WebDriver driver1) throws InterruptedException {
             case "perfectFeedback":
                 feedbackScoreOf5(driver1);
                 break;
-//            case "popup":
-//                handlePopUp.handlePopUpWindowBeforeLogIn(driver1);
-//                break;
             default:
                 throw new InvalidArgumentException("Invalid features choice");
         }
