@@ -1,4 +1,4 @@
-package amazonHomePageTest;
+package CnnHomePageTest;
 
 import base.CommonAPI;
 import org.openqa.selenium.By;
@@ -218,19 +218,19 @@ public class CnnHomePage extends CommonAPI {
                 "776B-F168-D79B-ED35F5FB6488']//a//img[@class='media__image media__image--responsive']")).click();
     }
 
-    public void searchAmerica() {
+    public void searchAmericaPage() {
         driver.findElement(By.className("search-icon")).click();
         driver.findElement(By.xpath("//input[@id='header-search-bar']")).sendKeys("Kobe");
         driver.findElement(By.xpath("//div[@class='Box-sc-1fet97o-0 iKQPmQ']//button[@class='Flex-sc-1sqrs56-0 search-barstyles__Button-yoe3fw-2 kxpkSG']")).click();
     }
 
-    public void CarouselRight() {
+    public void scrollRight() {
         driver.findElement(By.className("owl-next")).click();
         driver.findElement(By.className("owl-next")).click();
         driver.findElement(By.className("owl-next")).click();
     }
 
-    public void CarouselLeft() {
+    public void scrollLLeft() {
         driver.findElement(By.className("owl-prev")).click();
         driver.findElement(By.className("owl-prev")).click();
         driver.findElement(By.className("owl-prev")).click();

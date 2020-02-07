@@ -1,4 +1,4 @@
-package amazonHomePageTest;
+package CnnHomePageTest;
 
 import base.CommonAPI;
 import org.openqa.selenium.WebElement;
