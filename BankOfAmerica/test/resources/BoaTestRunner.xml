@@ -3,7 +3,7 @@
 
 <suite name="Bank of America Automation Script " parallel="false">
 
-    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="useCloudEnv" value="true"/>
     <parameter name="cloudEnvName" value="browserstack"/>
     <parameter name="os" value="OS X"/>
     <parameter name="os_version" value="Sierra"/>
@@ -77,15 +77,15 @@
             <!-- <class name="pageNavigation.NavigationFromHomePage"/>
               <class name="searchBar.searchBarFunctionality"/>
              <class name="feedback.CommentCardSubmission"/>
-             <class name="socialMediaLinkage.SocialMediaHandles"/> -->
+             <class name="socialMediaLinkage.SocialMediaHandles"/>
              <class name="pageNavigation.NavigationFromHomePageFooter"/>
              <class name="homePageHiddenFeatures.HiddenFeaturesHome"/>
              <class name="signInPanel.negativeSignIn"/>
              <class name="pageNavigation.NaviagationFromSmallBusinessPage"/>
              <class name="pageNavigation.VideoPageNavigation"/>
-             <class name="keywordDriven.TestByKeywords"/>
+             <class name="keywordDriven.TestByKeywords"/> -->
             <class name="pageNavigation.WealthManagementNavigation"/>
-         </classes>
-     </test>
+      </classes>
+  </test>
 
- </suite>
+</suite>
