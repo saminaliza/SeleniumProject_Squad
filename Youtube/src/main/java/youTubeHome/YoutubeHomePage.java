@@ -1,4 +1,4 @@
-package amazonHomePageTest;
+package youTubeHome;
 
 import base.CommonAPI;
 import org.openqa.selenium.WebElement;

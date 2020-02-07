@@ -1,7 +1,8 @@
-package amazonHomePageTest;
+package youTubeHomeTest;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
+import youTubeHome.YoutubePlayPage;
 
 public class TestPlayPage extends YoutubePlayPage {
 
