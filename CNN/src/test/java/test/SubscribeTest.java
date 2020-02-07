@@ -1,6 +1,6 @@
 package test;
 
-import amazonHomePageTest.SubscribeCnn;
+import CnnPageTest.SubscribeCnn;
 import base.CommonAPI;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
