@@ -172,7 +172,7 @@ public class CommonAPI {
 
     @AfterClass
     public void cleanUp(){
-        //driver.close();
+        driver.close();
     }
   //helper methods
     public void clickOnElement(String locator){
