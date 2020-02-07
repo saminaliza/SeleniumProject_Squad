@@ -1,4 +1,4 @@
-package amazonSearch;
+package amazonDataDriven;
 
 import base.CommonAPI;
 import datasuply.DataSource;
@@ -38,14 +38,6 @@ public class SearchPage extends CommonAPI {
         getSubmitWebElement().click();
     }
 
-    public void clearTypeNClickOnSearch() {
-        List<String> list = getItems();
-        for (int i = 0; i < list.size(); i++) {
-            clearInputBox();
-            typeItemName(list.get(i));
-            clickOnSearch();
-        }
-    }
 
     public void searchItemsAndSubmitButton() throws Exception, IOException, SQLException, ClassNotFoundException {
         List<String> list = DataSource.getItemsListFromDB();
@@ -56,13 +48,4 @@ public class SearchPage extends CommonAPI {
         }
     }
 
-    public List<String> getItems() {
-        List<String> itemsList = new ArrayList<String>();
-        itemsList.add("ear buds");
-        itemsList.add("iPhone");
-        itemsList.add("keyboard");
-        itemsList.add("mouse");
-
-        return itemsList;
-    }
 }

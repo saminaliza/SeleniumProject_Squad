@@ -1,6 +1,6 @@
-package amazonSearchPageTest;
+package dataDrivenTest;
 
-import amazonSearch.SearchPage;
+import amazonDataDriven.SearchPage;
 import base.CommonAPI;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
@@ -15,9 +15,4 @@ public class searchPageTest extends CommonAPI {
         search.searchItemsAndSubmitButton();
     }
 
-    @Test
-    public void userSearchMultipleItemsTest() {
-        SearchPage search = PageFactory.initElements(driver, SearchPage.class);
-        search.getItems();
-    }
 }
