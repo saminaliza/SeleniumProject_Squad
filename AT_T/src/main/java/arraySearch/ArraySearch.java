@@ -18,7 +18,8 @@ public class ArraySearch extends CommonAPI {
         itemsList.add("mophie Black Charge Stream Travel Kit");
         itemsList.add("Otterbox OtterSpot Wireless Charging Pad - Black");
         itemsList.add("BodyGuardz Smoke/Black Ace Case with Unequal - iPhone 6s/7/8");
-        for (int i = 0; i < itemsList.size(); i++) {
+        for (int i = 0; i < itemsList.size(); i++)
+        {
             driver.findElement(By.name("q")).sendKeys(itemsList.get(i));
             driver.findElement(By.name("q")).submit();
             driver.findElement(By.name("q")).clear();
@@ -26,5 +27,35 @@ public class ArraySearch extends CommonAPI {
     }
 
 }
+
+//public class UnitTestConnectDB {
+//    public static void main(String[] args) throws SQLException {
+//        //ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
+//
+//        String url = "jdbc:mysql://localhost:3306/midterm?Timezone=UTC";
+//        String userID = "root";
+//        String password ="cAt@123";
+//        Connection connection = null;
+//        Statement statement = null;
+//
+//
+//
+//        try{
+//            connection = DriverManager.getConnection(url,userID,password);
+//            statement = connection.createStatement();
+//            String query ="insert into pnt(id,name) values('3404_NY','Employee Clsess');";
+//            String query = "insert into pnt(id,name) values('3405_NY','Employee Classes);";
+//            statement.execute(query);
+//
+//        }catch(SQLException ex){
+//            ex.printStackTrace();
+//            System.out.println("Something might not ");
+//        }
+//        // Close the connection and statement
+//        finally {
+//            statement.close();
+//            connection.close();
+//        }
+//} }
 
 
