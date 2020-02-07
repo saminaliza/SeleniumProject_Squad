@@ -81,13 +81,13 @@ public class HomeTest extends CommonAPI {
     @Test
     public void userCanGoToNewReleasePageTest() {
         HomePage hm = PageFactory.initElements(driver, HomePage.class);
-        hm.useNewReleaseBtn(); //amazon problem
+        hm.useNewReleaseBtn();
     }
 
     @Test
     public void userCanGoToRegistryPageTest() {
         HomePage hm = PageFactory.initElements(driver, HomePage.class);
-        hm.useRegistryBtn(); 
+        hm.useRegistryBtn();
     }
 
     @Test
