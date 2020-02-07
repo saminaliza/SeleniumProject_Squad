@@ -13,19 +13,19 @@
 
     <test name="Amazon Home">
         <classes>
-<!--            <class name="amazonSignInTest.SignInTest"/>-->
-<!--            <class name="amazonAccountNListTest.HomePageListTest"/>-->
-<!--            <class name="amazonSignUpTest.SignUpPageTest"/>-->
-<!--            <class name="amazonHomePageTest.HomePageOptionsTest"/>-->
-<!--            <class name="amazonPrimeTest.PrimeOptionsUseTest"/>-->
-<!--            <class name="amazonEchoNAlexaTest.EchoNAlexaTest"/>-->
-<!--            <class name="amazonKindleOptionTest.KindleOptionsTest"/>-->
-<!--            <class name="amazonSearchPageTest.searchPageTest"/>-->
-<!--            <class name="amazonShoppingCartTest.ShoppingCartTest"/>-->
-<!--            <class name="amazonHelpOptionTest.HelpOptionTest"/>-->
-<!--            <class name="amazonTodaysDealTest.TodaysDealPageTest"/>-->
-<!--            <class name="amazonHomePageTest.HomeTest"/>-->
-<!--            <class name="amazonMakeMoneyTest.MakeMoneyWithAmazonTest"/>-->
+            <!--            <class name="amazonSignInTest.SignInTest"/>-->
+            <!--            <class name="amazonAccountNListTest.HomePageListTest"/>-->
+            <!--            <class name="amazonSignUpTest.SignUpPageTest"/>-->
+            <!--            <class name="amazonHomePageTest.HomePageOptionsTest"/>-->
+            <!--            <class name="amazonPrimeTest.PrimeOptionsUseTest"/>-->
+            <!--            <class name="amazonEchoNAlexaTest.EchoNAlexaTest"/>-->
+            <!--            <class name="amazonKindleOptionTest.KindleOptionsTest"/>-->
+            <!--            <class name="amazonSearchPageTest.searchPageTest"/>-->
+            <!--            <class name="amazonShoppingCartTest.ShoppingCartTest"/>-->
+            <!--            <class name="amazonHelpOptionTest.HelpOptionTest"/>-->
+            <!--            <class name="amazonTodaysDealTest.TodaysDealPageTest"/>-->
+            <!--            <class name="amazonHomePageTest.HomeTest"/>-->
+            <!--            <class name="amazonMakeMoneyTest.MakeMoneyWithAmazonTest"/>-->
         </classes>
     </test>
 </suite>
