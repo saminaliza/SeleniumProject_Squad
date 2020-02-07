@@ -73,7 +73,7 @@ public class HomePageOptions extends CommonAPI {
     }
 
     public void canGoToSellingAppsOption() {
-        sellAppsLink.click(); //need to check locator
+        sellAppsLink.click();
     }
 
 }

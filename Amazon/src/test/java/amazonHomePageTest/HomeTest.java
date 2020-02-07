@@ -87,13 +87,13 @@ public class HomeTest extends CommonAPI {
     @Test
     public void userCanGoToRegistryPageTest() {
         HomePage hm = PageFactory.initElements(driver, HomePage.class);
-        hm.useRegistryBtn(); //amazon problem
+        hm.useRegistryBtn(); 
     }
 
     @Test
     public void userCanGoToSellPageTest() {
         HomePage hm = PageFactory.initElements(driver, HomePage.class);
-        hm.useSellBtn(); //amazon problem
+        hm.useSellBtn();
     }
 
     @Test
@@ -105,13 +105,13 @@ public class HomeTest extends CommonAPI {
     @Test
     public void userCanGoToCouponPageTest() {
         HomePage hm = PageFactory.initElements(driver, HomePage.class);
-        hm.useCouponBtn(); //need to change the locator
+        hm.useCouponBtn();
     }
 
     @Test
     public void userCanGoToWholeFoodsPageTest() {
         HomePage hm = PageFactory.initElements(driver, HomePage.class);
-        hm.useWholeFoodsBtn(); //need to cjeck
+        hm.useWholeFoodsBtn();
     }
 
     @Test
