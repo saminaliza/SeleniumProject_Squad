@@ -54,7 +54,7 @@ public class KindleOptions extends CommonAPI {
     public void clickKindlePaperWhiteOption() {
         hamburgerIcon.click();
         kindleBtn.click();
-        kindlePprWhiteBtn.click();
+        kindlePprWhiteBtn.click(); //need to chack
     }
 
     public void clickKindleBookOption() {

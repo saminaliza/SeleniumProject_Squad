@@ -11,44 +11,33 @@ import reporting.TestLogger;
 
 public class NavigationFromHomePageFooter extends CommonAPI {
     @Parameters({"locationsUrl"})
-    @Test//(enabled=false)
+    @Test //(enabled=false)
     //Checks if the locations link on the footer of the page navigates to locations page.
     public void locationFunctionality(String locationsUrl) {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
         BoaHomePage bhp=PageFactory.initElements(driver, BoaHomePage.class);
-        driver.navigate().to(locationsUrl);
-        String locationsPageTitle=driver.getTitle();
-        driver.navigate().back();
-        bhp.locationFooterWebElement.click();
-        Assert.assertEquals(driver.getTitle(), locationsPageTitle);
+        bhp.locationPageTitle(locationsUrl);
     }
 
     @Parameters({"contactUsUrl"})
-    @Test//(enabled=false)
+    @Test ///(enabled=false)
     //Checks if the contactUs link on the footer of the page navigates to contact us page.
-    public void contactUsFunctionality(String contactUsUrl) {
+    public void contactUsFooterFunctionality(String contactUsUrl) {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
         BoaHomePage bhp=PageFactory.initElements(driver, BoaHomePage.class);
-        driver.navigate().to(contactUsUrl);
-        String contactUsTitle=driver.getTitle();
-        driver.navigate().back();
-        bhp.contactUsFooterWebElement.click();
-        Assert.assertEquals(driver.getTitle(), contactUsTitle);
+        BoaHomePage.contactUsFooterWebElement.click();
+        bhp.contactUsFooterPageTitle(contactUsUrl);
     }
 
     @Parameters({"helpUrl"})
-    @Test//(enabled=false)
-    public void helpFunctionality(String helpurl) {
+    @Test //(enabled=false)
+    public void helpFooterFunctionality(String helpurl) {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
         BoaHomePage bhp=PageFactory.initElements(driver, BoaHomePage.class);
-        driver.navigate().to(helpurl);
-        String helpTitle=driver.getTitle();
-        driver.navigate().back();
-        bhp.helpFooterWebElement.click();
-        Assert.assertEquals(driver.getTitle(), helpTitle);
+        bhp.helpFooterPageTitle(helpurl);
     }
 
     @Parameters({"accessibleBankingUrl"})
@@ -57,18 +46,11 @@ public class NavigationFromHomePageFooter extends CommonAPI {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
         BoaHomePage bhp=PageFactory.initElements(driver, BoaHomePage.class);
-        driver.navigate().to(accessibleBankingUrl);
-        String accessibleBankingTitle=driver.getTitle();
-        driver.navigate().back();
-        sleepFor(3);
-        bhp.accessibleBankingFooterWebElement.click();
-        sleepFor(3);
-        waitUntilVisible(By.xpath("//*[@id=footer_bofa_careers]"));
-        Assert.assertEquals(driver.getTitle(), accessibleBankingTitle);
+        bhp.accessibleBankingFooterPageTitle(accessibleBankingUrl);
     }
 
-    @Parameters //({"careersUrl"})
-    @Test(enabled=false)
+    @Parameters({"careersUrl"})
+    @Test//(enabled=false)
     //checks if the career tab on the footer of the homepage navigates to the proper career page.
     public void careersFunctionality(String careersUrl) {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
@@ -77,12 +59,12 @@ public class NavigationFromHomePageFooter extends CommonAPI {
         driver.navigate().to(careersUrl);
         String careersTitle=driver.getTitle();
         driver.navigate().back();
-        bhp.carrearsFooterWebElement.click();
+        BoaHomePage.carrearsFooterWebElement.click();
         Assert.assertEquals(driver.getTitle(), careersTitle);
     }
 
-    @Parameters //({"privacySecurityUrl"})
-    @Test(enabled=false)
+    @Parameters ({"privacySecurityUrl"})
+    @Test//(enabled=false)
     public void privacySecurityFunctionality(String privacySecurityUrl) {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
@@ -90,7 +72,7 @@ public class NavigationFromHomePageFooter extends CommonAPI {
         driver.navigate().to(privacySecurityUrl);
         String privacySecurityTitle=driver.getTitle();
         driver.navigate().back();
-        bhp.privacySecurityFooterWebElement.click();
+        BoaHomePage.privacySecurityFooterWebElement.click();
         Assert.assertEquals(driver.getTitle(), privacySecurityTitle);
     }
 
@@ -104,7 +86,7 @@ public class NavigationFromHomePageFooter extends CommonAPI {
         driver.navigate().to(mcafeeUrl);
         String mcafeeTitle=driver.getTitle();
         driver.navigate().back();
-        bhp.mcafeeFooterWebElement.click();
+        BoaHomePage.mcafeeFooterWebElement.click();
         Assert.assertEquals(driver.getTitle(), mcafeeTitle);
     }
 
@@ -117,7 +99,7 @@ public class NavigationFromHomePageFooter extends CommonAPI {
         driver.navigate().to(sitemapUrl);
         String sitemapTitle=driver.getTitle();
         driver.navigate().back();
-        bhp.sitemapFooterWebElement.click();
+        BoaHomePage.sitemapFooterWebElement.click();
         Assert.assertEquals(driver.getTitle(), sitemapTitle);
     }
 
@@ -126,8 +108,8 @@ public class NavigationFromHomePageFooter extends CommonAPI {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
         BoaHomePage bhp=PageFactory.initElements(driver, BoaHomePage.class);
-        bhp.advertisingPracticeFooterWebElement.click();
-        waitUntilClickAble(By.id(String.valueOf(bhp.advertisingPracticeFooterWebElement)));
+        BoaHomePage.advertisingPracticeFooterWebElement.click();
+        waitUntilClickAble(By.id(String.valueOf(BoaHomePage.advertisingPracticeFooterWebElement)));
         isPopUpWindowDisplayed(driver, "#WebsiteAdPractices_OptOut");
     }
 
@@ -137,7 +119,7 @@ public class NavigationFromHomePageFooter extends CommonAPI {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
         BoaHomePage bhp=PageFactory.initElements(driver, BoaHomePage.class);
-        bhp.feedbackFooterWebElement.click();
+        BoaHomePage.feedbackFooterWebElement.click();
         handleNewTab(driver);
         Assert.assertEquals(driver.getCurrentUrl(), feedbackFooterUrl);
     }
@@ -152,7 +134,15 @@ public class NavigationFromHomePageFooter extends CommonAPI {
         driver.navigate().to(onlineBanking);
         String onlineBankingPageTitle=driver.getTitle();
         driver.navigate().back();
-        bhp.onlineBankingLinkrWebElement.click();
+        BoaHomePage.onlineBankingLinkrWebElement.click();
         Assert.assertEquals(driver.getTitle(), onlineBankingPageTitle);
+    }
+
+    @Test //(enabled = false)
+    //checks if the 'feedback' link in the footer of the homepage is clickable.
+    public void feedBackFooterClickable(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
+        BoaHomePage bhp=PageFactory.initElements(driver, BoaHomePage.class);
+        bhp.feedBackFooterClick();
     }
 }

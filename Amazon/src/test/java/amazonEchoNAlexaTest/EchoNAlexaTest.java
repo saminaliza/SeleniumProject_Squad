@@ -45,13 +45,13 @@ public class EchoNAlexaTest extends CommonAPI {
     @Test
     public void userCanNavigateToAmazonSmartPlugPageTest() throws Exception {
         EchoNAlexaPage echoNAlexaUse = PageFactory.initElements(driver, EchoNAlexaPage.class);
-        echoNAlexaUse.clickOnAmazonSmartPlug();
+        echoNAlexaUse.clickOnAmazonSmartPlug(); //need to check
     }
 
     @Test
     public void userCanNavigateToAmazonSmartOvenPageTest() throws Exception {
         EchoNAlexaPage echoNAlexaUse = PageFactory.initElements(driver, EchoNAlexaPage.class);
-        echoNAlexaUse.clickOnAmazonSmartOven();
+        echoNAlexaUse.clickOnAmazonSmartOven(); //need to check
     }
 
     @Test
