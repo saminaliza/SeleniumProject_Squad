@@ -60,7 +60,7 @@ public class SearchBox extends CommonAPI {
     }
 
         public void searchItemsAndSubmit() throws Exception {
-           // TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
+        sleepFor(4);
             List<String> list2=DataSource.getItemsListFromDB();
 
             for (int i=0; i < list2.size(); i++) {

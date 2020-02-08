@@ -58,7 +58,6 @@ public class SignIn extends CommonAPI{
     }
     public void securityNHelpClick(){
         securityHelpWebElement.click();
-        isPopUpWindowDisplayed(driver, ".spa-dialog" );
     }
     @Parameters({"enrollUrl"})
     public void enrollClick(String enrollUrl) {

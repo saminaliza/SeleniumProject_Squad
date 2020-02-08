@@ -74,7 +74,7 @@ public class BoaHomePage extends CommonAPI{
     @FindBy(how = How.ID, using ="footer_bofa_privacy_and_security")
     public static WebElement privacySecurityFooterWebElement;
 
-    @FindBy(how = How.ID, using ="footer_bofa_mcafee_internet_security")
+    @FindBy(how = How.CSS, using ="#footer_bofa_mcafee_internet_security")
     public static WebElement mcafeeFooterWebElement;
 
     @FindBy(how = How.ID, using ="footer_bofa_sitemap")
@@ -86,7 +86,7 @@ public class BoaHomePage extends CommonAPI{
     @FindBy(how = How.XPATH, using ="//a[@id='footer_bofa_feedback']")
     public static WebElement feedbackFooterWebElement;
 
-    @FindBy(how = How.LINK_TEXT, using ="View Full Online Banking Site")
+    @FindBy(how = How.CSS, using ="#footer_bofa_view_full_online_banking_site")
     public static WebElement onlineBankingLinkrWebElement;
 
 
@@ -257,7 +257,7 @@ public class BoaHomePage extends CommonAPI{
         helpSearchBarWebElement.click();
        // Thread.sleep(5000);
         boolean result=isPopUpWindowDisplayed(driver, ".search-container");
-        Assert.assertEquals(result, false);
+        Assert.assertEquals(result, true);
     }
     @Parameters({"searchBarValue"})
     public void searchBarSuggestionWindow(String searchBarValue){
@@ -300,9 +300,25 @@ public class BoaHomePage extends CommonAPI{
         Assert.assertEquals(driver.getCurrentUrl(), feedbackPageUrl);
     }
 
-
-    public WebElement getHelpSearchButtonWebElement() {
-        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        return helpSearchButtonWebElement;
+    public void enEspanolClick(){
+        enEspanolWebElement.click();
+    }
+    public void helpClick(){
+        helpnWebElement.click();
+    }
+    public void businessInstitutionClick(){
+        businessInstitutionWebElement.click();
+    }
+    public void smallBusinessClick(){
+        smallBusinessWebElement.click();
+    }
+    public void securityClick(){
+        securityWebElement.click();
+    }
+    public void contactUsClick(){
+        contactUsWebElement.click();
+    }
+    public void wealthManagementClick(){
+        wealthManagemetWebElement.click();
     }
 }
