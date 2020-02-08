@@ -12,6 +12,8 @@ import java.util.List;
 
 public class CnnTest extends CommonAPI {
 
+
+
     @Test
     public void goToSubNews() throws InterruptedException {
         CnnHomePage aw = PageFactory.initElements(driver, CnnHomePage.class);
@@ -89,6 +91,7 @@ public class CnnTest extends CommonAPI {
         CnnHomePage cnnHomePage = PageFactory.initElements(driver, CnnHomePage.class);
         cnnHomePage.clickOnEntertainmentTab();
     }
+
 
     @Test
     public void TestInvokeCNNPage() {
@@ -242,6 +245,7 @@ public class CnnTest extends CommonAPI {
         cnnHomePage.clickOnSportsTab();
     }
 
+
     @Test
     public void videoTab() {
         CnnHomePage cnnHomePage = PageFactory.initElements(driver, CnnHomePage.class);
@@ -260,6 +264,7 @@ public class CnnTest extends CommonAPI {
             System.out.println(item);
 
         }
+
 
     }
 }

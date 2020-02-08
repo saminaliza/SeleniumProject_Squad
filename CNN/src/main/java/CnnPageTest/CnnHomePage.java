@@ -7,6 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
+import java.util.List;
+import java.util.Random;
+
 public class CnnHomePage extends CommonAPI {
 
     @FindBy(xpath = "/html[1]/body[1]/div[5]/div[1]/div[1]/header[1]/div[1]/div[1]/div[1]/div[5]/button[1]/*")
@@ -230,10 +233,36 @@ public class CnnHomePage extends CommonAPI {
         driver.findElement(By.className("owl-next")).click();
     }
 
+    public String randomText() {
+
+        String[] words = new String[11];
+        words[0] = "politics";
+        words[1] = "money";
+        words[2] = "new york";
+        words[3] = "world";
+        words[4] = "economy";
+        words[5] = "japan";
+        words[6] = "germany";
+        words[7] = "baseball";
+        words[8] = "cold weather";
+        words[9] = "obama";
+        words[10] = "paris";
+
+        String text = "";
+        Random random = new Random();
+        int randomText = random.nextInt(10) + 1;
+        for (int i = 0; i < words.length; i++) {
+            text = words[randomText];
+            randomText = random.nextInt(10) + 1;
+        }
+        return text;
+    }
+
     public void scrollLLeft() {
         driver.findElement(By.className("owl-prev")).click();
         driver.findElement(By.className("owl-prev")).click();
         driver.findElement(By.className("owl-prev")).click();
-    }
-}
 
+    }
+
+}
