@@ -6,9 +6,9 @@
     <parameter name="useCloudEnv" value="false"/>
     <parameter name="cloudEnvName" value="browserstack"/>
     <parameter name="os" value="OS X"/>
-    <parameter name="os_version" value="Sierra"/>
-    <parameter name="browserName" value="chrome"/>
-    <parameter name="browserVersion" value="79.0"/>
+    <parameter name="os_version" value="sierra"/>
+    <parameter name="browserName" value="firefox"/>
+    <parameter name="browserVersion" value="72.0"/>
     <parameter name="url" value="https://www.bankofamerica.com/"/>
 
     <!-- page Url's of the application  -->
@@ -74,10 +74,10 @@
 
     <test name = "Web Application Test">
         <classes>
-            <!-- <class name="pageNavigation.NavigationFromHomePage"/>
+            <class name="pageNavigation.NavigationFromHomePage"/>
               <class name="searchBar.searchBarFunctionality"/>
-             <class name="feedback.CommentCardSubmission"/>
-             <class name="socialMediaLinkage.SocialMediaHandles"/> -->
+              <class name="feedback.CommentCardSubmission"/>
+             <class name="socialMediaLinkage.SocialMediaHandles"/>
              <class name="pageNavigation.NavigationFromHomePageFooter"/>
              <class name="homePageHiddenFeatures.HiddenFeaturesHome"/>
              <class name="signInPanel.negativeSignIn"/>
@@ -85,7 +85,7 @@
              <class name="pageNavigation.VideoPageNavigation"/>
              <class name="keywordDriven.TestByKeywords"/>
             <class name="pageNavigation.WealthManagementNavigation"/>
-         </classes>
-     </test>
+      </classes>
+  </test>
 
- </suite>
+</suite>

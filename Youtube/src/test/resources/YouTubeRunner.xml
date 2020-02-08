@@ -5,27 +5,31 @@
 
     <parameter name="useCloudEnv" value="false"/>
     <parameter name="cloudEnvName" value="browserstack"/>
-    <parameter name="os" value="Windows"/>
-    <parameter name="os_version" value="10"/>
+    <parameter name="os" value="OS X"/>
+    <parameter name="os_version" value="Sierra"/>
     <parameter name="browserName" value="chrome"/>
     <parameter name="browserVersion" value="75.0"/>
     <parameter name="url" value="https://www.youtube.com"/>
 
     <test name="YouTube Homepage">
         <classes>
-            <class name="youTubeHomeTest.TestHomePage"/>
-        </classes>
-    </test>
 
-    <test name="YouTube Sign In">
-        <classes>
-            <class name="youTubeHomeTest.TestSignInPage"/>
-        </classes>
-    </test>
+            <!--  <class name="home.TestHomePage"/>
+         </classes>
+     </test>
 
-    <test name="YouTube Play">
-        <classes>
-            <class name="youTubeHomeTest.TestPlayPage"/>
-        </classes>
-    </test>
-</suite>
+     <test name="YouTube Sign In">
+         <classes>
+             <class name="home.TestSignInPage"/>
+         </classes>
+     </test>
+
+     <test name="YouTube Play">
+         <classes>
+               <class name="home.TestPlayPage"/>
+             <class name="signInTests.NegativeTestsSignIn"/> -->
+            <class name="signInTests.TestKeywords"/>
+         </classes>
+     </test>
+ </suite>
+
