@@ -3,7 +3,7 @@
 
 <suite name="Group2 Selenium Project " parallel="false">
 
-    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="useCloudEnv" value="true"/>
     <parameter name="cloudEnvName" value="browserstack"/>
     <parameter name="os" value="Windows"/>
     <parameter name="os_version" value="10"/>
@@ -14,19 +14,19 @@
     <test name="Amazon Home">
         <classes>
                         <class name="amazonSignInTest.SignInTest"/>
-<!--                        <class name="amazonAccountNListTest.HomePageListTest"/>-->
-<!--                        <class name="amazonSignUpTest.SignUpPageTest"/>-->
-<!--                        <class name="amazonHomePageTest.HomePageOptionsTest"/>-->
-<!--                        <class name="amazonPrimeTest.PrimeOptionsUseTest"/>-->
-<!--                        <class name="amazonEchoNAlexaTest.EchoNAlexaTest"/>-->
-<!--                        <class name="amazonKindleOptionTest.KindleOptionsTest"/>-->
-<!--                        <class name="dataDrivenTest.searchPageTest"/>-->
-<!--                        <class name="amazonShoppingCartTest.ShoppingCartTest"/>-->
-<!--                        <class name="amazonHelpOptionTest.HelpOptionTest"/>-->
-<!--                        <class name="amazonTodaysDealTest.TodaysDealPageTest"/>-->
-<!--                        <class name="amazonHomePageTest.HomeTest"/>-->
-<!--                        <class name="amazonMakeMoneyTest.MakeMoneyWithAmazonTest"/>-->
-<!--                        <class name="amazonSearchPageTest.ExtendedSearchTest"/>-->
+                        <class name="amazonAccountNListTest.HomePageListTest"/>
+                        <class name="amazonSignUpTest.SignUpPageTest"/>
+                        <class name="amazonHomePageTest.HomePageOptionsTest"/>
+                        <class name="amazonPrimeTest.PrimeOptionsUseTest"/>
+                        <class name="amazonEchoNAlexaTest.EchoNAlexaTest"/>
+                        <class name="amazonKindleOptionTest.KindleOptionsTest"/>
+                        <class name="dataDrivenTest.searchPageTest"/>
+                        <class name="amazonShoppingCartTest.ShoppingCartTest"/>
+                        <class name="amazonHelpOptionTest.HelpOptionTest"/>
+                        <class name="amazonTodaysDealTest.TodaysDealPageTest"/>
+                        <class name="amazonHomePageTest.HomeTest"/>
+                        <class name="amazonMakeMoneyTest.MakeMoneyWithAmazonTest"/>
+                        <class name="amazonSearchPageTest.ExtendedSearchTest"/>
         </classes>
     </test>
 </suite>

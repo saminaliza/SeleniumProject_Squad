@@ -17,7 +17,7 @@ public class SignUpPageTest extends CommonAPI {
         SignUpPage signUp = PageFactory.initElements(driver, SignUpPage.class);
         signUp.createAccount("John Doe", "myautotestmail2020@gmail.com", "test2055");
     }
-    
+
 
 }
 
