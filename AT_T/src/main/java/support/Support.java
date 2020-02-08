@@ -6,8 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-import javax.xml.ws.WebEndpoint;
-
 public class Support extends CommonAPI {
     @FindBy(how = How.XPATH,using = "//span[@class='z1-support-text']")
     WebElement support;

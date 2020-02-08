@@ -36,7 +36,6 @@ import java.util.concurrent.TimeUnit;
 
 public class CommonAPI {
 
-
     //ExtentReport
     public static ExtentReports extent;
     @BeforeSuite
@@ -91,14 +90,14 @@ public class CommonAPI {
     }
     //Browser SetUp
     public static WebDriver driver = null;
-    public String browserstack_username= "";
-    public String browserstack_accesskey = "";
+    public String browserstack_username= "shamimjobayer1";
+    public String browserstack_accesskey = "Pst8sGnXarAcLyPjKCfj";
     public String saucelabs_username = "";
     public String saucelabs_accesskey = "";
 
     @Parameters({"useCloudEnv","cloudEnvName","os","os_version","browserName","browserVersion","url"})
     @BeforeMethod
-    public void setUp(@Optional("false") boolean useCloudEnv, @Optional("false")String cloudEnvName,
+    public void setUp(@Optional("true") boolean useCloudEnv, @Optional("true")String cloudEnvName,
                       @Optional("OS X") String os, @Optional("10") String os_version, @Optional("chrome-options") String browserName, @Optional("34")
                               String browserVersion, @Optional("http://www.amazon.com") String url)throws IOException {
         //System.setProperty("webdriver.chrome.driver", "/Users/peoplentech/eclipse-workspace-March2018/SeleniumProject1/driver/chromedriver");
@@ -112,7 +111,7 @@ public class CommonAPI {
             getLocalDriver(os, browserName);
         }
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
+        //driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
         driver.get(url);
         //driver.manage().window().maximize();
     }
@@ -121,7 +120,7 @@ public class CommonAPI {
             if(OS.equalsIgnoreCase("OS X")){
                 System.setProperty("webdriver.chrome.driver", "../Generic/browser-driver/chromedriver");
             }else if(OS.equalsIgnoreCase("Windows")){
-                System.setProperty("webdriver.chrome.driver", "..\\Generic\\browser-driver\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "../Generic/browser-driver/chromedriver.exe");
             }
             driver = new ChromeDriver();
         } else if(browserName.equalsIgnoreCase("chrome-options")){
@@ -130,7 +129,7 @@ public class CommonAPI {
             if(OS.equalsIgnoreCase("OS X")){
                 System.setProperty("webdriver.chrome.driver", "../Generic/browser-driver/chromedriver");
             }else if(OS.equalsIgnoreCase("Windows")){
-                System.setProperty("webdriver.chrome.driver", "..\\Generic\\browser-driver\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "../Generic/browser-driver/chromedriver.exe");
             }
             driver = new ChromeDriver(options);
         }
@@ -139,20 +138,12 @@ public class CommonAPI {
             if(OS.equalsIgnoreCase("OS X")){
                 System.setProperty("webdriver.gecko.driver", "../Generic/browser-driver/geckodriver");
             }else if(OS.equalsIgnoreCase("Windows")) {
-<<<<<<< HEAD
-                System.setProperty("webdriver.gecko.driver", "..\\Generic\\browser-driver\\chromedriver.exe");
-=======
                 System.setProperty("webdriver.gecko.driver", "../Generic/browser-driver/geckodriver.exe");
->>>>>>> 88217ab53eb4c3b7936606f5a84d2cfe776ad899
             }
             driver = new FirefoxDriver();
 
         } else if(browserName.equalsIgnoreCase("ie")) {
-<<<<<<< HEAD
-            System.setProperty("webdriver.ie.driver", "..\\Generic\\browser-driver\\chromedriver.exe");
-=======
             System.setProperty("webdriver.ie.driver", "../Generic/browser-driver/IEDriverServer.exe");
->>>>>>> 88217ab53eb4c3b7936606f5a84d2cfe776ad899
             driver = new InternetExplorerDriver();
         }
         return driver;
@@ -179,16 +170,12 @@ public class CommonAPI {
         return driver;
     }
 
-    @AfterClass
+    @AfterMethod
     public void cleanUp(){
-<<<<<<< HEAD
-
-      //driver.close();
-=======
-        //driver.close();
->>>>>>> 88217ab53eb4c3b7936606f5a84d2cfe776ad899
+        driver.close();
     }
-  //helper methods
+
+    //helper methods
     public void clickOnElement(String locator){
         try {
             driver.findElement(By.cssSelector(locator)).click();
@@ -261,12 +248,13 @@ public class CommonAPI {
         Date date = new Date();
         df.format(date);
 
-        File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE); //problem
+        File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         try {
             //FileUtils.copyFile(file, new File(System.getProperty("user.dir") + "/screenshots/" + screenshotName + " " + df.format(date) + ".png"));
             System.out.println("Screenshot captured");
         } catch (Exception e) {
             System.out.println("Exception while taking screenshot " + e.getMessage());
+            ;
         }
 
     }

@@ -49,11 +49,7 @@
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
-<<<<<<< HEAD
-                <version>8.0.13</version>
-=======
                 <version>8.0.19</version>
->>>>>>> 88217ab53eb4c3b7936606f5a84d2cfe776ad899
             </dependency>
             <dependency>
                 <groupId>org.apache.poi</groupId>
@@ -85,7 +81,6 @@
 
         </dependencies>
     </dependencyManagement>
-
     <build>
         <plugins>
             <plugin>

@@ -37,15 +37,15 @@ public class BundlePurchase extends CommonAPI {
         shopAllOffer.click();
         shopAllOfferToo.click();
         zipCode.sendKeys("11106");
-        CommonAPI.sleepFor(4);
+        sleepFor(4);
         streetAddress.sendKeys("3443 30th St");
-        CommonAPI.sleepFor(7);
+        sleepFor(7);
         chooseFromDropDown.click();
         CommonAPI.sleepFor(6);
         apt.click();
-        CommonAPI.sleepFor(3);
+        sleepFor(3);
         aptNumber.sendKeys("1A");
-        CommonAPI.sleepFor(4);
+        sleepFor(4);
         executor.executeScript("arguments[0].click();",checkMark);
 
 

@@ -1,11 +1,8 @@
 package amazonMakeMoneyWithUs;
 
-import amazonKindle.KindleOptions;
 import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.Test;
 
 public class MakeMoneyOptionPage extends CommonAPI {
 
@@ -16,10 +13,10 @@ public class MakeMoneyOptionPage extends CommonAPI {
     WebElement sellUnderAccelerator;
 
     @FindBy(linkText = "Sell on Amazon Handmade")
-    WebElement SellOnAmazonHandmade;
+    WebElement sellOnAmazonHandmade;
 
     @FindBy(linkText = "Sell Your Services on Amazon")
-    WebElement SellServicesOnAmazon;
+    WebElement sellServicesOnAmazon;
 
     @FindBy(linkText = "Sell on Amazon Business")
     WebElement sellOnAmazonBusiness;
@@ -36,30 +33,39 @@ public class MakeMoneyOptionPage extends CommonAPI {
     @FindBy(linkText = "Self-Publish with Us")
     WebElement selfPublishWithUs;
 
-    public void sellOnAmazon(){
+    public void sellOnAmazon() {
         sellOnAmazon.click();
     }
-    public void sellUnderAmazonAccelerator(){
+
+    public void sellUnderAmazonAccelerator() {
         sellUnderAccelerator.click();
-    }public void sellOnAmazonHandmade(){
-        sellOnAmazon.click();
-    }public void sellOnAmazon(){
-        sellOnAmazon.click();
-    }public void sellOnAmazon(){
-        sellOnAmazon.click();
-    }public void sellOnAmazon(){
-        sellOnAmazon.click();
-    }public void sellOnAmazon(){
-        sellOnAmazon.click();
-    }public void sellOnAmazon(){
-        sellOnAmazon.click();
-    }public void sellOnAmazon(){
-        sellOnAmazon.click();
-    }public void sellOnAmazon(){
-        sellOnAmazon.click();
-    }public void sellOnAmazon(){
-        sellOnAmazon.click();
     }
 
+    public void sellOnAmazonHandmade() {
+        sellOnAmazonHandmade.click();
+    }
 
+    public void sellServicesOnAmazon() {
+        sellServicesOnAmazon.click();
+    }
+
+    public void sellOnAmazonBusiness() {
+        sellOnAmazonBusiness.click();
+    }
+
+    public void sellAppsOnAmazon() {
+        sellAppOnAmazon.click();
+    }
+
+    public void becomeAmazonAffiliate() {
+        amazonAffiliate.click();
+    }
+
+    public void advertiseProductOnAmazon() {
+        advertiseYourProducts.click();
+    }
+
+    public void selfPublishWithAmazon() {
+        selfPublishWithUs.click();
+    }
 }
