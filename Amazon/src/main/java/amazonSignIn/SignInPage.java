@@ -35,4 +35,18 @@ public class SignInPage extends CommonAPI {
         passwordBtn.sendKeys(password);
         signInBtn.click();
     }
+    public void forgotToSignIn(String name){
+        goToSignIn();
+        emailBtn.sendKeys(name);
+        continueBtn.click();
+        forgotBtn.click();
+    }
+    public void goToForgotSignIn(String name){
+        goToSignIn();
+        emailBtn.sendKeys(name);
+        continueBtn.click();
+        forgotBtn.click();
+        continueBtn.click();
+
+    }
 }

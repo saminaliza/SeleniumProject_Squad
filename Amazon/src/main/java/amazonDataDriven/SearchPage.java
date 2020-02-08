@@ -7,7 +7,6 @@ import org.openqa.selenium.support.FindBy;
 
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 public class SearchPage extends CommonAPI {
@@ -37,7 +36,6 @@ public class SearchPage extends CommonAPI {
     public void clickOnSearch() {
         getSubmitWebElement().click();
     }
-
 
     public void searchItemsAndSubmitButton() throws Exception, IOException, SQLException, ClassNotFoundException {
         List<String> list = DataSource.getItemsListFromDB();

@@ -22,20 +22,20 @@ public class ShoppingCartTest extends CommonAPI {
         ShoppingCartPage shop = PageFactory.initElements(driver, ShoppingCartPage.class);
         shop.addItemFromTodaysDeal();
         shop.saveItemForLater();
-        //shop.deleteItemFromCart(); //?????
+        //shop.deleteItemFromCart();
     }
 
     @Test
     public void userCanSaveItemForLaterTest() {
         ShoppingCartPage shop = PageFactory.initElements(driver, ShoppingCartPage.class);
         shop.addItemFromTodaysDeal();
-        shop.saveItemForLater();  //????
+        shop.saveItemForLater();
     }
 
     @Test
     public void userCanCompareSimilarItemTest() {
         ShoppingCartPage shop = PageFactory.initElements(driver, ShoppingCartPage.class);
         shop.addItemFromTodaysDeal();
-        shop.saveItemForLater(); //????
+        shop.saveItemForLater();
     }
 }

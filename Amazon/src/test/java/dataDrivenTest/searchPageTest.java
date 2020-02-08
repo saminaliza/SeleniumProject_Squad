@@ -10,7 +10,7 @@ import java.sql.SQLException;
 
 public class searchPageTest extends CommonAPI {
     @Test
-    public void searchItems() throws Exception, IOException, SQLException, ClassNotFoundException {
+    public void userCanSearchItemsUsingDatabase() throws Exception, IOException, SQLException, ClassNotFoundException {
         SearchPage search = PageFactory.initElements(driver, SearchPage.class);
         search.searchItemsAndSubmitButton();
     }

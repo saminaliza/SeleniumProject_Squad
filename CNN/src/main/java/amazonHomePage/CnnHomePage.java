@@ -1,4 +1,4 @@
-package amazonHomePageTest;
+package amazonHomePage;
 
 import base.CommonAPI;
 import org.openqa.selenium.By;

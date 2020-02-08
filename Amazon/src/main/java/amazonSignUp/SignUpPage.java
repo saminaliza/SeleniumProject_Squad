@@ -1,7 +1,6 @@
 package amazonSignUp;
 
 import base.CommonAPI;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -38,11 +37,6 @@ public class SignUpPage extends CommonAPI {
     @FindBy(xpath = "//*[@id=\"a-autoid-0\"]/span/input")
     WebElement submitBtn;
 
-    @FindBy(css = "a[class='a-popover-trigger a-declarative']")
-    WebElement sameEmailBtn;
-
-    @FindBy(linkText = "Create a new account anyway")
-    WebElement newAccountLink;
 
     public void canGoToSignUpPage() {
         Actions actions = new Actions(driver);
@@ -68,7 +62,7 @@ public class SignUpPage extends CommonAPI {
         createAccountBtn.click();
     }
 
-    public void createAccountPartWithVerificationCode(String name, String email, String password, String code) {
+    public void createAccountWithVerificationCode(String name, String email, String password, String code) {
         canGoToSignUpPage();
         userNameBox.sendKeys(name);
         emailBox.sendKeys(email);
@@ -79,29 +73,4 @@ public class SignUpPage extends CommonAPI {
         submitBtn.click();
     }
 
-    public void createAccountWithSameEmail(String name, String email, String password) {
-        canGoToSignUpPage();
-        userNameBox.sendKeys(name);
-        emailBox.sendKeys(email);
-        passwordBox.sendKeys(password);
-        reenterPasswordBox.sendKeys(password);
-        createAccountBtn.click();
-        sameEmailBtn.click();
-        newAccountLink.click();
-
-    }
-
-    public void createAccount3(String name, String email, String password) throws InterruptedException {
-        canGoToSignUpPage();
-        userNameBox.sendKeys(name);
-        emailBox.sendKeys(email);
-        passwordBox.sendKeys(password);
-        reenterPasswordBox.sendKeys(password);
-        createAccountBtn.click();
-        sameEmailBtn.click();
-        Thread.sleep(5000);
-        Alert alert = driver.switchTo().alert();
-        alert.dismiss();
-
-    }
 }

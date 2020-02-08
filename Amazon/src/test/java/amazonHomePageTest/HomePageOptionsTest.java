@@ -1,5 +1,6 @@
 package amazonHomePageTest;
 
+import amazonHomePage.HomePageOptions;
 import base.CommonAPI;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;

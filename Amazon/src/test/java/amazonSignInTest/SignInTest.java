@@ -1,6 +1,5 @@
 package amazonSignInTest;
 
-import amazonHomePageTest.HomePage;
 import amazonSignIn.SignInPage;
 import base.CommonAPI;
 import org.openqa.selenium.support.PageFactory;
@@ -23,7 +22,7 @@ public class SignInTest extends CommonAPI {
     }
 
     @Test(dataProvider = "validLogIns")
-    public void testUserCanLogInSuccessfully(String email, String password) {
+    public void userCanLogInSuccessfullyTest(String email, String password) {
         SignInPage signIn = PageFactory.initElements(driver, SignInPage.class);
         signIn.signIn(email, password);
     }
@@ -32,5 +31,16 @@ public class SignInTest extends CommonAPI {
     public Object[][] validLogInsData() {
         return new Object[][] {{"mytestmail2020@yahoo.com", "test2055"},
                 {"myautotestmail2020@gmail.com", "test2055"}};
+    }
+    @Test
+    public void userCanClickOnForgotPasswordForSignIn() {
+        SignInPage signIn = PageFactory.initElements(driver, SignInPage.class);
+        signIn.forgotToSignIn("mytestmail2020@yahoo.com");
+    }
+
+    @Test
+    public void testUserCanNavigateToForgotPasswordPage() {
+        SignInPage signIn = PageFactory.initElements(driver, SignInPage.class);
+        signIn.goToForgotSignIn("mytestmail2020@yahoo.com");
     }
 }
