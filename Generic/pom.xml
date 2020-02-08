@@ -60,6 +60,10 @@
             <artifactId>commons-io</artifactId>
         </dependency>
 
+        <dependency>
+        <groupId>io.rest-assured</groupId>
+        <artifactId> rest-assured</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

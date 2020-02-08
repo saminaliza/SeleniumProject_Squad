@@ -36,7 +36,6 @@ import java.util.concurrent.TimeUnit;
 
 public class CommonAPI {
 
-
     //ExtentReport
     public static ExtentReports extent;
     @BeforeSuite
@@ -112,7 +111,7 @@ public class CommonAPI {
             getLocalDriver(os, browserName);
         }
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
+        //driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
         driver.get(url);
         //driver.manage().window().maximize();
     }
@@ -121,7 +120,7 @@ public class CommonAPI {
             if(OS.equalsIgnoreCase("OS X")){
                 System.setProperty("webdriver.chrome.driver", "../Generic/browser-driver/chromedriver");
             }else if(OS.equalsIgnoreCase("Windows")){
-                System.setProperty("webdriver.chrome.driver", "..\\Generic\\browser-driver\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "../Generic/browser-driver/chromedriver.exe");
             }
             driver = new ChromeDriver();
         } else if(browserName.equalsIgnoreCase("chrome-options")){
@@ -130,7 +129,7 @@ public class CommonAPI {
             if(OS.equalsIgnoreCase("OS X")){
                 System.setProperty("webdriver.chrome.driver", "../Generic/browser-driver/chromedriver");
             }else if(OS.equalsIgnoreCase("Windows")){
-                System.setProperty("webdriver.chrome.driver", "..\\Generic\\browser-driver\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "../Generic/browser-driver/chromedriver.exe");
             }
             driver = new ChromeDriver(options);
         }
@@ -139,12 +138,12 @@ public class CommonAPI {
             if(OS.equalsIgnoreCase("OS X")){
                 System.setProperty("webdriver.gecko.driver", "../Generic/browser-driver/geckodriver");
             }else if(OS.equalsIgnoreCase("Windows")) {
-                System.setProperty("webdriver.gecko.driver", "..\\Generic\\browser-driver\\geckodriver.exe");
+                System.setProperty("webdriver.gecko.driver", "../Generic/browser-driver/geckodriver.exe");
             }
             driver = new FirefoxDriver();
 
         } else if(browserName.equalsIgnoreCase("ie")) {
-            System.setProperty("webdriver.ie.driver", "..\\Generic\\browser-driver\\IEDriverServer.exe");
+            System.setProperty("webdriver.ie.driver", "../Generic/browser-driver/IEDriverServer.exe");
             driver = new InternetExplorerDriver();
         }
         return driver;
@@ -171,12 +170,12 @@ public class CommonAPI {
         return driver;
     }
 
-    @AfterClass
+    @AfterMethod
     public void cleanUp(){
-
-//        driver.close();
+        //driver.close();
     }
-  //helper methods
+
+    //helper methods
     public void clickOnElement(String locator){
         try {
             driver.findElement(By.cssSelector(locator)).click();
@@ -255,6 +254,7 @@ public class CommonAPI {
             System.out.println("Screenshot captured");
         } catch (Exception e) {
             System.out.println("Exception while taking screenshot " + e.getMessage());
+            ;
         }
 
     }
@@ -392,7 +392,7 @@ public class CommonAPI {
         return items;
     }
 
-    public void selectOptionByVisibleText(WebElement element, String value) {
+    public static void selectOptionByVisibleText(WebElement element, String value) {
         Select select = new Select(element);
         select.selectByVisibleText(value);
     }
@@ -457,7 +457,7 @@ public class CommonAPI {
     }
 
     //Taking Screen shots
-    public void takeScreenShot() {
+    public void takeScreenShot() throws IOException {
         File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         //FileUtils.copyFile(file, new File("screenShots.png"));
     }
@@ -471,7 +471,6 @@ public class CommonAPI {
     public void waitUntilVisible(By locator) {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-
     }
 
     public void waitUntilSelectable(By locator) {
