@@ -59,7 +59,6 @@ public class SearchPage extends CommonAPI {
 
 
 
-
         // CommonAPI.selectOptionByVisibleText(searchBar , "Sajad"); This is how we pick up the values from dropdown
         //driver.navigate().back();
         // driver.navigate().forward();
