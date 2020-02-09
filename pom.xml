@@ -16,6 +16,7 @@
         <module>CNN</module>
         <module>AT_T</module>
         <module>Twitter</module>
+        <module>Rest-Assured</module>
     </modules>
 
     <dependencyManagement>
@@ -97,7 +98,7 @@
                 <version>3.0.0-M3</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <!--                        <suiteXmlFiles>target/test-classes/AmazonTestRunner.xml</suiteXmlFiles>-->
+<!--                                                <suiteXmlFiles>target/test-classes/AmazonTestRunner.xml</suiteXmlFiles>-->
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
