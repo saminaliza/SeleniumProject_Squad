@@ -30,7 +30,7 @@ public class AllEmployeeAPI {
         Assert.assertEquals(statusCode, 404);
     }
 
-    //@Test
+    @Test
     public void serverErrorCallAllEmployeeResources() {
         Response response = null;
         int statusCode = 0;
