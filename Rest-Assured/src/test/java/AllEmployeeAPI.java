@@ -29,16 +29,4 @@ public class AllEmployeeAPI {
         }
         Assert.assertEquals(statusCode, 404);
     }
-
-    @Test
-    public void serverErrorCallAllEmployeeResources() {
-        Response response = null;
-        int statusCode = 0;
-        try {
-            response = given().when().get(baseUrl + "/api/AllEmployeeResources").then().statusCode(200).extract().response();
-            statusCode = response.getStatusCode();
-        } catch (Exception ex) {
-        }
-        Assert.assertEquals(statusCode, 200);
-    }
 }

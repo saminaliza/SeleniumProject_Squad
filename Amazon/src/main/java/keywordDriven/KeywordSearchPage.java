@@ -10,7 +10,7 @@ public class KeywordSearchPage extends CommonAPI {
 
     public static String[] getDataFromExcelFileForFeaturesChoice() throws IOException {
         DataReader dr = new DataReader();
-        String path = System.getProperty("user.dir") + "/keywordData/items.xlsx";
+        String path = System.getProperty("user.dir") + "keywordData/items.xls";
         String[] data = dr.fileReader2(path, 0);
         return data;
     }

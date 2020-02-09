@@ -17,6 +17,7 @@
         <module>AT_T</module>
         <module>Twitter</module>
         <module>Rest-Assured</module>
+        <module>RestAPIShamim</module>
     </modules>
 
     <dependencyManagement>
