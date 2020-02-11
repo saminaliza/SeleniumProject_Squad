@@ -25,4 +25,11 @@ public class SubscribeTest extends CommonAPI {
         SubscribeCnn aw = PageFactory.initElements(driver, SubscribeCnn.class);
         aw.goToPrivacy();
     }
+    @Test
+    public void signWithInvalidId() throws InterruptedException {
+        SubscribeCnn aw = PageFactory.initElements(driver, SubscribeCnn.class);
+        aw.signInWithWrongPassword("abc@nothing.com");
+
+    }
+
 }

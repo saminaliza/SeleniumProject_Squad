@@ -9,13 +9,16 @@
     <parameter name="os" value="Windows"/>
     <parameter name="os_version" value="10"/>
     <parameter name="browserName" value="chrome"/>
-    <parameter name="browserVersion" value="75.0"/>
-    <parameter name="url" value="https://www.cnn.com/"/>
+    <parameter name="browserVersion" value="78.0"/>
+    <parameter name="url" value="https://www.cnn.com"/>
 
     <test name="Cnn Home">
         <classes>
             <class name="CnnPageTest.CnnHomePage"/>
             <class name="test.CnnTest"/>
+            <class name="CnnPageTest.SubscribeCnn"/>
+            <class name="test.SubscribeTest"/>
+
 
         </classes>
     </test>

@@ -90,8 +90,8 @@ public class CommonAPI {
     }
     //Browser SetUp
     public static WebDriver driver = null;
-    public String browserstack_username= "";
-    public String browserstack_accesskey = "";
+    public String browserstack_username= "abdulbhuiya1";
+    public String browserstack_accesskey = "8CSWxiodgQC4xXmzqgSK";
     public String saucelabs_username = "";
     public String saucelabs_accesskey = "";
 
@@ -103,7 +103,7 @@ public class CommonAPI {
         //System.setProperty("webdriver.chrome.driver", "/Users/peoplentech/eclipse-workspace-March2018/SeleniumProject1/driver/chromedriver");
         if(useCloudEnv==true){
             if(cloudEnvName.equalsIgnoreCase("browserstack")) {
-                getCloudDriver(cloudEnvName,browserstack_username,browserstack_accesskey,os,os_version, browserName, browserVersion);
+                getCloudDriver(cloudEnvName,"saminaislam1","ai2GFow1y9USErvsdspK",os,os_version, browserName, browserVersion);
             }else if (cloudEnvName.equalsIgnoreCase("saucelabs")){
                 getCloudDriver(cloudEnvName,saucelabs_username, saucelabs_accesskey,os,os_version, browserName, browserVersion);
             }
@@ -172,7 +172,7 @@ public class CommonAPI {
 
     @AfterMethod
     public void cleanUp(){
-        driver.close();
+        // driver.close();
     }
 
     //helper methods
